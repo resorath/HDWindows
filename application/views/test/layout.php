@@ -22,17 +22,20 @@
         </div>
         <div class="col-sm-2"></div>
         <div class="col-sm-2 toplink" id="quote">
-          <a href="#"><span class="glyphicon glyphicon-euro"></span> Get a Online Quote</a>
+          <div class="navicon"><span class="glyphicon glyphicon-euro"></span></div>
+          <a href="#">Get a Online Quote</a>
           <p class="clinger">Instant and free</p>
         </div>
 
         <div class="col-sm-2 toplink borderleft" id="book">
-          <a href="#"><span class="glyphicon glyphicon-fire"></span> Book an Appointment</a>
+          <div class="navicon"><span class="glyphicon glyphicon-fire"></span></div>
+          <a href="#">Book an Appointment</a>
           <p class="clinger">Get started right away</p>
         </div>
 
         <div class="col-sm-2 toplink borderleft" id="quote">
-          <a href="#"><span class="glyphicon glyphicon-bell"></span> Contact Us</a>
+          <div class="navicon"><span class="glyphicon glyphicon-bell"></span></div>
+          <a href="#">Contact Us</a>
           <p class="clinger">Questions? Let us know!</p>
         </div>
 

@@ -48,7 +48,7 @@
 $active_group = 'local';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'mysql.hdwindows.com';
+$db['default']['hostname'] = 'mysql.hdwindows.ca';
 $db['default']['username'] = 'hdwindows';
 $db['default']['password'] = 'higit';
 $db['default']['database'] = 'hdwindows';

@@ -5,7 +5,9 @@
 
 .toplink
 {
-	height: 45px;
+	height: 65px;
+
+	text-align: center;
 
 }
 
@@ -23,7 +25,12 @@
 
 .borderleft
 {
-	border-left: 1px solid  rgb(66, 139, 202);
+	/*border-left: 1px solid  rgb(66, 139, 202);*/
+}
+
+.navicon
+{
+	font-size: 2.0em;
 }
 
 .rslides {
