@@ -5,10 +5,77 @@
 
 .toplink
 {
+	height: 45px;
 
 }
 
 .toplink a
 {
-	
+	color: rgb(66, 139, 202);
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.clinger
+{
+	font-size: 0.8em;
+}
+
+.borderleft
+{
+	border-left: 1px solid  rgb(66, 139, 202);
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+
+@media (max-width: 767px){
+
+	.toplink
+	{
+		height: 100%;
+		padding-top: 20px;
+	}
+
+	.clinger
+	{
+		display: none;
+	}
+
+	.borderleft
+	{
+		border: none;
+	}
+
+
 }
