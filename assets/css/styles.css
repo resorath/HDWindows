@@ -11,6 +11,8 @@ p
 h1
 {
   font-family: 'Raleway', sans-serif;
+  padding-top: 30px;
+  font-size: 3.0em;
 }
 
 .pageful
@@ -35,13 +37,30 @@ h1
 #commercialservices
 {
   background-color: #FFCCFF;
-  background-image: url('../img/masthead.gif');
+  background-image: url('../img/merely_cubed.png');
 }
 
 #whyus
 {
   background-color: #FFFFFF;
 }
+
+#faqs
+{
+  background-color: #AAAAAA;
+}
+
+.whitepage
+{
+  background-color: #FFFFFF;
+  margin: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+
 
 #maincontent
 {
@@ -146,9 +165,16 @@ h1
   padding-left: none;
 }
 
+#guarantee
+{
+  background-color: #440044;
+  background-image: url('../img/struckaxiom.png');
+}
+
 #whyus
 {
-  background-color: royalblue;
+  background-color: #FFCCFF;
+  background-image: url('../img/masthead.gif');
 }
 
 #whychooserow
@@ -184,6 +210,13 @@ h1
 {
   display:none;
 }
+
+#keepscrolling
+{
+  margin-top: 80px;
+  text-align: center;
+}
+
 
 
 .rslides {
@@ -222,6 +255,13 @@ h1
 
 
 @media (max-width: 767px){
+
+  h1
+  {
+    padding-top: 20px;
+    font-size: 1.9em;
+    font-weight: bold;
+  }
 
 	.toplink
 	{
@@ -267,7 +307,6 @@ h1
 
   #maincontent
   {
-    margin-top: 10px;
   }
 
   #whyus
@@ -284,12 +323,29 @@ h1
     padding-bottom: 20px;
   }
 
+
   .whyusdivider
   {
     width: 60%;
     display: block;
 
   }
+
+  .whitepage
+  {
+    background-color: #FFFFFF;
+    margin: inherit;
+    padding: inherit;
+    margin-bottom: 20px;
+    height: 100%;
+    box-shadow: 10px 10px 5px #888888;
+  }
+
+  #logo
+  {
+    margin-top: 20px;
+  }
+
 
 }
 
