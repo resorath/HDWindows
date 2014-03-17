@@ -1,7 +1,46 @@
-body
+html, body
 {
+  height: 100%;
+}
+
+p
+{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1
+{
+  font-family: 'Raleway', sans-serif;
+}
+
+.pageful
+{
+  min-height:100%;
+  position: relative;
+}
+
+#greeter
+{
+
   background-color: #FFFFFF;
   background-image: url('../img/masthead.gif');
+}
+
+#residentservices
+{
+  background-color: #FFCCFF;
+  background-image: url('../img/green_cup.png');
+}
+
+#commercialservices
+{
+  background-color: #FFCCFF;
+  background-image: url('../img/masthead.gif');
+}
+
+#whyus
+{
+  background-color: #FFFFFF;
 }
 
 #maincontent
@@ -79,6 +118,73 @@ body
 {
   text-decoration: none;
 }
+
+#footer
+{
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#footer > p
+{
+  margin-bottom: 4px;
+}
+
+#footernav li
+{
+  display: inline-block;
+  list-style: none;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#footernav li:first-child
+{
+  border-style: none;
+  margin-left: -50px;
+  padding-left: none;
+}
+
+#whyus
+{
+  background-color: royalblue;
+}
+
+#whychooserow
+{
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.tallman > .leader
+{
+  font-size: 2.0em;
+  text-align: center;
+
+}
+
+.tallman > img
+{
+  display: block;
+  padding: 20px;
+  width: 180px;
+  height: 290px;
+}
+
+.tallman
+{
+  width: 90%;
+  padding: 10px;
+  height: 800px;
+  background-color: #FFFFFF;
+}
+
+.whyusdivider
+{
+  display:none;
+}
+
 
 .rslides {
   position: relative;
@@ -164,6 +270,27 @@ body
     margin-top: 10px;
   }
 
+  #whyus
+  {
+    padding-bottom: 20px;
+  }
+
+  .tallman
+  {
+    width: inherit;
+    padding: inherit;
+    height: inherit;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .whyusdivider
+  {
+    width: 60%;
+    display: block;
+
+  }
+
 }
 
 @media (max-width: 992px) and (min-width: 768px){
@@ -180,6 +307,14 @@ body
   #linkscontainer
   {
     width: 100%;
+  }
+
+  .tallman
+  {
+    width: 95%;
+    padding: 2px;
+    height: 500px;
+
   }
 
 
