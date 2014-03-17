@@ -50,6 +50,12 @@ h1
   background-color: #AAAAAA;
 }
 
+#footer
+{
+    background-color: #FFFFFF;
+    background-image: url('../img/masthead.gif');
+}
+
 .whitepage
 {
   background-color: #FFFFFF;
@@ -142,11 +148,18 @@ h1
 {
   text-align: center;
   font-size: 0.8em;
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 #footer > p
 {
   margin-bottom: 4px;
+}
+
+#footernav
+{
+  margin: 0;
 }
 
 #footernav li
@@ -196,6 +209,7 @@ h1
   padding: 20px;
   width: 180px;
   height: 290px;
+  margin: 0 auto;
 }
 
 .tallman
@@ -204,6 +218,7 @@ h1
   padding: 10px;
   height: 800px;
   background-color: #FFFFFF;
+  border-radius: 5px;
 }
 
 .whyusdivider
