@@ -1,3 +1,9 @@
+body
+{
+  background-color: #FFFFFF;
+  background-image: url('../img/masthead.gif');
+}
+
 #maincontent
 {
 	padding-top: 30px;
@@ -33,13 +39,20 @@
 	font-size: 2.0em;
 }
 
+.slides
+{
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+
 .rslides {
   position: relative;
   list-style: none;
   overflow: hidden;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 20px auto;
   }
 
 .rslides li {
@@ -71,8 +84,13 @@
 	.toplink
 	{
 		height: 100%;
-		padding-top: 20px;
+		padding-top: 0px;
 	}
+
+  .navicon
+  {
+    display: inline-block;
+  }
 
 	.clinger
 	{
@@ -83,6 +101,11 @@
 	{
 		border: none;
 	}
+
+  #pitchhead
+  {
+    font-size: 2.3em;
+  }
 
 
 }

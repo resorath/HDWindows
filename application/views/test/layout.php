@@ -22,15 +22,15 @@
         </div>
         <div class="col-sm-2"></div>
         <div class="col-sm-2 toplink" id="quote">
-          <div class="navicon"><span class="glyphicon glyphicon-euro"></span></div>
-          <a href="#">Get a Online Quote</a>
-          <p class="clinger">Instant and free</p>
+          <div class="navicon"><span class="glyphicon glyphicon-ok"></span></div>
+          <a href="#">Why Us?</a>
+          <p class="clinger">Learn what makes us special</p>
         </div>
 
         <div class="col-sm-2 toplink borderleft" id="book">
           <div class="navicon"><span class="glyphicon glyphicon-fire"></span></div>
-          <a href="#">Book an Appointment</a>
-          <p class="clinger">Get started right away</p>
+          <a href="#">Get Started</a>
+          <p class="clinger">Get a free quote and book an appointment</p>
         </div>
 
         <div class="col-sm-2 toplink borderleft" id="quote">
@@ -51,7 +51,7 @@
     </div>
 
     <div class="container" id="whatwedo">
-      <h1>Beautify Your View</h1>
+      <h1 id="pitchhead">Beautify Your View</h1>
 
       <p>Locavore jean shorts Tumblr cardigan Shoreditch. Brooklyn hella Vice wolf trust fund plaid semiotics fixie authentic keytar, beard High Life ugh. Banksy forage PBR&B aesthetic before they sold out raw denim. Single-origin coffee selfies DIY mustache freegan. IPhone Shoreditch paleo drinking vinegar direct trade gluten-free, disrupt aesthetic chambray typewriter selfies Bushwick master cleanse locavore squid. Vegan umami Neutra retro street art, beard fingerstache pop-up. Meh VHS fanny pack, try-hard stumptown McSweeney's irony 8-bit biodiesel master cleanse Wes Anderson.</p>
 
@@ -60,7 +60,7 @@
     </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="<?=base_url() ?>assets/js/jquery.min.js"></script>
     <script src="<?=base_url() ?>assets/js/bootstrap.min.js"></script>
     <script src="<?=base_url() ?>assets/js/responsiveslides.min.js"></script>
     <script src="<?=base_url() ?>assets/js/scripts.js"></script>
