@@ -57,7 +57,9 @@ body
 
 .aboutuslink a
 {
-  color: rgb(66, 139, 202);
+  text-align: center;
+  color: #FFFFFF;
+  vertical-align: center;
 }
 
 #mobilemenu
