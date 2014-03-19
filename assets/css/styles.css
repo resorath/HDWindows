@@ -36,8 +36,12 @@ h1
 
 #commercialservices
 {
-  background-color: #FFCCFF;
-  background-image: url('../img/merely_cubed.png');
+  background-color: #82CAFA;
+  background-image: url('../img/calgarysil.png');
+  background-repeat: repeat-x;
+  background-position: 50% bottom;
+  background-attachment: fixed;
+
 }
 
 #whyus
@@ -180,8 +184,11 @@ h1
 
 #guarantee
 {
-  background-color: #440044;
-  background-image: url('../img/struckaxiom.png');
+  background-color: #FFFFFF;
+  background-image: url('../img/squeegsil.png');
+  background-attachment: fixed;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
 }
 
 #whyus

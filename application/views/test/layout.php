@@ -132,7 +132,7 @@
           </div>
           <hr class="whyusdivider">
           <div class="col-sm-4 whychooseblock">
-            <div class="tallman">
+            <div class="tallman" id="reason3">
               <p class="leader">Exciting Reason 3!</p>
               <img src="<?=base_url() ?>assets/img/silsea.png">
               <p class="follower">Because: Reasons</p>
@@ -178,7 +178,7 @@
       </div>
     </div>
 
-    <div class="pageful" id="guarantee">
+    <div class="pageful" id="guarantee" data-stellar-background-ratio="2.5">
       <div class="container">
         <h1>Our Guarantee to You</h1>
 
@@ -199,6 +199,7 @@
 
     <script src="<?=base_url() ?>assets/js/jquery.min.js"></script>
     <script src="<?=base_url() ?>assets/js/bootstrap.min.js"></script>
+    <script src="<?=base_url() ?>assets/js/stellar.min.js"></script>
     <script src="<?=base_url() ?>assets/js/responsiveslides.min.js"></script>
     <script src="<?=base_url() ?>assets/js/scripts.js"></script>
   </body>
