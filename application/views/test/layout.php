@@ -97,7 +97,19 @@
 
     <div class="pageful" id="residentservices">
       <div class="container">
-        <h1>Residential Services</h1>
+        <h1 id="resheader">Residential Services</h1>
+
+        <div class="wideboy" id="windowcleaning">
+          <div class="lefthulk">
+            <img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
+          </div><div class="rightsmash">
+            <div class="rightsmashinner">
+              <p class="resleader">Window Cleaning</p>
+              Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </div>
