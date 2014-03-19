@@ -24,6 +24,16 @@ $(window).stellar({
 	responsive: true
 });
 
+$(document).ready()
+{
+	// check if position: fixed is supported, and if not, removed fixed positions
+	if(!supportFixedPositions())
+	{
+		$('#commercialservices').css('background-attachment', 'scroll');
+	}
+
+}
+
 
 /*var xpos = 180;
 var lastScrollTop = $(window).scrollTop();;
@@ -48,3 +58,40 @@ $(window).scroll(function() {
 
 
 });*/
+
+function supportFixedPositions(){
+  var container = document.body;
+  
+  if (document.createElement && container && container.appendChild && container.removeChild) {
+    var el = document.createElement('div');
+    
+    if (!el.getBoundingClientRect) return null;
+        
+    el.innerHTML = 'x';
+    el.style.cssText = 'position:fixed;top:100px;';
+    container.appendChild(el);
+
+    var originalHeight = container.style.height,
+        originalScrollTop = container.scrollTop;
+    // In IE<=7, the window's upper-left is at 2,2 (pixels) with respect to the true client.
+    // surprisely, in IE8, the window's upper-left is at -2, -2 (pixels), but other elements
+    // tested is just right, so we need adjust this.
+    // https://groups.google.com/forum/?fromgroups#!topic/comp.lang.javascript/zWJaFM5gMIQ
+    // https://bugzilla.mozilla.org/show_bug.cgi?id=174397
+    var extraTop  = document.documentElement.getBoundingClientRect().top;
+    extraTop = extraTop > 0 ? extraTop : 0;
+
+    container.style.height = '3000px';
+    container.scrollTop = 500;
+
+    var elementTop = el.getBoundingClientRect().top;
+    container.style.height = originalHeight;
+    
+    var isSupported = (elementTop - extraTop) === 100;
+    container.removeChild(el);
+    container.scrollTop = originalScrollTop;
+
+    return isSupported;
+  }
+  return null;
+}
