@@ -179,10 +179,11 @@
     </div>
 
     <div class="pageful" id="guarantee" data-stellar-background-ratio="2.5">
-      <div class="container">
+      <div class="container" id="gauranteecontainer">
         <h1>Our Guarantee to You</h1>
 
       </div>
+
     </div>
 
     <div id="footer">
