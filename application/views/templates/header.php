@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="HD Window Cleaning is a professional window cleaning service for Calgary and area. We do residential (home) and commercial (high rise) window cleaning.">
-    <title>HD Window Cleaning - Calgary and Area</title>
+    <title><?=$title ?></title>
 
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>

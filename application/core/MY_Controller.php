@@ -42,7 +42,7 @@ class MY_Controller extends CI_Controller {
         // Title
         if(key_exists('title', $data))
             $data['title'] .= " - ";
-        @$data['title'] .= "HD Window Cleaning";
+        @$data['title'] .= "HD Window Cleaning - Calgary and Area";
         
         // Navigation
         //if(!key_exists('nav', $data))

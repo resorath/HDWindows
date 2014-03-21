@@ -1,6 +1,8 @@
 html, body
 {
   height: 100%;
+  background-color: #FFFFFF;
+  background-image: url('../img/masthead.gif');
 }
 
 p
@@ -70,6 +72,10 @@ h1
   box-shadow: 10px 10px 5px #888888;
 }
 
+.leadcentre
+{
+  text-align: center;
+}
 
 
 #maincontent
@@ -303,6 +309,121 @@ h1
 }
 
 
+.smallheader
+{
+  display: none;
+  background-color: black;
+  color:  rgb(66, 139, 202);
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding-left: 20px;
+}
+
+.multichoice
+{
+  margin-top: 40px;
+}
+
+.multichoice > a > div
+{
+  border: 2px outset rgb(66, 139, 202);
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 10px;
+  height: 140px;
+  color: #000000;
+
+}
+
+.muiltichoice  > a> .lead
+{
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.multichoice > a > #residential
+{
+  background-color: #7BCC70;
+}
+
+.multichoice > a > #lightcommercial
+{
+  background-color: #01C5BB;
+}
+
+.multichoice > a > #commercial
+{
+  background-color: #6699FF;
+}
+
+.quote-col-leader
+{
+  font-size: 1.4em;
+  text-decoration: underline;
+}
+
+.col-parent
+{
+  margin-top: 20px;
+}
+
+/* Quote Cell */
+.quote-col > img
+{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.quote-col > .description
+{
+  display: inline-block;
+}
+
+.quote-col > .description > p
+{
+  padding: 0px;
+  margin: 0px;
+}
+
+.quote-col > .input
+{
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+}
+
+.quote-col > .input > input
+{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.quote-col > .inputadjuster
+{
+  display: inline-block;
+}
+
+.quote-col > .inputadjuster > button
+{
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  margin: 1px;
+}
+
+
+
+/* END Quote Cell */
+
+.protips > li
+{
+  font-size: 1.4em;
+
+}
 
 .rslides {
   position: relative;
@@ -439,6 +560,22 @@ h1
   .residentrow
   {
     margin-bottom: 0px;
+  }
+
+  .smallheader
+  {
+    display: block;
+  }
+
+  .bigheader
+  {
+    display: none;
+  }
+
+  .lotsoftext
+  {
+    font-size: 1.5em;
+    width: 100%;
   }
 
 

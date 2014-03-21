@@ -16,5 +16,19 @@
     <script src="<?=base_url() ?>assets/js/stellar.min.js"></script>
     <script src="<?=base_url() ?>assets/js/responsiveslides.min.js"></script>
     <script src="<?=base_url() ?>assets/js/scripts.js"></script>
+
+    <?php 
+    if(isset($additionalscripts))
+    {
+      foreach($additionalscripts as $script):
+        ?>
+
+        <script src="<?=base_url() ?>assets/js/<?=$script ?>"></script>
+
+        <?php
+
+      endforeach;
+
+    } ?>
   </body>
 </html>
