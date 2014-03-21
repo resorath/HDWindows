@@ -4,6 +4,6 @@ class Home extends MY_Controller {
 
 	public function index()
 	{
-		$this->loadview('test/layout');
+		$this->loadview('home');
 	}
 }
