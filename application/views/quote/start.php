@@ -14,7 +14,7 @@
   </div>
 
 
-  <div class="quote-stage" id="stage1" style="display: none;">
+  <div class="quote-stage stage1" id="stage1">
     <div class="well">
       <p>Thanks for your interest in HD Windows for your cleaning needs. Please take a moment to tell us
         about what we can do for you. This no obligation quote should only take a few minutes, and we won't
@@ -25,19 +25,19 @@
     <h2 class="leadcentre lotsoftext">Which of these choices best represents you?</h1>
 
     <div class="row multichoice">
-      <a href="#">
+      <a href="#" class="stage1-link" id="residential-link">
         <div class="col-md-3 quote-stage-1" id="residential">
           <p class="lead">Residential</p>
           <p class="follow">I own a typical house, townhouse, condo or apartment unit.</p>
         </div>
       </a>
-      <a href="#">
+      <a href="#" class="stage1-link" id="lightcommercial-link">
         <div class="col-md-3 col-md-offset-1 quote-stage-1" id="lightcommercial">
           <p class="lead">Light Commercial</p>
           <p class="follow">I represent a small business, such as a kiosk, strip-mall (unit or whole building), etc.</p>
         </div>
      </a>
-      <a href="#">
+      <a href="#" class="stage1-link" id="commercial-link">
         <div class="col-md-3 col-md-offset-1 quote-stage-1" id="commercial">
           <p class="lead">Heavy Commercial</p>
           <p class="follow">I represent a high-rise building; such as a commercial tower, apartment or condo complex or other large buildings.
@@ -48,7 +48,7 @@
 
   </div>
 
-  <div class="quote-stage" id="stage2-residential" style="display: none;">
+  <div class="quote-stage stage2" id="stage2-residential" style="display: none;">
     <h2 class="leadcentre lotsoftext">Ok! Now its time to figure out what you need...</h1>
 
     <div class="well"><p>On the next step we will ask you for details on what you need done. If you have a smart phone or tablet, you can proceed
@@ -67,12 +67,12 @@
       <li>Removing or replacing storm windows? Get a rough size and count.</li>
     </ul>
 
-    <button class="btn btn-large btn-primary nav-justified">Okay, Lets do this!</button>
+    <button class="btn btn-large btn-primary nav-justified stage2-link" id="residential2-link">Okay, Lets do this!</button>
 
 
   </div>
 
-  <div class="quote-stage" id="stage3-residential">
+  <div class="quote-stage" id="stage3-residential" style="display: none;">
 
     <h2 class="leadcentre lotsoftext">Great! Tell us what you need!</h1>
 
@@ -89,11 +89,11 @@
             <p>Under 20 ft</p>
           </div>
           <div class="input">
-            <input type="text">
+            <input type="text" id="input-regularpane">
           </div>
           <div class="inputadjuster">
-            <button class="btn btn-xs up"><span class="glyphicon glyphicon-plus"></span></button>
-            <button class="btn btn-xs down"><span class="glyphicon glyphicon-minus"></span></button>
+            <button class="btn btn-xs up" data-attachedinput="input-regularpane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs down" data-attachedinput="input-regularpane"><span class="glyphicon glyphicon-minus"></span></button>
           </div>
 
         </div>
