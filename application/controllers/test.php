@@ -11,4 +11,9 @@ class Test extends MY_Controller {
 	{
 		$this->loadview('test/layout');
 	}
+
+	public function slides()
+	{
+		$this->load->view('test/slides');
+	}
 }

@@ -25,19 +25,19 @@
     <h2 class="leadcentre lotsoftext">Which of these choices best represents you?</h1>
 
     <div class="row multichoice">
-      <a href="#" class="stage1-link" id="residential-link">
+      <a href="#step2/residential" class="stage1-link" id="residential-link">
         <div class="col-md-3 quote-stage-1" id="residential">
           <p class="lead">Residential</p>
           <p class="follow">I own a typical house, townhouse, condo or apartment unit.</p>
         </div>
       </a>
-      <a href="#" class="stage1-link" id="lightcommercial-link">
+      <a href="#step2/lightcommercial" class="stage1-link" id="lightcommercial-link">
         <div class="col-md-3 col-md-offset-1 quote-stage-1" id="lightcommercial">
           <p class="lead">Light Commercial</p>
           <p class="follow">I represent a small business, such as a kiosk, strip-mall (unit or whole building), etc.</p>
         </div>
      </a>
-      <a href="#" class="stage1-link" id="commercial-link">
+      <a href="#step2/commercial" class="stage1-link" id="commercial-link">
         <div class="col-md-3 col-md-offset-1 quote-stage-1" id="commercial">
           <p class="lead">Heavy Commercial</p>
           <p class="follow">I represent a high-rise building; such as a commercial tower, apartment or condo complex or other large buildings.
@@ -67,7 +67,7 @@
       <li>Removing or replacing storm windows? Get a rough size and count.</li>
     </ul>
 
-    <button class="btn btn-large btn-primary nav-justified stage2-link" id="residential2-link">Okay, Lets do this!</button>
+    <button class="btn btn-large btn-primary nav-justified stage2-link" id="residential2-link" onclick="window.location.hash='#step3/residential';">Okay, Lets do this!</button>
 
 
   </div>
@@ -82,11 +82,12 @@
           Indoor Cleaning
         </div>
 
+        <!-- Service Item -->
         <div class="quote-col">
           <img src="<?=base_url() ?>assets/img/placeholder.gif">
           <div class="description">
             <p>Regular Pane</p>
-            <p>Under 20 ft</p>
+            <p>Under 4m</p>
           </div>
           <div class="input">
             <input type="text" id="input-regularpane">
@@ -97,6 +98,25 @@
           </div>
 
         </div>
+        <!-- /Service Item -->
+
+        <!-- Service Item -->
+        <div class="quote-col">
+          <img src="<?=base_url() ?>assets/img/placeholder.gif">
+          <div class="description">
+            <p>Super Pane</p>
+            <p>Over 2km</p>
+          </div>
+          <div class="input">
+            <input type="text" id="input-superpane">
+          </div>
+          <div class="inputadjuster">
+            <button class="btn btn-xs up" data-attachedinput="input-superpane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs down" data-attachedinput="input-superpane"><span class="glyphicon glyphicon-minus"></span></button>
+          </div>
+
+        </div>
+        <!-- /Service Item -->
 
       </div>
 
@@ -106,7 +126,15 @@
         </div>
 
         <div class="quote-col">
-          
+          <img src="<?=base_url() ?>assets/img/placeholder.gif">
+          <div class="description">
+            <p>Regular Gutter</p>
+            <p>First or Second Floor</p>
+          </div>
+          <div class="slide">
+            <input type="text" class="span2" value="4" id="sl1">
+          </div>
+
         </div>
 
       </div>

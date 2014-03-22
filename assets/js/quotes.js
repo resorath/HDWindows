@@ -1,27 +1,25 @@
-$(document).ready(function() {
 
-
-});
-
-$('.stage1-link').click(function() {
-	$('.stage1').fadeOut();
-
-});
 
 $('#residential-link').click(function() {
-	$('#stage2-residential').fadeIn();
-
+	loadview('2', 'residential');
 });
 
-$('.stage2-link').click(function() {
-	$('.stage2').fadeOut();
-
-})
-
 $('#residential2-link').click(function() {
-	$('#stage3-residential').fadeIn();
 
-})
+	loadview('3', 'residential');
+});
+
+// stage = 1, 2, etc. type = residential, commercial, lightcommercial
+function loadview(stage, type)
+{
+	for(var i = 1; i < stage; i++)
+		$('.stage' + i).fadeOut();
+
+	console.log('#stage'+stage+'-'+type);
+	$('#stage'+stage+'-'+type).fadeIn();
+
+}
+
 
 
 $('.inputadjuster > .up').click(function() {
@@ -46,3 +44,48 @@ $('.inputadjuster > .down').click(function() {
 
 	$('#' + $(this).data('attachedinput')).val(val);
 });
+
+
+$('#sl1').slider({
+      formater: function(value) {
+        return 'Current value: '+value;
+      }
+    });
+
+// on hash change
+$(window).hashchange( function(){
+  var hash = window.location.hash;
+
+  if(hash.indexOf("#step2/") == 0)
+  {
+  		var type = hash.substring(7);
+
+  }
+
+  if(hash.indexOf("#step3/") == 0)
+  {
+  		var type = hash.substring(7);
+
+  }
+
+ });
+
+// on page load
+$(document).ready(function() {
+  var hash = window.location.hash;
+
+  if(hash.indexOf("#step2/") == 0)
+  {
+  	var type = hash.substring(7);
+  	loadview('2', 'residential');
+	
+  }
+
+  if(hash.indexOf("#step3/") == 0)
+  {
+  		var type = hash.substring(7);
+		loadview('3', 'residential');
+  }
+
+});
+
