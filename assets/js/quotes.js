@@ -46,11 +46,22 @@ $('.inputadjuster > .down').click(function() {
 });
 
 
-$('#sl1').slider({
+$('.slideinput').slider({
+	  min: 0,
+	  max: 50,
+	  value: 0,
       formater: function(value) {
-        return 'Current value: '+value;
+        return 'Meters: '+value;
       }
-    });
+});
+
+$(".slideinput").on('slide', function(slideEvt) {
+	if(slideEvt.value > 0)
+		$('#' + $(this).data('attachedinput')).val(slideEvt.value);
+	else
+		$('#' + $(this).data('attachedinput')).val('');
+});
+
 
 // on hash change
 $(window).hashchange( function(){

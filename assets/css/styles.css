@@ -423,14 +423,35 @@ h1
   margin: 1px;
 }
 
+.small
+{
+  font-size: 0.7em;
+}
+
+.kindasmall
+{
+  font-size: 0.9em;
+}
+
 
 
 /* END Quote Cell */
+
+#stage3-residential
+{
+  display: none;
+}
 
 .protips > li
 {
   font-size: 1.4em;
 
+}
+
+.sliderholder
+{
+  display: block;
+  margin-bottom: 30px;
 }
 
 .rslides {

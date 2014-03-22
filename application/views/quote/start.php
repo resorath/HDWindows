@@ -1,4 +1,5 @@
 <div class="container" id="maincontent">
+
   <div class="row bigheader" id="quotebigheader">
     <div class="col-sm-4" id="logo">
       <img src="<?=base_url() ?>assets/img/badlogo.png" alt="Bad Logo">
@@ -15,6 +16,7 @@
 
 
   <div class="quote-stage stage1" id="stage1">
+
     <div class="well">
       <p>Thanks for your interest in HD Windows for your cleaning needs. Please take a moment to tell us
         about what we can do for you. This no obligation quote should only take a few minutes, and we won't
@@ -72,7 +74,8 @@
 
   </div>
 
-  <div class="quote-stage" id="stage3-residential" style="display: none;">
+
+  <div class="quote-stage" id="stage3-residential">
 
     <h2 class="leadcentre lotsoftext">Great! Tell us what you need!</h1>
 
@@ -87,14 +90,14 @@
           <img src="<?=base_url() ?>assets/img/placeholder.gif">
           <div class="description">
             <p>Regular Pane</p>
-            <p>Under 4m</p>
+            <p class="kindasmall">Under 4m</p>
           </div>
           <div class="input">
-            <input type="text" id="input-regularpane">
+            <input type="text" id="input-indoor-regularpane">
           </div>
           <div class="inputadjuster">
-            <button class="btn btn-xs up" data-attachedinput="input-regularpane"><span class="glyphicon glyphicon-plus"></span></button>
-            <button class="btn btn-xs down" data-attachedinput="input-regularpane"><span class="glyphicon glyphicon-minus"></span></button>
+            <button class="btn btn-xs up" data-attachedinput="input-indoor-regularpane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs down" data-attachedinput="input-indoor-regularpane"><span class="glyphicon glyphicon-minus"></span></button>
           </div>
 
         </div>
@@ -105,14 +108,14 @@
           <img src="<?=base_url() ?>assets/img/placeholder.gif">
           <div class="description">
             <p>Super Pane</p>
-            <p>Over 2km</p>
+            <p class="kindasmall">Over 2km</p>
           </div>
           <div class="input">
-            <input type="text" id="input-superpane">
+            <input type="text" id="input-indoor-superpane">
           </div>
           <div class="inputadjuster">
-            <button class="btn btn-xs up" data-attachedinput="input-superpane"><span class="glyphicon glyphicon-plus"></span></button>
-            <button class="btn btn-xs down" data-attachedinput="input-superpane"><span class="glyphicon glyphicon-minus"></span></button>
+            <button class="btn btn-xs up" data-attachedinput="input-indoor-superpane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs down" data-attachedinput="input-indoor-superpane"><span class="glyphicon glyphicon-minus"></span></button>
           </div>
 
         </div>
@@ -125,19 +128,61 @@
           Outdoor Cleaning
         </div>
 
+        <!-- Service Item -->
         <div class="quote-col">
           <img src="<?=base_url() ?>assets/img/placeholder.gif">
           <div class="description">
-            <p>Regular Gutter</p>
-            <p>First or Second Floor</p>
+            <p>Super Pane</p>
+            <p class="kindasmall">Over 2km</p>
           </div>
-          <div class="slide">
-            <input type="text" class="span2" value="4" id="sl1">
+          <div class="input">
+            <input type="text" id="input-outdoor-superpane">
+          </div>
+          <div class="inputadjuster">
+            <button class="btn btn-xs up" data-attachedinput="input-outdoor-superpane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs down" data-attachedinput="input-outdoor-superpane"><span class="glyphicon glyphicon-minus"></span></button>
           </div>
 
         </div>
+        <!-- /Service Item -->
+
+        <!-- Service Item -->
+        <div class="quote-col">
+          <img src="<?=base_url() ?>assets/img/placeholder.gif">
+          <div class="description">
+            <p>Ledges <span class="small">(Meters)</a></p>
+            <p class="kindasmall">1st or 2nd Floor</p>
+          </div>
+          <div class="input">
+            <input type="text" id="input-ledges">
+          </div>
+          <div class="sliderholder">
+            <input type="text" class="span2 slideinput" value="0" id="input-ledgesSlider" data-attachedinput="input-ledges">
+          </div>
+        </div>
+
+        <!-- /Service Item -->
+
+        <!-- Service Item -->
+        <div class="quote-col">
+          <img src="<?=base_url() ?>assets/img/placeholder.gif">
+          <div class="description">
+            <p>Sils <span class="small">(Meters)</a></p>
+            <p class="kindasmall">1st or 2nd Floor</p>
+          </div>
+          <div class="input">
+            <input type="text" id="input-sils">
+          </div>
+          <div class="sliderholder">
+            <input type="text" class="span2 slideinput" value="0" id="input-silsSlider" data-attachedinput="input-sils">
+          </div>
+        </div>
+
+        <!-- /Service Item -->
 
       </div>
+
+
 
       <div class="col-md-4 col-parent">
         <div class="quote-col-leader">
@@ -150,12 +195,8 @@
 
       </div>
 
-
     </div>
-
     
-
   </div>
-
 
 </div>
