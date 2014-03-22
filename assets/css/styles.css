@@ -607,6 +607,19 @@ h1
     width: 100%;
   }
 
+ .quote-col > .inputadjuster
+ {
+  vertical-align: top;
+ }
+  .quote-col > .inputadjuster > button
+  {
+    display: inline-block;
+    width: 30px;
+    height: 35px;
+    padding: 0px;
+    margin: 1px;
+  }
+
 
 }
 
