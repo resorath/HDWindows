@@ -403,7 +403,7 @@ h1
 
 .quote-col > .input > input
 {
-  width: 50px;
+  width: 40px;
   height: 40px;
   text-align: center;
   font-size: 1.5em;
@@ -614,11 +614,16 @@ h1
 
   .quote-col > .inputadjuster > button
   {
-    display: inline-block;
-    width: 30px;
-    height: 35px;
-    padding: 0px;
-    margin: 1px;
+  display: inline-block;
+  width: 30px;
+  height: 35px;
+  padding: 0px;
+  margin: 1px;
+  }
+
+  .quote-col > .input > input
+  {
+    font-size: 1.2em;
   }
 
 
