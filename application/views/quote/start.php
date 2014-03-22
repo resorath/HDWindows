@@ -96,8 +96,8 @@
             <input type="text" id="input-indoor-regularpane">
           </div>
           <div class="inputadjuster">
-            <button class="btn btn-xs up" data-attachedinput="input-indoor-regularpane"><span class="glyphicon glyphicon-plus"></span></button>
-            <button class="btn btn-xs down" data-attachedinput="input-indoor-regularpane"><span class="glyphicon glyphicon-minus"></span></button>
+            <button class="btn btn-xs btn-primary up" data-attachedinput="input-indoor-regularpane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs btn-danger down" data-attachedinput="input-indoor-regularpane"><span class="glyphicon glyphicon-minus"></span></button>
           </div>
 
         </div>
@@ -114,8 +114,8 @@
             <input type="text" id="input-indoor-superpane">
           </div>
           <div class="inputadjuster">
-            <button class="btn btn-xs up" data-attachedinput="input-indoor-superpane"><span class="glyphicon glyphicon-plus"></span></button>
-            <button class="btn btn-xs down" data-attachedinput="input-indoor-superpane"><span class="glyphicon glyphicon-minus"></span></button>
+            <button class="btn btn-xs btn-primary up" data-attachedinput="input-indoor-superpane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs btn-danger down" data-attachedinput="input-indoor-superpane"><span class="glyphicon glyphicon-minus"></span></button>
           </div>
 
         </div>
@@ -139,8 +139,8 @@
             <input type="text" id="input-outdoor-superpane">
           </div>
           <div class="inputadjuster">
-            <button class="btn btn-xs up" data-attachedinput="input-outdoor-superpane"><span class="glyphicon glyphicon-plus"></span></button>
-            <button class="btn btn-xs down" data-attachedinput="input-outdoor-superpane"><span class="glyphicon glyphicon-minus"></span></button>
+            <button class="btn btn-xs btn-primary up" data-attachedinput="input-outdoor-superpane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs btn-danger down" data-attachedinput="input-outdoor-superpane"><span class="glyphicon glyphicon-minus"></span></button>
           </div>
 
         </div>
