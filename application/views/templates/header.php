@@ -11,6 +11,11 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="<?=base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?=base_url() ?>assets/css/styles.css" rel="stylesheet">
+    <script>
+      var config = {
+           base: "<?php echo base_url(); ?>"
+       };
+     </script>
 
       <?php 
     if(isset($additionalstyles))

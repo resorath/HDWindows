@@ -321,6 +321,26 @@ h1
   padding-left: 20px;
 }
 
+#getpersonal
+{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.controls > input
+{
+  height: 40px;
+  width: 250px;
+}
+
+.mobileform
+{
+  width: 270px;
+  margin: 0 auto;
+}
+
 .multichoice
 {
   margin-top: 40px;
@@ -357,6 +377,22 @@ h1
 {
   background-color: #6699FF;
 }
+
+.multichoice > a > #quote
+{
+  background-color: #FFAA00;
+}
+
+.multichoice > a > #booking
+{
+  background-color: #876ED7;
+}
+
+.multichoice > a > #contactus
+{
+  background-color: #009999;
+}
+
 
 .quote-col-leader
 {
@@ -433,6 +469,35 @@ h1
   font-size: 0.9em;
 }
 
+.error
+{
+  display: none;
+  color: #FF0000;
+  font-weight: bold;
+}
+
+#postalcodeinput
+{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.biginputlabel
+{
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+#getstartedinvalid
+{
+  text-align: center;
+}
+
+#getstartedselectionheader
+{
+  margin-bottom: 50px;
+}
 
 
 /* END Quote Cell */
@@ -448,10 +513,37 @@ h1
 
 }
 
+.protip
+{ 
+  display: none;
+  text-align: left;
+}
+
+.protipanchor
+{
+  display: block;
+  font-size: 0.8em;
+  margin-top: 20px;
+}
+
+
 .sliderholder
 {
   display: block;
   margin-bottom: 30px;
+}
+
+#postalcode
+{
+  width: 120px;
+  height: 36px;
+  font-size: 24px;
+}
+
+#postalcodelookup
+{
+  vertical-align: top;
+  display: inline-block;
 }
 
 .rslides {

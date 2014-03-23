@@ -34,6 +34,41 @@ $(document).ready()
 
 }
 
+$('#postalcodelookup').click(function() {
+  $('#postalcodeerror').hide();
+  $('#getstartedinvalid').hide();
+  var postalcode = $('#postalcode').val();
+
+  if(!checkPostal(postalcode))
+  {
+    $('#postalcodeerror').show();
+    return;
+  }
+
+  $.get(config.base + "getstarted/lookuppostalcode/" + postalcode.replace(/\s+/, "") , function( data ) {
+
+    $('#introheader').fadeOut();
+    if(data == "yes")
+    { 
+      $('#postalcodeinput').fadeOut();
+      $('#getstartedvalid').fadeIn();
+    }
+    if(data == "no")
+    {
+      $('#getstartedinvalid').fadeIn();
+
+    }
+
+  });
+
+
+});
+
+$('#postalcodeprivacyanchor').click(function() {
+  $('#postalcodeprivacy').fadeIn();
+
+});
+
 
 /*var xpos = 180;
 var lastScrollTop = $(window).scrollTop();;
@@ -58,6 +93,12 @@ $(window).scroll(function() {
 
 
 });*/
+
+function checkPostal(postal) {
+    return postal.match(/[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/);
+}
+
+
 
 function supportFixedPositions(){
   var container = document.body;

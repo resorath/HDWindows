@@ -19,7 +19,7 @@
 
           <div class="col-sm-2 toplink borderleft" id="book">
             <div class="navicon"><span class="glyphicon glyphicon-fire"></span></div>
-            <span class="ctalink"><a href="quote">Get Started</a></span>
+            <span class="ctalink"><a href="getstarted">Get Started</a></span>
             <p class="clinger">Get a free quote and book an appointment</p>
           </div>
 
