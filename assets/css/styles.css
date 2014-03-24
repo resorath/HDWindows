@@ -378,6 +378,17 @@ h1
 
 }
 
+#bookbutton
+{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.btn-wide
+{
+  width: 50%;
+}
+
 .stylishhr
 {
   width: 60%;

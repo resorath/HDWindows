@@ -150,7 +150,7 @@
         <div class="control-group">
           <label class="control-label" for="postalcode">First Time Choice</label>
           <div class="controls">
-            <input size="16" type="text" value="" placeholder="Click to select" class="input-xlarge form_datetime">
+            <input size="16" type="text" value="" placeholder="Click to select" readonly class="input-xlarge form_datetime">
           </div>
         </div>
       </div>
@@ -159,7 +159,7 @@
         <div class="control-group">
           <label class="control-label" for="postalcode">Second Time Choice</label>
           <div class="controls">
-            <input size="16" type="text" value="" placeholder="Click to select" class="input-xlarge form_datetime">
+            <input size="16" type="text" value="" placeholder="Click to select" readonly class="input-xlarge form_datetime">
           </div>
         </div>
       </div>
@@ -168,7 +168,7 @@
         <div class="control-group">
           <label class="control-label" for="postalcode">Third Time Choice</label>
           <div class="controls">
-            <input size="16" type="text" value="" placeholder="Click to select" class="input-xlarge form_datetime">
+            <input size="16" type="text" value="" placeholder="Click to select" readonly class="input-xlarge form_datetime">
           </div>
         </div>
       </div>
@@ -177,16 +177,17 @@
 
 
     <!-- Button -->
-    <div class="control-group">
+    <div class="control-group" id="bookbutton">
       <label class="control-label" for="submit"></label>
       <div class="controls">
-        <button id="submit" name="submit" class="btn btn-primary">Book!</button>
+        <button id="submit" name="submit" class="btn btn-primary btn-wide">Book!</button>
       </div>
     </div>
 
     </fieldset>
     </form>
 
+    <div style="margin-top: 60px"></div>
 
   </div>
 
