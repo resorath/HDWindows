@@ -150,7 +150,7 @@
         <div class="control-group">
           <label class="control-label" for="postalcode">First Time Choice</label>
           <div class="controls">
-            <input size="16" type="text" value="" placeholder="Click to select" readonly class="input-xlarge form_datetime">
+            <input size="16" type="text" value="" name="firstdatechoice" id="firstdatechoice" placeholder="Click/Tap to select" readonly class="input-xlarge form_datetime">
           </div>
         </div>
       </div>
@@ -159,7 +159,7 @@
         <div class="control-group">
           <label class="control-label" for="postalcode">Second Time Choice</label>
           <div class="controls">
-            <input size="16" type="text" value="" placeholder="Click to select" readonly class="input-xlarge form_datetime">
+            <input size="16" type="text" value="" name="seconddatechoice" id="seconddatechoice" placeholder="Click/Tap to select" readonly class="input-xlarge form_datetime">
           </div>
         </div>
       </div>
@@ -168,7 +168,7 @@
         <div class="control-group">
           <label class="control-label" for="postalcode">Third Time Choice</label>
           <div class="controls">
-            <input size="16" type="text" value="" placeholder="Click to select" readonly class="input-xlarge form_datetime">
+            <input size="16" type="text" value="" name="thirddatechoice" id="thirddatechoice" placeholder="Click/Tap to select" readonly class="input-xlarge form_datetime">
           </div>
         </div>
       </div>
