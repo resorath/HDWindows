@@ -47,13 +47,43 @@
       <label class="control-label" for="previousbook">Have you used our services before?</label>
       <div class="controls">
         <label class="radio" for="previousbook-0">
-          <input type="radio" name="previousbook" id="previousbook-0" value="Yes" checked="checked" required="required">
+          <input type="radio" name="previousbook" id="previousbook-0" value="Yes" required="required">
           Yes
         </label>
         <label class="radio" for="previousbook-1">
-          <input type="radio" name="previousbook" id="previousbook-1" value="No" required="required">
+          <input type="radio" name="previousbook" id="previousbook-1" value="No" checked="checked" required="required">
           No
         </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Text input-->
+        <div class="control-group">
+          <label class="control-label" for="email">Contact Name</label>
+          <div class="controls">
+
+            <select name="title" id="usertitle">
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Miss">Miss</option>
+              <option value="Ms.">Ms.</option>
+              <option value="Dr.">Dr.</option>
+              <option value="Prof.">Prof.</option>
+              <option value="Rev.">Rev.</option>
+              <option value="Honorable">The Honourable</option>
+              <option value="Rh.">The Right Honourable</option>
+              <option value="govgen">His Excellency</option>
+              <option value="queen">Her Majesty</option>
+              <option value="na">N/A</option>
+            </select>
+
+
+            <input id="whoname" name="email" type="text" placeholder="" class="input-xlarge" required="">
+            <p class="help-block">Who we are talking to</p>
+          </div>
+        </div>
       </div>
     </div>
 
