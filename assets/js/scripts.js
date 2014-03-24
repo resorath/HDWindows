@@ -69,6 +69,23 @@ $('#postalcodeprivacyanchor').click(function() {
 
 });
 
+$('.stage1-link').ready(function() {
+  $('.windowretainer').fadeOut(2000);
+
+});
+
+$('#howitworks').ready(function() {
+  $('#howitworksa').tooltip()
+});
+
+$('#referral').ready(function() {
+  $('#referral').select2();
+
+});
+
+$('.form_datetime').ready(function() {
+  $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+})
 
 /*var xpos = 180;
 var lastScrollTop = $(window).scrollTop();;

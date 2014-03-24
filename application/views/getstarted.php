@@ -13,7 +13,6 @@
     <em>HDWindows</em> | Get Started
   </div>
 
-
 	<div class="well" id="getstartedinvalid" style="display: none;">
 		<h2>Bad News Everyone...</h2>
 		<p>Sorry! But the postal code you gave us isn't in our service area. </p>

@@ -17,32 +17,28 @@
 
   <div class="quote-stage stage1" id="stage1">
 
-    <div class="well">
-      <p>Thanks for your interest in HD Windows for your cleaning needs. Please take a moment to tell us
-        about what we can do for you. This no obligation quote should only take a few minutes, and we won't
-        ask you any personal questions!</p>
-    </div>
-
-
     <h2 class="leadcentre lotsoftext">Which of these choices best represents you?</h1>
 
     <div class="row multichoice">
       <a href="#step2/residential" class="stage1-link" id="residential-link">
         <div class="col-md-3 quote-stage-1" id="residential">
+          <div class="windowretainer"></div>
           <p class="lead">Residential</p>
           <p class="follow">I own a typical house, townhouse, condo or apartment unit.</p>
         </div>
       </a>
       <a href="#step2/lightcommercial" class="stage1-link" id="lightcommercial-link">
         <div class="col-md-3 col-md-offset-1 quote-stage-1" id="lightcommercial">
+          <div class="windowretainer"></div>
           <p class="lead">Light Commercial</p>
           <p class="follow">I represent a small business, such as a kiosk, strip-mall (unit or whole building), etc.</p>
         </div>
      </a>
       <a href="#step2/commercial" class="stage1-link" id="commercial-link">
         <div class="col-md-3 col-md-offset-1 quote-stage-1" id="commercial">
+          <div class="windowretainer"></div>
           <p class="lead">Heavy Commercial</p>
-          <p class="follow">I represent a high-rise building; such as a commercial tower, apartment or condo complex or other large buildings.
+          <p class="follow">I represent a high-rise building; such as a commercial tower, apartment or condo complex, or other large buildings.
         </div>
       </a>
 

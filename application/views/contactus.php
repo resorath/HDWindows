@@ -47,7 +47,7 @@
       <div class="control-group">
         <label class="control-label" for="submit"></label>
         <div class="controls">
-          <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+          <button id="submit" name="submit" class="btn btn-primary">Shazam!</button>
           <p class="help-block">We will only use these details to contact you in response to your query.</p>
         </div>
       </div>
