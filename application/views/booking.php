@@ -21,7 +21,7 @@
 
     <div class="outer-center">
       <div class="inner-center" id="howitworks">
-        <p>How it works <a href="#" id="howitworksa" data-toggle="tooltip" data-placement="top" title="We aren't a big company, but instead a small team. A little song and dance is neccesary so we can group together our bookings. Thank you for understand and keeping our fuel consumption down!"><span class="glyphicon glyphicon-question-sign"></span></a></p>
+        <p>How it works <a href="#" id="howitworksa" data-toggle="tooltip" data-placement="top" title="We aren't a big company, but instead a small team. A little song and dance is neccesary so we can group together our bookings. Thank you for your patience and keeping our fuel consumption down!"><span class="glyphicon glyphicon-question-sign"></span></a></p>
         <ol>
           <li>Let us know some details about yourself, and a range of dates and times you are available.</li>
           <li>We will select a few dates that work for us and let you know.</li>
@@ -72,6 +72,7 @@
               <option value="Dr.">Dr.</option>
               <option value="Prof.">Prof.</option>
               <option value="Rev.">Rev.</option>
+              <option value="Mayor">His Worship</option>
               <option value="Honorable">The Honourable</option>
               <option value="Rh.">The Right Honourable</option>
               <option value="govgen">His Excellency</option>
