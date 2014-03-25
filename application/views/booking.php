@@ -174,21 +174,36 @@
 
     <hr class="stylishhr">
 
-    <p>Please pick up to three dates and times that work for you. We will get back to you!</p>
+    <p>Please pick some dates and times that work for you. We will get back to you!</p>
 
     <div class="row">
       <div class="col-md-4">
         <div class="control-group">
-          <label class="control-label" for="postalcode">First Time Choice</label>
+          <label class="control-label" for="firstdatechoice">First Time Choice</label>
           <div class="controls">
             <input size="16" type="text" value="" name="firstdatechoice" id="firstdatechoice" placeholder="Click/Tap to select" readonly class="input-xlarge form_datetime">
           </div>
         </div>
       </div>
 
+
       <div class="col-md-4">
         <div class="control-group">
-          <label class="control-label" for="postalcode">Second Time Choice</label>
+          <label class="control-label" for="firstdatechoice-until">Until</label>
+          <div class="controls">
+            <input size="16" type="text" value="" name="firstdatechoice-until" id="firstdatechoice-until" placeholder="<-- Select a start date and time" disabled class="input-xlarge form_timepicker">
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="control-group">
+          <label class="control-label" for="seconddatechoice">Second Time Choice</label>
           <div class="controls">
             <input size="16" type="text" value="" name="seconddatechoice" id="seconddatechoice" placeholder="Click/Tap to select" readonly class="input-xlarge form_datetime">
           </div>
@@ -197,15 +212,14 @@
 
       <div class="col-md-4">
         <div class="control-group">
-          <label class="control-label" for="postalcode">Third Time Choice</label>
+          <label class="control-label" for="seconddatechoice-until">Until</label>
           <div class="controls">
-            <input size="16" type="text" value="" name="thirddatechoice" id="thirddatechoice" placeholder="Click/Tap to select" readonly class="input-xlarge form_datetime">
+            <input size="16" type="text" value="" name="secondtimechoice-until" id="seconddatechoice-until" placeholder="<-- Select a start date and time" disabled class="input-xlarge form_timepicker">
           </div>
         </div>
       </div>
+
     </div>
-
-
 
     <!-- Button -->
     <div class="control-group" id="bookbutton">

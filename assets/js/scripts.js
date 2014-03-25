@@ -84,8 +84,51 @@ $('#referral').ready(function() {
 });
 
 $('.form_datetime').ready(function() {
-  $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'});
-})
+  $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'})
+  .on('changeDate', function(ev){
+    var trigger = '#' + ev.target.id;
+    $(trigger + '-until').removeAttr('disabled');
+    $(trigger + '-until').attr('placeholder', "Click/Tap to select");
+    var selecteddatetime = $(trigger).val().split(' ');
+    var selectedtime = selecteddatetime[1];
+
+
+    $(trigger + '-until').timepicker({ 
+      'timeFormat': 'H:i',
+      'step': 30,
+      'maxTime': '11:30pm',
+      'minTime': selectedtime,
+      'showDuration': true
+
+
+    });
+
+    $(trigger + '-until').focus();
+  })
+});
+
+$('#secondtimechoice').change(function() {
+  
+  if($(this).val() != '')
+  {
+    $(this).removeAttr('disabled');
+    var selecteddatetime = $(this).val().split(' ');
+    var selectedtime = selecteddatetime[1];
+
+
+    $('#secondtimechoice').timepicker({ 
+      'timeFormat': 'H:i',
+      'step': 30,
+      'maxTime': '11:30pm',
+      'minTime': selectedtime,
+      'showDuration': true
+
+
+    });
+
+  }
+
+});
 
 /*var xpos = 180;
 var lastScrollTop = $(window).scrollTop();;
