@@ -191,7 +191,7 @@
         <div class="control-group">
           <label class="control-label" for="firstdatechoice-until">Until</label>
           <div class="controls">
-            <input size="16" type="text" value="" name="firstdatechoice-until" id="firstdatechoice-until" placeholder="<-- Select a start date and time" disabled class="input-xlarge form_timepicker">
+            <input size="16" type="text" value="" name="firstdatechoice-until" id="firstdatechoice-until" placeholder="Select a start date and time" disabled class="input-xlarge form_timepicker">
           </div>
         </div>
       </div>
@@ -199,7 +199,7 @@
 
 
     </div>
-    <div class="row">
+    <div class="row" style="margin-top: 30px">
 
       <div class="col-md-4">
         <div class="control-group">
@@ -214,7 +214,7 @@
         <div class="control-group">
           <label class="control-label" for="seconddatechoice-until">Until</label>
           <div class="controls">
-            <input size="16" type="text" value="" name="secondtimechoice-until" id="seconddatechoice-until" placeholder="<-- Select a start date and time" disabled class="input-xlarge form_timepicker">
+            <input size="16" type="text" value="" name="secondtimechoice-until" id="seconddatechoice-until" placeholder="Select a start date and time" disabled class="input-xlarge form_timepicker">
           </div>
         </div>
       </div>
