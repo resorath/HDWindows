@@ -25,7 +25,7 @@
 
           <div class="col-sm-2 toplink borderleft" id="quote">
             <div class="navicon"><span class="glyphicon glyphicon-bell"></span></div>
-            <span class="ctalink"><a href="#">Contact Us</a></span>
+            <span class="ctalink"><a href="<?=base_url() ?>contactus">Contact Us</a></span>
             <p class="clinger">Questions? Let us know!</p>
           </div>
 
