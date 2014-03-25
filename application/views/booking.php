@@ -1,17 +1,4 @@
-<div class="container" id="maincontent">
 
-  <div class="row bigheader" id="quotebigheader">
-    <div class="col-sm-4" id="logo">
-      <img src="<?=base_url() ?>assets/img/badlogo.png" alt="Bad Logo">
-    </div>
-    <div class="col-sm-7" id="quoteheader">
-      <h1 class="leadcentre" style="">Appointment</h1>
-    </div>
-  </div>
-
-  <div class="smallheader" id="quotesmallheader">
-    <em>HDWindows</em> | Book an Appointment
-  </div>
 
   <div class="well">
     <h2 class="leadcentre lotsoftext" id="introheader">Ready to Book?</h2>

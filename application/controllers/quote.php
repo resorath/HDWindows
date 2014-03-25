@@ -13,6 +13,8 @@ class Quote extends MY_Controller {
 
   		$data['title'] = "Get a Quote";
 
+  		$data['subcontenttitle'] = "Get a Quote";
+
 		$this->loadview('quote/start', $data);
            
 	}

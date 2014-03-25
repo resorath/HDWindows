@@ -4,7 +4,8 @@ class Getstarted extends MY_Controller {
 
 	public function index()
 	{
-		$this->loadview('getstarted');
+		$data['subcontenttitle'] = "Get Started";
+		$this->loadview('getstarted', $data);
 	}
 
 	public function lookuppostalcode($code)

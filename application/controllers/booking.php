@@ -13,6 +13,8 @@ class Booking extends MY_Controller {
   		$data['additionalstyles'][] = 'bootstrap-datetimepicker.min.css';
   		$data['additionalstyles'][] = 'jquery.timepicker.css';
 
+      $data['subcontenttitle'] = "Booking";
+
 		$this->loadview('booking', $data);
 	}
 

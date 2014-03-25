@@ -37,4 +37,21 @@
     <![endif]-->
   </head>
   <body>
-	    	<!-- End of header -->
+
+  <?php if(isset($subcontenttitle)): ?>
+  <div class="container" id="maincontent">
+
+  <div class="row bigheader" id="quotebigheader">
+    <div class="col-sm-4" id="logo">
+      <a href="<?=base_url() ?>"><img src="<?=base_url() ?>assets/img/badlogo.png" alt="Bad Logo"></a>
+    </div>
+    <div class="col-sm-7" id="quoteheader">
+      <h1 class="leadcentre" style=""><?=$subcontenttitle ?></h1>
+    </div>
+  </div>
+
+  <div class="smallheader" id="quotesmallheader">
+    <em>HDWindows</em> | <?=$subcontenttitle ?>
+  </div>
+
+  <?php endif ?>

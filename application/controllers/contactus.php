@@ -4,6 +4,7 @@ class Contactus extends MY_Controller {
 
 	public function index()
 	{
+		$data['subcontenttitle'] = "Contact Us";
 		$this->loadview('contactus');
 	}
 

@@ -1,17 +1,3 @@
-<div class="container" id="maincontent">
-
-  <div class="row bigheader" id="quotebigheader">
-    <div class="col-sm-4" id="logo">
-      <img src="<?=base_url() ?>assets/img/badlogo.png" alt="Bad Logo">
-    </div>
-    <div class="col-sm-4 col-sm-offset-1" id="quoteheader">
-      <h1 class="leadcentre">Get Started</h1>
-    </div>
-  </div>
-
-  <div class="smallheader" id="quotesmallheader">
-    <em>HDWindows</em> | Get Started
-  </div>
 
 	<div class="well" id="getstartedinvalid" style="display: none;">
 		<h2>Bad News Everyone...</h2>
