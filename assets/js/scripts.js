@@ -86,6 +86,7 @@ $('#referral').ready(function() {
 $('.form_datetime').ready(function() {
   $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'})
   .on('changeDate', function(ev){
+    $('.form_datetime').datetimepicker('hide');
     var trigger = '#' + ev.target.id;
     $(trigger + '-until').removeAttr('disabled');
     $(trigger + '-until').attr('placeholder', "Click/Tap to select");
