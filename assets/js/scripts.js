@@ -70,7 +70,7 @@ $('#postalcodeprivacyanchor').click(function() {
 });
 
 $('.stage1-link').ready(function() {
-  $('.windowretainer').fadeOut(2000);
+  $('.windowretainer').fadeOut(1000);
 
 });
 
