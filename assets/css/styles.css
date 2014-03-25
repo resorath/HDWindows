@@ -881,6 +881,11 @@ input[type='text'],input[type='number'],select,textarea
     font-size: 1.2em;
   }
 
+  #privacybanner
+  {
+    padding-top: 0px;
+  }
+
 
 }
 
