@@ -4,7 +4,7 @@
 	sensitive information like your phone number or e-mail address, you can trust us that those details won't end up in the hands
 	of spammers. It also means we value you as a customer more than we value selling your information. </p>
 
-	<div class="alert alert-info"><span class="emphasis">In a Nutshell:</span> We collect information about you while you use this site. 
+	<div class="alert alert-info"><strong>In a Nutshell:</strong> We collect information about you while you use this site. 
 		We use this information for the services you came here for, and don't give this information to anyone else - except required by law.</div>
 
 	<h3>Information We Collect</h3>
