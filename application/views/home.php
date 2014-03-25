@@ -71,7 +71,7 @@
       </div>
 
       <div id="keepscrolling">
-        <span class="glyphicon glyphicon-hand-down"> Keep Scrolling to Learn More <span class="glyphicon glyphicon-hand-down">
+        <span class="glyphicon glyphicon-hand-down"></span> Keep Scrolling to Learn More <span class="glyphicon glyphicon-hand-down"></span>
       </div>
 
     </div>

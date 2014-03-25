@@ -400,6 +400,11 @@ input[type='text'],input[type='number'],select,textarea
   text-align: center;
 }
 
+.emphasis
+{
+  font-weight: bold;
+}
+
 .btn-wide
 {
   width: 50%;
@@ -598,8 +603,35 @@ input[type='text'],input[type='number'],select,textarea
   margin-bottom: 50px;
 }
 
+.privacyitem
+{
+
+}
+
+.privacybullet
+{
+  font-size: 1.5em;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.privacytext
+{
+  font-size: 1.2em;
+
+  padding-bottom: 30px;
+
+}
+
 
 /* END Quote Cell */
+
+#privacybanner
+{
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
 
 #stage3-residential
 {

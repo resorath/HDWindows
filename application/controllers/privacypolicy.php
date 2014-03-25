@@ -4,7 +4,8 @@ class Privacypolicy extends MY_Controller {
 
 	public function index()
 	{
-		$this->loadview('privacypolicy');
+		$data['subcontenttitle'] = "Privacy Policy";
+		$this->loadview('privacypolicy', $data);
 	}
 
 }
