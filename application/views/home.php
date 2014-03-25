@@ -64,7 +64,7 @@
       <div class="container" id="whatwedo">
         <h2 id="pitchhead">Beautify Your View</h2>
 
-        <p>HD Window Cleaning specializes in residential and commercial window cleaning. Fully equipped professionals with years of experience will make your home or business shine. The utmost care goes into our cleaning techniques to ensure that you are completely satisfied. </p>
+        <p class="leadheader">HD Window Cleaning specializes in residential and commercial window cleaning. Fully equipped professionals with years of experience will make your home or business shine. The utmost care goes into our cleaning techniques to ensure that you are completely satisfied. </p>
       </div>
 
       <div id="keepscrolling">
