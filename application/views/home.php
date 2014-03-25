@@ -81,20 +81,20 @@
       	<div class="row residentrow">
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Window Cleaning</p>
+				<p class="resleader">Window Cleaning Interior and Exterior</p>
 				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
 	        </div>
 
 	        <div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Window Cleaning</p>
+				<p class="resleader">Storm Windows Install and Teardown</p>
 				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
 	        </div>
 
 
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Window Cleaning</p>
+				<p class="resleader">Store Fronts Cleaning</p>
 				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
 	        </div>
 
@@ -103,20 +103,20 @@
       	<div class="row residentrow">
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Window Cleaning</p>
+				<p class="resleader">Post Construction Clean up</p>
 				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
 	        </div>
 
 	        <div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Window Cleaning</p>
+				<p class="resleader">Ledges and Tracking</p>
 				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
 	        </div>
 
 
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Window Cleaning</p>
+				<p class="resleader">Other Services</p>
 				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
 	        </div>
 	    </div>
