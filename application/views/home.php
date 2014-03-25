@@ -82,21 +82,19 @@
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
 				<p class="resleader">Window Cleaning Interior and Exterior</p>
-				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
-	        </div>
+				Text about window cleaning
+           </div>
 
 	        <div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
 				<p class="resleader">Storm Windows Install and Teardown</p>
-				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
-	        </div>
+				Text about storm windows </div>
 
 
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
 				<p class="resleader">Store Fronts Cleaning</p>
-				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
-	        </div>
+				Text about store fronts </div>
 
 	    </div>
 
@@ -104,21 +102,18 @@
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
 				<p class="resleader">Post Construction Clean up</p>
-				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
-	        </div>
+				Text about post construction cleanup </div>
 
 	        <div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
 				<p class="resleader">Ledges and Tracking</p>
-				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
-	        </div>
+				Text about included ledges and tracking (and meshes) </div>
 
 
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
 				<p class="resleader">Other Services</p>
-				Shabby chic Shoreditch flannel mustache, Pinterest pork belly McSweeney's meggings PBR&B mixtape tote bag. Pork belly wayfarers asymmetrical, salvia bespoke lo-fi Intelligentsia viral Odd Future selvage sriracha fixie fashion axe. Cardigan meh dreamcatcher Wes Anderson lo-fi, bitters actually Blue Bottle lomo cliche photo booth occupy chambray food truck Vice. Stumptown messenger bag Blue Bottle farm-to-table, typewriter tofu craft beer hoodie
-	        </div>
+				Other services  </div>
 	    </div>
 
       </div>
@@ -140,8 +135,7 @@
             <div class="tallman">
               <p class="leader">We're Local!</p>
               <img src="<?=base_url() ?>assets/img/siltower.png">
-              <p class="follower">We only use locally sourced, organic, mercury free water to clean your windows! The other guys just
-                spray acid in your face instead of cleaning your windows, because they are foreigners.
+              <p class="follower">We only use locally sourced, organic, mercury free water to clean your windows!
             </div>
           </div>
           <hr class="whyusdivider">
@@ -149,7 +143,7 @@
             <div class="tallman">
               <p class="leader">We're Professionals!</p>
               <img src="<?=base_url() ?>assets/img/silsuit.png">
-              <p class="follower">It's not our first day. We haved been doing this for over 999 time units, cleaning both the world trade centres and neighbourhood dog houses. No college kids here.</p>
+              <p class="follower">It's not our first day. We haved been doing this for over 999 time units. No college kids here.</p>
             </div>
           </div>
           <hr class="whyusdivider">
