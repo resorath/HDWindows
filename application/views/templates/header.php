@@ -51,7 +51,7 @@
   </div>
 
   <div class="smallheader" id="quotesmallheader">
-    <em>HDWindows</em> | <?=$subcontenttitle ?>
+    <em><a href="<?=base_url() ?>">HDWindows</a></em> | <?=$subcontenttitle ?>
   </div>
 
   <?php endif ?>
