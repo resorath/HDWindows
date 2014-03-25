@@ -134,12 +134,18 @@ input[type='text'],input[type='number'],select,textarea
   padding-right: 10px;
 }
 
+.aboutuslinka:hover
+{
+    background-color:  rgb(66, 119, 202);
+}
+
 .aboutuslink a
 {
   text-align: center;
   color: #FFFFFF;
   vertical-align: center;
 }
+
 
 #mobilemenu
 {
