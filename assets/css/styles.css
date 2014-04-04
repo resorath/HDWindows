@@ -151,7 +151,7 @@ input[type='text'],input[type='number'],select,textarea
 
 #mobilemenu
 {
-  display: block;
+  display: none;
   position: absolute;
   top: 5px;
   right: 5px;
