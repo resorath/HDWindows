@@ -24,7 +24,8 @@
     <script src="<?=base_url() ?>assets/js/bootstrap.min.js"></script>
     <script src="<?=base_url() ?>assets/js/stellar.min.js"></script>
     <script src="<?=base_url() ?>assets/js/responsiveslides.min.js"></script>
-    <script src="<?=base_url() ?>assets/js/jquery.hashchanged.js"></script>
+    <script src="<?=base_url() ?>assets/js/jquery.hashchanged.js"></script>    
+    <script src="<?=base_url() ?>assets/js/jquery.sidr.min.js"></script>
     <script src="<?=base_url() ?>assets/js/scripts.js"></script>
 
     <?php 

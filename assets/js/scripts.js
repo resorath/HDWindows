@@ -6,6 +6,10 @@ $(document).ready(function(){
 
     });
 
+    $('#openmobilemenu').sidr({
+
+    });
+
 });
 
 // Scrolling navigation
@@ -33,6 +37,11 @@ $(document).ready()
 	}
 
 }
+
+$('#mobilenavul > li > a').click(function() {
+  $.sidr('close');
+
+});
 
 $('#postalcodelookup').click(function() {
   $('#postalcodeerror').hide();

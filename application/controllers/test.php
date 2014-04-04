@@ -16,4 +16,9 @@ class Test extends MY_Controller {
 	{
 		$this->load->view('test/slides');
 	}
+
+	public function hamburger()
+	{
+		$this->load->view('test/hamburger');
+	}
 }

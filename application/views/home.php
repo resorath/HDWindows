@@ -1,9 +1,7 @@
 
 
-    <div class="pageful" id="greeter">
-      <div id="mobilemenu">
-        <div id="menuanchor"><a href="#">Menu <span class="glyphicon glyphicon-th-list"></span></a></div>
-      </div>
+    <section class="pageful" id="greeter">
+
 
       <div class="container" id="maincontent">
         <div class="row">
@@ -71,99 +69,103 @@
         <span class="glyphicon glyphicon-hand-down"></span> Keep Scrolling to Learn More <span class="glyphicon glyphicon-hand-down"></span>
       </div>
 
-    </div>
+    </section>
 
-    <div class="pageful" id="residentservices">
+    <section class="pageful" id="residentservices">
       <div class="container">
         <h1 id="resheader">Residential Services</h1>
+
+        <p>We take great pride in our work and pay attention to the details. Whether your home is large or small, we can make sure it looks its best. 
+          Set up a one time appointment with us or have us come back on a schedule. We offer:</p>
 
 
       	<div class="row residentrow">
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Window Cleaning Interior and Exterior</p>
-				Text about window cleaning
+				      <p class="resleader">Window cleaning</p>
+				      Get professional window cleaning for your home, inside and out. 
            </div>
 
 	        <div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Storm Windows Install and Teardown</p>
-				Text about storm windows </div>
+				<p class="resleader">New glass coating removal</p>
+				Got some new glass up? We can make it shine.</div>
 
 
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Store Fronts Cleaning</p>
-				Text about store fronts </div>
+				<p class="resleader">Post construction window cleaning</p>
+				We can also clear paint splatters on windows.</div>
 
 	    </div>
 
       	<div class="row residentrow">
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Post Construction Clean up</p>
-				Text about post construction cleanup </div>
+				<p class="resleader">Tracking, sills and screens</p>
+				We include these in the price!</div>
 
-	        <div class="col-md-4">
-      			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Ledges and Tracking</p>
-				Text about included ledges and tracking (and meshes) </div>
+          <div class="col-md-4">
+            <img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
+        <p class="resleader">Storm Windows</p>
+        We can clean your storm windows, remove them seasonally or replace them entirely.
+           </div>
 
 
       		<div class="col-md-4">
       			<img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-				<p class="resleader">Other Services</p>
-				Other services  </div>
+				<p class="resleader">Special requests</p>
+				That ledge you can't reach to dust...</div>
 	    </div>
 
       </div>
-    </div>
+    </section>
 
-    <div class="pageful" id="commercialservices">
+    <section class="pageful" id="commercialservices">
       <div class="container">
         <h1>Commercial Services</h1>
 
       </div>
-    </div>
+    </section>
 
 
-    <div class="pageful" id="whyus">
+    <section class="pageful" id="whyus">
       <div class="container">
         <h1>Why Choose Us?</h1>
         <div class="row" id="whychooserow">
           <div class="col-sm-4 whychooseblock">
             <div class="tallman">
-              <p class="leader">We're Local!</p>
+              <p class="leader">We're Experienced!</p>
               <img src="<?=base_url() ?>assets/img/siltower.png">
-              <p class="follower">We only use locally sourced, organic, mercury free water to clean your windows!
+              <p class="follower">Daniel has been taking care to make windows shine for 15 years in Calgary and area. He started out working with family who taught him the art of window cleaning both in a residential setting and small commercial businesses. He spent many seasons happily learning the tricks of the trade. He then reached for new heights taking on high rise buildings working for a reputable Calgary company. There is became SPRAT (Society of Professional Rope Access Technicians) certified and gained a valuable skill set working on some technically challenging buildings. He started HD Window Cleaning with his wife Heather in 2012. </p>
             </div>
           </div>
           <hr class="whyusdivider">
           <div class="col-sm-4 whychooseblock">
             <div class="tallman">
-              <p class="leader">We're Professionals!</p>
-              <img src="<?=base_url() ?>assets/img/silsuit.png">
-              <p class="follower">It's not our first day. We haved been doing this for over 999 time units. No college kids here.</p>
+              <p class="leader">We're Local!</p>
+              <img src="<?=base_url() ?>assets/img/siltower.png">
+              <p class="follower">Daniel and Heather are proud to call Calgary home. Daniel moved here in 1996 and Heather was born and raised in Calgary. We strive to support other local businesses. We also work to keep our city clean by using biodegradable, non-toxic cleaning supplies, minimizing waste, and ensuring that the scheduled routes that we work on maximize efficiency to minimize gasoline consumed. If your home or business is downtown and doesn't require ladders, Daniel will often use his bicycle to get to the job. </p>
             </div>
           </div>
           <hr class="whyusdivider">
           <div class="col-sm-4 whychooseblock">
             <div class="tallman" id="reason3">
-              <p class="leader">Exciting Reason 3!</p>
-              <img src="<?=base_url() ?>assets/img/silsea.png">
-              <p class="follower">Because: Reasons</p>
+              <p class="leader">We're Professional!</p>
+              <img src="<?=base_url() ?>assets/img/silsuit.png">
+              <p class="follower">We work with the utmost attention to detail to make sure you are completely satisfied with your windows. Daniel has had experience with a multitude of building types and will ensure that you are happy with his work. He will treat your home, office or business with respect and care, considering timelines and surroundings. </p>
             </div>
           </div>
         </div>
 
       </div>
-    </div>
+    </section>
 
-    <div class="pageful" id="guarantee" data-stellar-background-ratio="2.5">
+    <section class="pageful" id="guarantee" data-stellar-background-ratio="2.5">
       <div class="container" id="gauranteecontainer">
         <h1>Our guarantee to You</h1>
 
       </div>
 
-    </div>
+    </section>
 
