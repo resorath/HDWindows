@@ -155,7 +155,7 @@ input[type='text'],input[type='number'],select,textarea
   position: absolute;
   top: 0px;
   left: 0px;
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding-left: 10px;
   padding-right: 3px;
   padding-top: 5px;
@@ -163,7 +163,8 @@ input[type='text'],input[type='number'],select,textarea
   color: #000000;
   width: 100%;
   z-index: 999;
-  height: 30px;
+  height: 25px;
+  font-weight: bold;
 }
 
 #menuanchor
