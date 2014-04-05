@@ -149,22 +149,45 @@ input[type='text'],input[type='number'],select,textarea
 }
 
 
-#mobilemenu
+.mobilemenu
 {
   display: none;
   position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 1.5em;
-  padding-left: 2px;
+  top: 0px;
+  left: 0px;
+  font-size: 1.3em;
+  padding-left: 10px;
   padding-right: 3px;
-  border: 1px solid #929292;
-  border-radius: 5px;
-  width: 110px;
+  padding-top: 5px;
+  background-color: #000000;
+  color: #000000;
+  width: 100%;
   z-index: 999;
+  height: 30px;
 }
 
-#mobilemenu a:hover
+#menuanchor
+{
+  position: absolute;
+  right: 5px;
+
+}
+
+#auxmobilemenu
+{
+  font-size: 0.8em;
+  width: 25px;
+  right: 5px;
+  left: inherit;
+  height: 15px;
+}
+
+#mainmobilemenu
+{
+  position: fixed;
+}
+
+.mobilemenu a:hover
 {
   text-decoration: none;
 }
@@ -651,6 +674,7 @@ input[type='text'],input[type='number'],select,textarea
 #pitchhead
 {
   margin-top: 50px;
+  font-family: 'Copse', serif;
 }
 
 
@@ -775,7 +799,7 @@ input[type='text'],input[type='number'],select,textarea
   #pitchhead
   {
     margin-top: 0px;
-    font-size: 2.3em;
+    font-size: 2.2em;
   }
 
   .ctalink
@@ -789,7 +813,7 @@ input[type='text'],input[type='number'],select,textarea
     display: none;
   }
 
-  #mobilemenu
+  .mobilemenu
   {
     display: inline;
   }

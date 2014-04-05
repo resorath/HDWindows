@@ -39,20 +39,29 @@
   </head>
   <body>
 
-  <nav id="mobilemenu">
-    <div id="menuanchor"><a href="#sidr" id="openmobilemenu">Menu <span class="glyphicon glyphicon-th-list"></span></a></div>
+  <?php if(isset($subcontenttitle)): ?>
+  <nav class="mobilemenu" id="auxmobilemenu">
+    <div id="menuanchor"><a href="#sidr" id="openmobilemenu"><span class="glyphicon glyphicon-tasks"></span></a></div>
   </nav>
+  <?php else: ?>
+  <nav class="mobilemenu" id="mainmobilemenu">
+    <div id="menuanchor"><a href="#sidr" id="openmobilemenu">Menu <span class="glyphicon glyphicon-tasks"></span></a></div>
+  </nav>
+  <?php endif ?>
+
 
   <div id="sidr">
   <p class="mobilegreet">How can we help?</p>
     <ul id="mobilenavul">
-      <li class="active"><a href="#">Meet and Greet</a></li>
-      <li><a href="#">Residential Services</a></li>
-      <li><a href="#">Commercial Services</a></li>
-      <li><a href="#">Why Choose Us?</a></li>
-      <li><a href="#">Our Guarantee</a></li>
-      <li><a href="#">Get a Online Quote</a></li>
-      <li><a href="#">Book an Appointment</a></li>
+      <li class="active"><a href="<?=base_url() ?>/#greeter">Meet and Greet</a></li>
+      <li><a href="<?=base_url() ?>/#residentialservices">Residential Services</a></li>
+      <li><a href="<?=base_url() ?>/#commercialservices">Commercial Services</a></li>
+      <li><a href="<?=base_url() ?>/#whychooseus">Why Choose Us?</a></li>
+      <li><a href="<?=base_url() ?>/#guarantee">Our Guarantee</a></li>
+      <li><a href="<?=base_url() ?>/quote">Get a Online Quote</a></li>
+      <li><a href="<?=base_url() ?>/booking">Book an Appointment</a></li>
+      <li></li>
+      <li><a href="<?=base_url() ?>/contactus">Contact Us</a></li>
     </ul>
   </div>
 

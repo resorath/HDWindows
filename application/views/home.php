@@ -1,6 +1,7 @@
 
 
     <section class="pageful" id="greeter">
+      <a name="greeter"></a>
 
 
       <div class="container" id="maincontent">
@@ -72,6 +73,7 @@
     </section>
 
     <section class="pageful" id="residentservices">
+      <a name="residentialservices"></a>
       <div class="container">
         <h1 id="resheader">Residential Services</h1>
 
@@ -122,6 +124,7 @@
     </section>
 
     <section class="pageful" id="commercialservices">
+      <a name="commercialservices"></a>
       <div class="container">
         <h1>Commercial Services</h1>
 
@@ -130,6 +133,7 @@
 
 
     <section class="pageful" id="whyus">
+      <a name="whyus"></a>
       <div class="container">
         <h1>Why Choose Us?</h1>
         <div class="row" id="whychooserow">
@@ -162,6 +166,7 @@
     </section>
 
     <section class="pageful" id="guarantee" data-stellar-background-ratio="2.5">
+      <a name="guarantee"></a>
       <div class="container" id="gauranteecontainer">
         <h1>Our guarantee to You</h1>
 
