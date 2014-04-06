@@ -34,13 +34,40 @@ input[type='text'],input[type='number'],select,textarea
 
 #residentservices
 {
-  background-color: #FFCCFF;
-  background-image: url('../img/green_cup.png');
+  background-color: #FFFFFF;
+  background-image: url('../img/laddertrans.png'), url('../img/ladderrepeater.png');
+  background-repeat: no-repeat, repeat-y;
+  background-position: top left, top left;
+  background-attachment: fixed, fixed;
+
+}
+
+#residentservices h1
+{
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+#residentialservices > li
+{
+  font-size: 1.4em;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+
+#residentialleader
+{
+  font-size: 1.4em;
+}
+
+#residentialfollower
+{
+  font-size: 1.2em;
 }
 
 #commercialservices
 {
-  background-color: #82CAFA;
   background-image: url('../img/calgarysil.png');
   background-repeat: repeat-x;
   background-position: 50% bottom;
@@ -354,7 +381,26 @@ input[type='text'],input[type='number'],select,textarea
   padding-bottom: 40px;
 }
 
-.residentrow > .col-md-4 > img
+.residentcolcontainer
+{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.residentcolcontainer > p
+{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.resfollower
+{
+  padding-bottom: 20px;
+  font-size: 1.2em;
+}
+
+
+.residentrow img
 {
   width: 100%;
   height: 100%;
@@ -823,6 +869,18 @@ input[type='text'],input[type='number'],select,textarea
 
   #maincontent
   {
+  }
+
+  #residentservices
+  {
+    background-image: url('../img/laddernotrans.png'), url('../img/ladderrepeater.png');
+    background-size: 100%;
+    background-attachment: scroll;
+  }
+
+  #residentservices > .container
+  {
+    background: none;
   }
 
   #commercialservices
