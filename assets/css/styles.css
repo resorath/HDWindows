@@ -812,7 +812,6 @@ input[type='text'],input[type='number'],select,textarea
 
 
 
-
 @media (max-width: 767px){
 
   h1
@@ -975,6 +974,15 @@ input[type='text'],input[type='number'],select,textarea
     padding-top: 0px;
   }
 
+
+}
+
+@media (max-width: 767px) and (orientation: landscape){
+
+  .toplink
+  {
+    display: inline-block;
+  }
 
 }
 
