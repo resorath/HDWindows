@@ -44,7 +44,7 @@ input[type='text'],input[type='number'],select,textarea
 
 #residentservices h1
 {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
 }
 
@@ -267,8 +267,8 @@ input[type='text'],input[type='number'],select,textarea
 
 #whyus
 {
-  background-color: #FFCCFF;
-  background-image: url('../img/masthead.gif');
+  background-color: #464646;
+  background-image: url('../img/hexagon.png');
 }
 
 #whychooserow
@@ -383,7 +383,7 @@ input[type='text'],input[type='number'],select,textarea
 
 .residentcolcontainer
 {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .residentcolcontainer > p

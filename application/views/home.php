@@ -77,55 +77,58 @@
       <div class="container">
         <h1 id="resheader">Residential Services</h1>
         <div class="row residentrow">
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="residentcolcontainer">
               <p class="resleader">Window cleaning</p>
-              <img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
+              <img src="<?=base_url() ?>assets/img/resbanner-window.jpg">
 
               <p class="resfollower">Get professional window cleaning for your home, inside and out. </p>
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="residentcolcontainer">
-              <p class="resleader">New glass coating removal</p>
-              <img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-              <p class="resfollower">Got some new glass up? We can make it shine.</p>
+              <p class="resleader">Tracking, sills and screens</p>
+              <img src="<?=base_url() ?>assets/img/resbanner-sills.jpg">
+              <p class="resfollower">We include these in the price!</p>
             </div>
           </div>
 
 
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="residentcolcontainer">
               <p class="resleader">Post construction window cleaning</p>            
-              <img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
+              <img src="<?=base_url() ?>assets/img/resbanner-construction.jpg">
               <p class="resfollower">We can also clear paint splatters on windows.</p>
             </div>
           </div>
         </div>
 
         <div class="row residentrow">
-          <div class="col-md-4">
+
+
+          <div class="col-sm-4">
             <div class="residentcolcontainer">
-              <p class="resleader">Tracking, sills and screens</p>
-              <img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
-              <p class="resfollower">We include these in the price!</p>
+              <p class="resleader">New glass coating removal</p>
+              <img src="<?=base_url() ?>assets/img/resbanner-coating.jpg">
+              <p class="resfollower">Got some new glass up? We can make it shine.</p>
             </div>
           </div>
 
-          <div class="col-md-4">
+
+          <div class="col-sm-4">
             <div class="residentcolcontainer">
               <p class="resleader">Storm Windows</p>
-              <img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
+              <img src="<?=base_url() ?>assets/img/resbanner-stormwindows.jpg">
               <p class="resfollower">We can clean your storm windows, remove them seasonally or replace them entirely.</p>
             </div>
           </div>
 
 
-          <div class="col-md-4">
+          <div class="col-sm-4">
             <div class="residentcolcontainer">
               <p class="resleader">Special requests</p>
-              <img src="<?=base_url() ?>assets/img/window-cleaning.jpg">
+              <img src="<?=base_url() ?>assets/img/resbanner-specialrequest.jpg">
               <p class="resfollower">That ledge you can't reach to dust...</p>
             </div>
           </div>
