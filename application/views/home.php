@@ -141,10 +141,15 @@
 
     <section class="pageful" id="commercialservices">
       <a name="commercialservices"></a>
+
       <div class="container">
         <h1>Commercial Services</h1>
-
       </div>
+
+      <div class="container" id="commercialcore">
+        <p id="commercialbanner">Increase the curb appeal of your business with clean and clear windows. We take care of ground level or multi-level commercial properties. </p>
+       </div>
+
     </section>
 
 
@@ -184,7 +189,7 @@
     <section class="pageful" id="guarantee" data-stellar-background-ratio="2.5">
       <a name="guarantee"></a>
       <div class="container" id="gauranteecontainer">
-        <h1>Our guarantee to You</h1>
+        <h1>Our Guarantee to You</h1>
 
       </div>
 

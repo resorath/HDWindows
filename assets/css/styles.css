@@ -1,3 +1,9 @@
+@font-face
+{
+  font-family: ComicNeue;
+  src: url('../fonts/ComicNeue-Regular.woff');
+}
+
 html, body
 {
   height: 100%;
@@ -9,9 +15,10 @@ html, body
 
 h1
 {
-  font-family: 'Copse', serif;
+
+  font-family: 'ComicNeue', serif;
   padding-top: 30px;
-  font-size: 3.0em;
+  font-size: 5.0em;
 }
 
 input[type='text'],input[type='number'],select,textarea 
@@ -72,6 +79,19 @@ input[type='text'],input[type='number'],select,textarea
   background-repeat: repeat-x;
   background-position: 50% bottom;
   background-attachment: fixed;
+
+}
+
+#commercialcore
+{
+  background-color: rgba(0, 128, 255, 0.1);
+  padding: 10px;
+  margin-top: 50px;
+}
+
+#commercialcore > #commercialbanner
+{
+  font-size: 2.5em;
 
 }
 
@@ -721,7 +741,8 @@ input[type='text'],input[type='number'],select,textarea
 #pitchhead
 {
   margin-top: 50px;
-  font-family: 'Copse', serif;
+  font-size: 3.0em;
+  font-family: 'ComicNeue', serif;
 }
 
 
@@ -885,6 +906,7 @@ input[type='text'],input[type='number'],select,textarea
   #commercialservices
   {
     background-attachment: scroll;
+    background-position: 50% 200px;
   }
 
   #whyus
@@ -974,6 +996,16 @@ input[type='text'],input[type='number'],select,textarea
     padding-top: 0px;
   }
 
+  #commercialcore 
+  {
+    margin-top: 10px;
+  }
+
+  #commercialcore > #commercialbanner
+  {
+    font-size: 1.5em;
+  }
+
 
 }
 
@@ -1010,6 +1042,22 @@ input[type='text'],input[type='number'],select,textarea
 
   }
 
+  #commercialcore > #commercialbanner
+  {
+    font-size: 2.0em;
+  }
+
+}
+
+/* Standard Wide */
+@media (min-width: 992px) and (max-width: 1280px){
+
+ /* #commercialcore > #commercialbanner
+  {
+    font-size: 2.5em;
+  }
+*/
+
 }
 
 
@@ -1020,6 +1068,11 @@ input[type='text'],input[type='number'],select,textarea
     background-image: url('../img/laddertrans.png');
 
   }
+
+  /*#commercialcore > #commercialbanner
+  {
+    font-size: 4.0em;
+  }*/
 
 
 }
