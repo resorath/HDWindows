@@ -35,7 +35,7 @@ input[type='text'],input[type='number'],select,textarea
 #residentservices
 {
   background-color: #FFFFFF;
-  background-image: url('../img/laddertrans.png'), url('../img/ladderrepeater.png');
+  background-image: url('../img/laddertranssemi.png');
   background-repeat: no-repeat, repeat-y;
   background-position: top left, top left;
   background-attachment: fixed, fixed;
@@ -1010,6 +1010,16 @@ input[type='text'],input[type='number'],select,textarea
 
   }
 
+}
+
+
+/* Really Wide */
+@media (min-width: 1900px){
+  #residentservices
+  {
+    background-image: url('../img/laddertrans.png');
+
+  }
 
 
 }
