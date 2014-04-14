@@ -82,17 +82,41 @@ input[type='text'],input[type='number'],select,textarea
 
 }
 
-#commercialcore
+.commercialcore
 {
   background-color: rgba(0, 128, 255, 0.1);
   padding: 10px;
   margin-top: 50px;
 }
 
-#commercialcore > #commercialbanner
+#commercialbanner
 {
   font-size: 2.5em;
+}
 
+#commercialfooter
+{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px;
+}
+
+.commercialinnercol
+{
+  width: 50%;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.5em;
+  font-family: 'Voltaire', sans-serif;
+  margin: 0 auto;
+}
+
+.commercialicon
+{
+  display: block;
+  font-size: 5.0em;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 #whyus
@@ -979,10 +1003,38 @@ input[type='text'],input[type='number'],select,textarea
     background: none;
   }
 
+
   #commercialservices
   {
     background-attachment: scroll;
-    background-position: 50% 200px;
+
+  }
+
+  #commercialbanner
+  {
+    font-size: 1.3em;
+  }
+
+  #commercialfooter
+  {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .commercialinnercol
+  {
+    width: 100%;
+    margin-top: 40px;
+    font-size: 1.5em;
+  }
+
+  .commercialicon
+  {
+    display: block;
+    font-size: 5.0em;
+    margin-bottom: 20px;
+    margin-top: 40px;
   }
 
   #whyus

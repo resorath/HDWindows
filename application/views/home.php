@@ -11,7 +11,7 @@
           </div>
           <div class="col-sm-2"></div>
           <div class="col-sm-2 toplink" id="quote">
-            <div class="navicon"><span class="glyphicon glyphicon-ok"></span></div>
+            <div class="navicon"><span class="glyphicon glyphicon-heart"></span></div>
             <span class="ctalink"><a href="#" data-scrolltarget="whyus" class="scrolllink">Why Us?</a></span>
             <p class="clinger">Learn what makes us special</p>
           </div>
@@ -160,12 +160,42 @@
       <a name="commercialservices"></a>
 
       <div class="container">
+
         <h1>Commercial Services</h1>
+
+      <div class="commercialcore">
+        <p id="commercialbanner">Increase the curb appeal of your business with clean and clear windows. We take care of ground level or multi-level commercial properties. </p>
       </div>
 
-      <div class="container" id="commercialcore">
-        <p id="commercialbanner">Increase the curb appeal of your business with clean and clear windows. We take care of ground level or multi-level commercial properties. </p>
-       </div>
+      <div class="row">
+
+        <div class="col-sm-4">
+          <div class="commercialinnercol">
+            <i class="commercialicon fa fa-building-o"></i>
+            We cover everything from small shops to high rises
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="commercialinnercol">
+            <i class="commercialicon fa fa-briefcase"></i>
+            Our crew can handle post construction cleanup including paint splatter removal
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="commercialinnercol">
+            <i class="commercialicon fa fa-clock-o"></i>
+            Set a schedule with us and we'll keep you covered, with pain free invoicing
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="commercialcore">
+        <p id="commercialfooter">Get started by calling us up or book a <i class="fa fa-coffee"></i>coffee appointment</p>
+      </div>
 
     </section>
 

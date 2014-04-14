@@ -9,8 +9,10 @@
 
     <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
     <link href="<?=base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?=base_url() ?>assets/css/jquery.sidr.dark.css" rel="stylesheet">
+    <link href="<?=base_url() ?>assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?=base_url() ?>assets/css/styles.css" rel="stylesheet">
     <script>
       var config = {
