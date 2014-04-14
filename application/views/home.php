@@ -33,7 +33,7 @@
 
       <div class="salebannermobile">
         <img src="<?=base_url() ?>assets/img/flower.png" alt="">
-        Spring Sale! 20% off all services!
+        Spring Sale! 15% off all services!
       </div>
       <div class="slides">
 
@@ -42,14 +42,14 @@
             <img src="<?=base_url() ?>assets/img/slide/1.jpg" alt="">
             <div class="slidetext">
               <p class="slideleadtext">Spring Sale!</p>
-              <p class="slidefollowtext">Get 20% off all services!</p>
+              <p class="slidefollowtext">Get 15% off all services!</p>
             </div>
           </li>
           <li>
             <img src="<?=base_url() ?>assets/img/slide/2.jpg" alt="">
             <div class="slidetext">
               <p class="slideleadtext">Spring Sale!</p>
-              <p class="slidefollowtext">Get 20% off all services!</p>
+              <p class="slidefollowtext">Get 15% off all services!</p>
             </div>
           </li>
         </ul>
