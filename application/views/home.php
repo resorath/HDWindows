@@ -193,9 +193,9 @@
 
       </div>
 
-      <div class="commercialcore">
+      <a href="<?=base_url() ?>contactus" id="commercialcontacta">
         <p id="commercialfooter">Get started by calling us up or book a <i class="fa fa-coffee"></i>coffee appointment</p>
-      </div>
+      </a>
 
     </section>
 
