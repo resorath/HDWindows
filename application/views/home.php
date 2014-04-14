@@ -31,6 +31,10 @@
         </div>
       </div>
 
+      <div class="salebannermobile">
+        <img src="<?=base_url() ?>assets/img/flower.png" alt="">
+        Spring Sale! 20% off all services!
+      </div>
       <div class="slides">
 
         <ul class="rslides">
