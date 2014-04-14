@@ -32,9 +32,22 @@
       </div>
 
       <div class="slides">
+
         <ul class="rslides">
-          <li><img src="<?=base_url() ?>assets/img/slide/1.jpg" alt=""</li>
-          <li><img src="<?=base_url() ?>assets/img/slide/2.jpg" alt=""></li>
+          <li>
+            <img src="<?=base_url() ?>assets/img/slide/1.jpg" alt="">
+            <div class="slidetext">
+              <p class="slideleadtext">Spring Sale!</p>
+              <p class="slidefollowtext">Get 20% off all services!</p>
+            </div>
+          </li>
+          <li>
+            <img src="<?=base_url() ?>assets/img/slide/2.jpg" alt="">
+            <div class="slidetext">
+              <p class="slideleadtext">Spring Sale!</p>
+              <p class="slidefollowtext">Get 20% off all services!</p>
+            </div>
+          </li>
         </ul>
 
       </div>

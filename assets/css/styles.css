@@ -42,7 +42,7 @@ input[type='text'],input[type='number'],select,textarea
 #residentservices
 {
   background-color: #FFFFFF;
-  background-image: url('../img/laddertranssemi.png');
+  background-image: url('../img/laddersupertrans.png');
   background-repeat: no-repeat, repeat-y;
   background-position: top left, top left;
   background-attachment: fixed, fixed;
@@ -51,7 +51,7 @@ input[type='text'],input[type='number'],select,textarea
 
 #residentservices h1
 {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.0);
   width: 100%;
 }
 
@@ -160,12 +160,6 @@ input[type='text'],input[type='number'],select,textarea
 .navicon
 {
 	font-size: 2.0em;
-}
-
-.slides
-{
-  background-color: #FFFFFF;
-  width: 100%;
 }
 
 .aboutuslinka
@@ -799,40 +793,96 @@ input[type='text'],input[type='number'],select,textarea
   display: inline-block;
 }
 
-.rslides {
+/* Front page slide control */
+
+.slides
+{
+  /*background-color: #FFFFFF;*/
+  position: relative;
+  width: 100%;
+}
+
+
+.rslides 
+{
   position: relative;
   list-style: none;
   overflow: hidden;
   width: 100%;
   padding: 0;
   margin: 20px auto;
-  }
+}
 
-.rslides li {
+.rslides li 
+{
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
   width: 100%;
   left: 0;
   top: 0;
-  }
+}
 
-.rslides li:first-child {
+.rslides li:first-child 
+{
   position: relative;
   display: block;
   float: left;
-  }
+}
 
-.rslides img {
+.rslides img 
+{
   display: block;
   height: auto;
   float: left;
   width: 100%;
   border: 0;
+}
+
+.slidetext
+{
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 30%;
+  min-width: 200px;
+  height: 130px;
+  padding: 20px;
+
+}
+
+.slideleadtext
+{
+  font-size: 1.8em;
+}
+
+.slidefollowtext
+{
+  font-size: 1.4em;
+}
+
+
+/* END Front page slide control */
+
+/* Really small phone */
+@media (max-width: 460px){
+
+
+  .rslides img 
+  {
+    height: 150px;
+    width: 600px;
+    margin-left: -150px;
+    overflow: hidden;
+    text-align: center;
   }
 
 
+}
 
+/* Mobile media queries old: 767; */
 @media (max-width: 767px){
 
   h1
@@ -847,6 +897,7 @@ input[type='text'],input[type='number'],select,textarea
 		height: 100%;
 		padding-top: 0px;
 	}
+
 
   .navicon
   {
@@ -885,17 +936,22 @@ input[type='text'],input[type='number'],select,textarea
     display: inline;
   }
 
-
-
   #maincontent
   {
   }
 
   #residentservices
   {
-    background-image: url('../img/laddernotrans.png'), url('../img/ladderrepeater.png');
+    background-image: url('../img/laddernotrans_m.png'), url('../img/ladderrepeater_m.png');
     background-size: 100%;
     background-attachment: scroll;
+  }
+
+  #residentservices h1
+  {
+      background-color: rgba(255, 255, 255, 0.8);
+      width: 100;
+      padding: 20px;
   }
 
   #residentservices > .container
@@ -1006,9 +1062,39 @@ input[type='text'],input[type='number'],select,textarea
     font-size: 1.5em;
   }
 
+  .slidetext
+  {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    padding: 5px;
+    overflow: none;
+    height: 60px;
+
+  }
+
+  .slideleadtext
+  {
+    font-size: 1.5em;
+    margin: 0px;
+
+  }
+
+  .slidefollowtext
+  {
+    font-size: 1.0em;
+    margin: 0px;
+
+  }
+
 
 }
+/* END mobile media queries */
 
+/* Mobile in landscape media queries */
 @media (max-width: 767px) and (orientation: landscape){
 
   .toplink
@@ -1017,7 +1103,9 @@ input[type='text'],input[type='number'],select,textarea
   }
 
 }
+/* END mobile landscape */
 
+/* Tablet media */
 @media (max-width: 992px) and (min-width: 768px){
   .aboutuslinka
   {
@@ -1048,6 +1136,7 @@ input[type='text'],input[type='number'],select,textarea
   }
 
 }
+/* END tablet media */
 
 /* Standard Wide */
 @media (min-width: 992px) and (max-width: 1280px){
