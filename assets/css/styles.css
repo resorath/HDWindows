@@ -363,8 +363,7 @@ input[type='text'],input[type='number'],select,textarea
 
 #whyus
 {
-  background-color: #464646;
-  background-image: url('../img/hexagon.png');
+  background-color: #52B4AF;
 }
 
 #whychooserow
@@ -442,11 +441,6 @@ input[type='text'],input[type='number'],select,textarea
   font-size: 1.4em;
 }
 
-
-.whyusdivider
-{
-  display:none;
-}
 
 .leadheader
 {
@@ -1016,6 +1010,11 @@ input[type='text'],input[type='number'],select,textarea
 		border: none;
 	}
 
+  .whychooseblock
+  {
+    margin-bottom: 40px;
+  }
+
   #pitchhead
   {
     margin-top: 0px;
@@ -1109,13 +1108,6 @@ input[type='text'],input[type='number'],select,textarea
     padding-bottom: 20px;
   }
 
-
-  .whyusdivider
-  {
-    width: 60%;
-    display: block;
-
-  }
 
   .whitepage
   {
