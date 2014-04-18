@@ -10,4 +10,6 @@ application/logs/*
 
 application/config/database.php
 
+application/helpers/keys_helper.php
+
 *.sublime*
