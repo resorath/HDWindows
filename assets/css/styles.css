@@ -42,7 +42,7 @@ input[type='text'],input[type='number'],select,textarea
 #residentservices
 {
   background-color: #FFFFFF;
-  background-image: url('../img/laddersupertrans.png');
+  background-image: none; /*url('../img/laddersupertrans.png');*/
   background-repeat: no-repeat, repeat-y;
   background-position: top left, top left;
   background-attachment: fixed, fixed;
@@ -360,10 +360,11 @@ input[type='text'],input[type='number'],select,textarea
   margin-top: 40px;
 }
 
+/* Why choose us */
 
 #whyus
 {
-  background-color: #52B4AF;
+  background-color: #FFFFFF;
 }
 
 #whychooserow
@@ -376,6 +377,14 @@ input[type='text'],input[type='number'],select,textarea
 {
   font-size: 2.0em;
   text-align: center;
+
+}
+
+.tallman > .follower
+{
+  color: #444444;
+  line-height: 24px;
+  font-family: arial, serif;
 
 }
 
@@ -395,7 +404,14 @@ input[type='text'],input[type='number'],select,textarea
   height: 800px;
   background-color: #FFFFFF;
   border-radius: 5px;
+
+  -webkit-box-shadow: 10px 10px 46px 20px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 46px 20px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 46px 20px rgba(0,0,0,0.75);
+
 }
+
+/* ENDS why choose us */
 
 #resheader
 {
@@ -1043,7 +1059,7 @@ input[type='text'],input[type='number'],select,textarea
 
   #residentservices
   {
-    background-image: url('../img/laddernotrans_m.png'), url('../img/ladderrepeater_m.png');
+    background-image: none; /* url('../img/laddernotrans_m.png'), url('../img/ladderrepeater_m.png');*/
     background-size: 100%;
     background-attachment: scroll;
   }
@@ -1094,6 +1110,8 @@ input[type='text'],input[type='number'],select,textarea
     margin-top: 70px;
   }
 
+  /* Why choose us block */
+
   #whyus
   {
     padding-bottom: 20px;
@@ -1107,6 +1125,8 @@ input[type='text'],input[type='number'],select,textarea
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  /* ENDS why choose us */
 
 
   .whitepage
@@ -1239,8 +1259,9 @@ input[type='text'],input[type='number'],select,textarea
   .tallman
   {
     width: 95%;
-    padding: 2px;
-    height: 500px;
+    padding: 8px;
+    height: inherit;
+    margin-bottom: 40px;
 
   }
 
@@ -1265,7 +1286,7 @@ input[type='text'],input[type='number'],select,textarea
 
 
 /* Really Wide */
-@media (min-width: 1900px){
+@media (min-width: 1910px){
   #residentservices
   {
     background-image: url('../img/laddertrans.png');

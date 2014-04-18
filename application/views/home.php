@@ -68,7 +68,7 @@
             <a href="booking"><span class="aboutuslinka">Book an Appointment</span></a>
           </div>
           <div class="col-sm-2 aboutuslink">
-            <a href="#" data-scrolltarget="guarantee" class="scrolllink"><span class="aboutuslinka">Our guarantee to You</span>
+            <a href="#" data-scrolltarget="guarantee" class="scrolllink"><span class="aboutuslinka">Our Gsuarantee to You</span>
           </div>
           <div class="col-sm-2 aboutuslink">
             <a href="quote"><span class="aboutuslinka">Get an Instant Quote</a></span>
@@ -205,21 +205,21 @@
       <div class="container">
         <h1>Why Choose Us?</h1>
         <div class="row" id="whychooserow">
-          <div class="col-sm-4 whychooseblock">
+          <div class="col-md-4 whychooseblock">
             <div class="tallman">
               <p class="leader">We're Experienced!</p>
               <img src="<?=base_url() ?>assets/img/art-experienced.png">
               <p class="follower">Daniel has been taking care to make windows shine for 15 years in Calgary and area. He started out working with family who taught him the art of window cleaning both in a residential setting and small commercial businesses. He spent many seasons happily learning the tricks of the trade. He then reached for new heights taking on high rise buildings working for a reputable Calgary company. There is became SPRAT (Society of Professional Rope Access Technicians) certified and gained a valuable skill set working on some technically challenging buildings. He started HD Window Cleaning with his wife Heather in 2012. </p>
             </div>
           </div>
-          <div class="col-sm-4 whychooseblock">
+          <div class="col-md-4 whychooseblock">
             <div class="tallman">
               <p class="leader">We're Local!</p>
               <img src="<?=base_url() ?>assets/img/art-tower.png">
               <p class="follower">Daniel and Heather are proud to call Calgary home. Daniel moved here in 1996 and Heather was born and raised in Calgary. We strive to support other local businesses. We also work to keep our city clean by using biodegradable, non-toxic cleaning supplies, minimizing waste, and ensuring that the scheduled routes that we work on maximize efficiency to minimize gasoline consumed. If your home or business is downtown and doesn't require ladders, Daniel will often use his bicycle to get to the job. </p>
             </div>
           </div>
-          <div class="col-sm-4 whychooseblock">
+          <div class="col-md-4 whychooseblock">
             <div class="tallman" id="reason3">
               <p class="leader">We're Professional!</p>
               <img src="<?=base_url() ?>assets/img/art-professional.png">
