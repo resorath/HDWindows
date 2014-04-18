@@ -14,19 +14,31 @@ class Contactus extends MY_Controller {
 
 	public function index()
 	{
+		$this->load->helper('keys');
+
 		$data['subcontenttitle'] = "Contact Us";
 
-		$data['publickey'] = get_recaptcha_public_key(); // you got this from the signup page
-
+		$data['publickey'] = get_recaptcha_public_key();
 
 		$this->loadview('contactus', $data);
 	}
 
-	public function sendmessage()
+	public function sendmessage($token)
 	{
-		$privatekey = get_recaptcha_private_key();
+
 
 	}
+
+	public function checkcaptcha($challenge, $response)
+	{
+		$this->load->helper('captcha');
+
+		
+		validate_captcha('asdf', 'asdf');
+
+
+	}
+
 
 
 }
