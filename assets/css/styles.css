@@ -1300,3 +1300,18 @@ input[type='text'],input[type='number'],select,textarea
 
 
 }
+
+/* Recaptcha specific */
+@media (max-width: 444px) {
+
+  .recaptchatable #recaptcha_challenge_image {
+    margin-left: -120px !important;
+    padding: 0 !important;
+    width: 200px !important;
+  }
+  .recaptchatable .recaptcha_r1_c1, .recaptchatable .recaptcha_r3_c1,  .recaptchatable .recaptcha_r2_c2, .recaptchatable .recaptcha_r3_c2, .recaptchatable .recaptcha_r7_c1, .recaptchatable .recaptcha_r8_c1, .recaptchatable .recaptcha_r3_c3, .recaptchatable .recaptcha_r2_c1, .recaptchatable .recaptcha_r4_c1, .recaptchatable .recaptcha_r4_c2, .recaptchatable .recaptcha_r4_c4, .recaptchatable .recaptcha_image_cell {
+
+    background: none !important;
+  }
+
+}

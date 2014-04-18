@@ -7,6 +7,13 @@ class Communication_expert extends CI_Model
 		parent::__construct();
 	}
 
+	function send_message($type, $name, $contactdetails, $message)
+	{
+		$sql = "INSERT INTO `communication` (`id`, `type`, `name`, `contactdetails`, `message`) VALUES (NULL, ?, ?, ?, ?)";
+		$this->db->query($sql, array($type, $name, $contactdetails, $message));
+	}
+
+
 
 }
 

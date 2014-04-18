@@ -68,7 +68,7 @@
             <a href="booking"><span class="aboutuslinka">Book an Appointment</span></a>
           </div>
           <div class="col-sm-2 aboutuslink">
-            <a href="#" data-scrolltarget="guarantee" class="scrolllink"><span class="aboutuslinka">Our Gsuarantee to You</span>
+            <a href="#" data-scrolltarget="guarantee" class="scrolllink"><span class="aboutuslinka">Our Guarantee to You</span>
           </div>
           <div class="col-sm-2 aboutuslink">
             <a href="quote"><span class="aboutuslinka">Get an Instant Quote</a></span>

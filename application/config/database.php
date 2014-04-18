@@ -45,12 +45,12 @@
 | the active record class
 */
 
-$active_group = 'local';
+$active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'mysql.hdwindows.ca';
 $db['default']['username'] = 'hdwindows';
-$db['default']['password'] = 'higit';
+$db['default']['password'] = 'higit123';
 $db['default']['database'] = 'hdwindows';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
