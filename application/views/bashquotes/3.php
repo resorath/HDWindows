@@ -1,0 +1,3 @@
+<kyourek> There was a 23% drop in temperature.
+<nappyjallapy> That's almost 25%!
+<kyourek> ... That was one of the most worthless comments I've ever heard.

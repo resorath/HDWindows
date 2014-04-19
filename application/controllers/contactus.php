@@ -27,10 +27,12 @@ class Contactus extends MY_Controller {
 	{
 		$this->load->model('Communication_expert');
 
-		if($_POST['contacttoken'] != $_SESSION['captchatoken'])
+		if($_SESSION['captchatoken'] == NULL || $_POST['contacttoken'] != $_SESSION['captchatoken'])
 			die("Bad or no token, do you have javascript enabled?");
 
-		$id = $this->Communication_expert->send_message_database('email', $_POST['name'], $_POST['contact'], $_POST['question']);
+		$_SESSION['captchatoken'] = id;
+
+		$NULL = $this->Communication_expert->send_message_database('email', $_POST['name'], $_POST['contact'], $_POST['question']);
 
 		$this->Communication_expert->send_message_email($_POST['name'], $_POST['contact'], $_POST['question'], $id);
 

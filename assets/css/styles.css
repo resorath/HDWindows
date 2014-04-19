@@ -208,6 +208,32 @@ input[type='text'],input[type='number'],select,textarea
 	/*border-left: 1px solid  rgb(66, 139, 202);*/
 }
 
+
+/* Errors */
+.quotes
+{
+  background-image: url('../img/quotes.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  min-height: 50px;
+  color: #777777;
+  padding: 20px;
+  font-family: 'Satisfy', cursive;
+  font-size: 1.2em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.quotes > p
+{
+  margin-top: 20px;
+  float: right;
+  font-family: Verdana, sans-serif;
+  font-size: 0.7em;
+}
+
+/* */
+
 .navicon
 {
 	font-size: 2.0em;
@@ -1002,6 +1028,12 @@ input[type='text'],input[type='number'],select,textarea
     padding-top: 20px;
     font-size: 1.9em;
     font-weight: bold;
+  }
+
+  .preservemobilebig
+  {
+    padding-top: 5px;
+    font-size: 3.5em;
   }
 
 	.toplink
