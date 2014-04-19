@@ -170,26 +170,35 @@ function checkPostal(postal) {
 }
 
 
-$('#contactsubmit').click(function() {
+$('#contactform').submit(function(event) {
+  
+  if($('#contacttoken').val().length > 0)
+    return true;
+
+  event.preventDefault();
   var challenge = $('#recaptcha_challenge_field').val();
   var response = $('#recaptcha_response_field').val();
 
-  $.getJSON( config.base + 'contactus/checkcaptcha/' + challenge + '/' + encodeURIComponent(response), function( data ) {
-    if(data['valid'] == 'nok')
-    {
-
-      $('#contacttoken').val('');
-      alert('failed');
-      Recaptcha.reload();
+  $.ajax({
+    url: config.base + 'contactus/checkcaptcha/' + challenge + '/' + encodeURIComponent(response),
+    dataType: 'json',
+    async: false,
+    success: function(data) {
+    
+      if(data['valid'] == 'nok')
+      {
+        $('#contacttoken').val('');
+        alert("Captcha didn't validate");
+        Recaptcha.reload();
+      }
+      if(data['valid'] == 'ok')
+      {
+        $('#contacttoken').val(data['token']);
+        $("#contactform").submit();
+      }
     }
-    if(data['valid'] == 'ok')
-    {
-      $('#contacttoken').val(data['token']);
-      $("#contactform").submit();
-    }
-
-
   });
+
 });
 
 
