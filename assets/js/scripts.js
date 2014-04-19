@@ -174,7 +174,7 @@ $('#contactsubmit').click(function() {
   var challenge = $('#recaptcha_challenge_field').val();
   var response = $('#recaptcha_response_field').val();
 
-  $.getJSON( config.base + 'contactus/checkcaptcha/' + challenge + '/' + response, function( data ) {
+  $.getJSON( config.base + 'contactus/checkcaptcha/' + challenge + '/' + encodeURIComponent(response), function( data ) {
     if(data['valid'] == 'nok')
     {
 

@@ -29,11 +29,11 @@ class Communication_expert extends CI_Model
 
 		$mailbody = $this->parser->parse('emails/contactus', $data, TRUE);
 
-		$this->email->from('donotreply@hdwindows.ca', $name + " (via HDWindows.ca Contact Form)");
+		$this->email->from('donotreply@hdwindows.ca', $name . " (via HDWindows.ca Contact Form)");
 		$this->email->to($_SESSION['config_contactemail']); 
 
-		$this->email->subject('HDWindows.ca query from ' + $name);
-		$this->email->message($message);	
+		$this->email->subject('HDWindows.ca query from ' . $name);
+		$this->email->message($mailbody);	
 
 		$this->email->send();
 
