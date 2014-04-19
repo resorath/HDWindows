@@ -23,18 +23,46 @@ class Contactus extends MY_Controller {
 		$this->loadview('contactus', $data);
 	}
 
-	public function sendmessage($token)
+	public function sendmessage()
 	{
+		$this->load->model('Communication_expert');
+
+		if($_POST['contacttoken'] != $_SESSION['captchatoken'])
+			die("Bad or no token, do you have javascript enabled?");
+
+		$id = $this->Communication_expert->send_message_database('email', $_POST['name'], $_POST['contact'], $_POST['question']);
+
+		$this->Communication_expert->send_message_email($_POST['name'], $_POST['contact'], $_POST['question'], $id);
+
 
 
 	}
 
+	// JSON
 	public function checkcaptcha($challenge, $response)
 	{
 		$this->load->helper('captcha');
 
-		
-		validate_captcha('asdf', 'asdf');
+		validate_captcha($challenge, $response);
+
+		$result = array();
+
+		if($_SESSION['captchatoken'] != NULL)
+		{
+			$result = array(
+				"valid" => "ok",
+				"token" => $_SESSION['captchatoken']
+			);
+		}
+		else
+		{
+			$result = array(
+				"valid" => "nok"
+			);
+		}
+
+		echo json_encode($result);
+
 
 
 	}

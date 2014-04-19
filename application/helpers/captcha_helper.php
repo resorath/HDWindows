@@ -13,8 +13,11 @@
 
 		if($resp->is_valid)
 		{
-			$session['captchatoken'] = 
-
+			$_SESSION['captchatoken'] = rand_sha1(60);
+		}
+		else
+		{
+			$_SESSION['captchatoken'] = NULL;
 		}
 	}
 

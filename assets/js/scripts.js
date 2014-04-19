@@ -170,6 +170,28 @@ function checkPostal(postal) {
 }
 
 
+$('#contactsubmit').click(function() {
+  var challenge = $('#recaptcha_challenge_field').val();
+  var response = $('#recaptcha_response_field').val();
+
+  $.getJSON( config.base + 'contactus/checkcaptcha/' + challenge + '/' + response, function( data ) {
+    if(data['valid'] == 'nok')
+    {
+
+      $('#contacttoken').val('');
+      alert('failed');
+      Recaptcha.reload();
+    }
+    if(data['valid'] == 'ok')
+    {
+      $('#contacttoken').val(data['token']);
+      $("#contactform").submit();
+    }
+
+
+  });
+});
+
 
 function supportFixedPositions(){
   var container = document.body;

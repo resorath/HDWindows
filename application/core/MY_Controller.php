@@ -27,6 +27,15 @@ class MY_Controller extends CI_Controller {
 
         @session_start();
 
+        // Load database and config values into memory (except for the home page)
+        if($this->_controller != "home")
+        {
+            $this->load->database();
+            $this->load->model('Config_expert');
+
+            $this->Config_expert->load_values();
+        }
+
         // start the logger
         //$this->slogger = Slogger::getInstance();
         //$this->slogger->setController($this->_controller);

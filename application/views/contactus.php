@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
 
-        <form method="post" class="mobileform">
+        <form method="post" class="mobileform" name="contactform" id="contactform" action="<?=base_url() ?>contactus/sendmessage">
           <fieldset>
 
 
@@ -44,12 +44,14 @@
 
 
           <div class="control-group">
-            <label class="control-label" for="submit"></label>
+            <label class="control-label" for="submitbutton"></label>
             <div class="controls">
-              <button id="submit" name="submit" class="btn btn-primary">Shazam!</button>
+              <button id="contactsubmit" name="submitbutton" class="btn btn-primary" type="button">Shazam!</button>
               <p class="help-block">We will only use these details to contact you in response to your query.</p>
             </div>
           </div>
+
+          <input type="hidden" name="contacttoken" id="contacttoken" value="">
 
 
           </fieldset>
