@@ -74,6 +74,14 @@ $('#postalcodelookup').click(function() {
 
 });
 
+$('#skippostalcodelookup').click(function() {
+  $('#introheader').fadeOut();
+  $('#postalcodeerror').fadeOut();
+  $('#postalcodeinput').fadeOut();
+  $('#getstartedvalid').fadeIn();
+
+});
+
 $('#postalcodeprivacyanchor').click(function() {
   $('#postalcodeprivacy').fadeIn();
 
@@ -172,6 +180,9 @@ function checkPostal(postal) {
 
 $('#contactform').submit(function(event) {
   
+  $('.form-error#captchaerror').html('');
+  $('#contactsubmit').attr('disabled', 'disabled');
+
   if($('#contacttoken').val().length > 0)
     return true;
 
@@ -188,7 +199,10 @@ $('#contactform').submit(function(event) {
       if(data['valid'] == 'nok')
       {
         $('#contacttoken').val('');
-        alert("Captcha didn't validate");
+        
+        $('.form-error#captchaerror').html('<div class="alert alert-danger"><p><strong>I know these are tough...</strong></p><p>but please try the words again, we gave you a new set!</p></div>')
+        $('#contactsubmit').removeAttr('disabled');
+
         Recaptcha.reload();
       }
       if(data['valid'] == 'ok')

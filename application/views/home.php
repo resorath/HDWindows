@@ -152,6 +152,10 @@
 
         </div>
 
+      <a href="<?=base_url() ?>getstarted" class="commercialcontacta">
+        <p class="commercialfooter">Learn more about pricing, book a consultation or just chat with us here</p>
+      </a>
+
 
       </div>
     </section>
@@ -193,8 +197,8 @@
 
       </div>
 
-      <a href="<?=base_url() ?>contactus" id="commercialcontacta">
-        <p id="commercialfooter">Get started by calling us up or book a <i class="fa fa-coffee"></i>coffee appointment</p>
+      <a href="<?=base_url() ?>contactus" class="commercialcontacta">
+        <p class="commercialfooter">Get started here by calling us up or book a <i class="fa fa-coffee"></i>coffee appointment</p>
       </a>
 
     </section>

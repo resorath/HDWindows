@@ -94,18 +94,13 @@ input[type='text'],input[type='number'],select,textarea
   font-size: 2.5em;
 }
 
-#commercialfooter
+.commercialfooter
 {
   font-size: 1.5em;
   text-align: center;
   padding: 10px;
 }
 
-#commercialservices a
-{
-  text-decoration: none;
-  color: #FFFFFF;
-}
 
 .commercialinnercol
 {
@@ -117,18 +112,22 @@ input[type='text'],input[type='number'],select,textarea
   margin: 0 auto;
 }
 
-#commercialcontacta
+.commercialcontacta
 {
   display: block;
   background-color: rgb(66, 139, 202);
   padding: 10px;
   margin-top: 50px;
   margin-bottom: 20px;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
-#commercialcontacta:hover
+.commercialcontacta:hover
 {
   background-color:  rgb(66, 119, 202); 
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 
@@ -902,6 +901,7 @@ input[type='text'],input[type='number'],select,textarea
   width: 120px;
   height: 36px;
   font-size: 24px;
+  margin-left: 90px;
 }
 
 #postalcodelookup
@@ -1119,11 +1119,16 @@ input[type='text'],input[type='number'],select,textarea
     font-size: 1.3em;
   }
 
-  #commercialfooter
+  .commercialfooter
   {
     font-size: 1.5em;
     text-align: center;
     padding: 10px;
+  }
+
+  #postalcode
+  {
+    margin-left: inherit;
   }
 
   .commercialinnercol

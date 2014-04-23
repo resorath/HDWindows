@@ -28,7 +28,10 @@ class Contactus extends MY_Controller {
 		$this->load->model('Communication_expert');
 
 		if($_SESSION['captchatoken'] == NULL || $_POST['contacttoken'] != $_SESSION['captchatoken'])
-			die("Bad or no token, do you have javascript enabled?");
+		{
+			redirect('/contactus');
+			return;
+		}
 
 		$_SESSION['captchatoken'] = NULL;
 

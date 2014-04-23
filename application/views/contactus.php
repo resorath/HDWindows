@@ -36,6 +36,7 @@
 
           <div class="control-group" style="margin-top: 20px">
             <label class="control-label" for="captcha">Human Only Field</label>
+            <div class="form-error" id="captchaerror"></div>
             <div class="controls">
               <?=recaptcha_get_html($publickey) ?>
               <p class="help-block">Please copy the words in the image into the text box. Bots, please ignore this field.</p>

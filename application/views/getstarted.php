@@ -13,7 +13,8 @@
 		<div class="biginputlabel">What is the postal code for the location where you need us? </div>
 		<form>
 			<input type="text" name="postalcode" id="postalcode" placeholder="">
-			<button type="button" id="postalcodelookup" class="btn btn-primary btn-large">Check <span class="glyphicon glyphicon-chevron-righ"></span> </button>
+			<button type="button" id="postalcodelookup" class="btn btn-primary btn-large">Check <span class="glyphicon glyphicon-chevron-right"></span> </button>
+			<button type="button" id="skippostalcodelookup" class="btn btn-link smallbtnlink">Skip this</button>
 		</form>
 		<span class="error" id="postalcodeerror">Please enter a valid Postal Code! (e.g. T2N 1N4)</span>
 
