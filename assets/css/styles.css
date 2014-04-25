@@ -26,6 +26,11 @@ input[type='text'],input[type='number'],select,textarea
   font-size:16px;
 }
 
+#mobilenavul, #mobilegreet
+{
+  display: none;
+}
+
 .pageful
 {
   min-height:100%;
@@ -570,6 +575,17 @@ input[type='text'],input[type='number'],select,textarea
 {
 }
 
+.radio
+{
+  display: inline-block;
+  margin: 20px;
+}
+
+#welcomebackalert
+{
+  display: none;
+}
+
 .outer-center {
     float: right;
     right: 50%;
@@ -584,6 +600,11 @@ input[type='text'],input[type='number'],select,textarea
     clear: both;
 }
 
+.redasterix
+{
+  color: red;
+}
+
 #howitworks > p
 {
   font-size: 1.4em;
@@ -592,7 +613,7 @@ input[type='text'],input[type='number'],select,textarea
 
 #howitworks > ol
 {
-  list-style: lower-greek;
+  list-style: upper-roman;
 }
 
 #bigtower
@@ -910,6 +931,12 @@ input[type='text'],input[type='number'],select,textarea
   display: inline-block;
 }
 
+#bookingpostalcode
+{
+  width: 120px;
+  height: 36px;
+}
+
 /* Front page slide control */
 
 .slides
@@ -1027,6 +1054,11 @@ input[type='text'],input[type='number'],select,textarea
     padding-top: 20px;
     font-size: 1.9em;
     font-weight: bold;
+  }
+
+  #mobilenavul, #mobilegreet
+  {
+    display: inherit;
   }
 
   .preservemobilebig

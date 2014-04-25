@@ -7,11 +7,10 @@ class Client_expert extends CI_Model
 		parent::__construct();
 	}
 
-	/*function add_group($name, $supervisorId)
+	function add_group($contactmodal)
 	{
-		$sql = "INSERT INTO `group` (`id`, `name`, `supervisorId`) VALUES (NULL, ?, ?)";
-		$this->db->query($sql, array($name, $supervisorId));
-	}*/
+		$this->db->insert('customer', $contactmodal);
+	}
 
 
 

@@ -252,3 +252,14 @@ function supportFixedPositions(){
   }
   return null;
 }
+
+$('.previousbookradio').click(function() {
+  if($('input[name=previousbook]:checked').val() == 'Yes')
+  {
+    $('#welcomebackalert').fadeIn();
+  }
+  else
+  {
+    $('#welcomebackalert').hide();
+  }
+});

@@ -2,8 +2,8 @@
     <div id="footer">
       <p id="copy">Copyright &copy;  2014 HD Window Cleaners of Calgary</p>
       <ul id="footernav">
-        <li><a href="privacypolicy">Privacy Policy</a></li>
-        <li><a href="contactus">Contact Us</a></li>
+        <li><a href="<?=base_url() ?>privacypolicy">Privacy Policy</a></li>
+        <li><a href="<?=base_url() ?>contactus">Contact Us</a></li>
         <li><a href="#">Report a Problem</a></li>
 
       </ul>

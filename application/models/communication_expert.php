@@ -10,7 +10,7 @@ class Communication_expert extends CI_Model
 	function send_message_database($type, $name, $contactdetails, $message)
 	{
 		$sql = "INSERT INTO `communication` (`id`, `type`, `name`, `contactdetails`, `message`, `session`) VALUES (NULL, ?, ?, ?, ?, ?)";
-		$this->db->query($sql, array($type, $name, $contactdetails, $message, implode("\n", $_SERVER)));
+		$this->db->query($sql, array($type, $name, $contactdetails, $message, json_encode($_SERVER)));
 		return $this->db->insert_id();
 	}
 

@@ -1,5 +1,5 @@
 
-
+<?=print_r($_POST); ?>
   <div class="well">
     <h2 class="leadcentre lotsoftext" id="introheader">Ready to Book?</h2>
 
@@ -11,7 +11,7 @@
         <p>How it works <a href="#" id="howitworksa" data-toggle="tooltip" data-placement="top" title="We aren't a big company, but instead a small team. A little song and dance is neccesary so we can group together our bookings. Thank you for your patience and keeping our fuel consumption down!"><span class="glyphicon glyphicon-question-sign"></span></a></p>
         <ol>
           <li>Let us know some details about yourself, and a range of dates and times you are available.</li>
-          <li>We will select a few dates that work for us and let you know.</li>
+          <li>We will select a few dates that are mutually agreeable and let you know.</li>
           <li>You can finalize the date and time, and we will come over to give you a final quote.</li>
           <li>We agree on the quote, and work gets done.</li>
         </ol>
@@ -26,7 +26,7 @@
       Read more in our <a href="privacypolicy">Privacy Policy</a>.
     </div>
 
-    <form class="form-horizontal" method="POST">
+    <form class="form-horizontal" method="POST" action="<?=base_url() ?>booking" id="bookingform">
     <fieldset>
 
     <!-- Multiple Radios -->
@@ -34,41 +34,49 @@
       <label class="control-label" for="previousbook">Have you used our services before?</label>
       <div class="controls">
         <label class="radio" for="previousbook-0">
-          <input type="radio" name="previousbook" id="previousbook-0" value="Yes" required="required">
+          <input type="radio" name="previousbook" class="previousbookradio" id="previousbook-0" value="Yes" required="required" <?=set_radio('previousbook', 'Yes') ?>>
           Yes
         </label>
         <label class="radio" for="previousbook-1">
-          <input type="radio" name="previousbook" id="previousbook-1" value="No" checked="checked" required="required">
+          <input type="radio" name="previousbook" class="previousbookradio" id="previousbook-1" value="No" required="required" <?=set_radio('previousbook', 'No', TRUE) ?>>
           No
         </label>
       </div>
+    </div>
+
+    <?=validation_errors(); ?>
+
+    <div class="alert alert-success alert-dismissable" id="welcomebackalert">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Thanks for coming back!</strong>
+      <p>To make your return visit easier, you can click the link in the e-mail you got form us last time to book again! Don't have that e-mail anymore? No problem, just fill the form out again and we will figure things out. </p>
     </div>
 
     <div class="row">
       <div class="col-md-6">
         <!-- Text input-->
         <div class="control-group">
-          <label class="control-label" for="email">Contact Name</label>
+          <label class="control-label" for="title">Contact Name <span class="redasterix">*</span></label>
           <div class="controls">
 
             <select name="title" id="usertitle">
-              <option value="Mr.">Mr.</option>
-              <option value="Mrs.">Mrs.</option>
-              <option value="Miss">Miss</option>
-              <option value="Ms.">Ms.</option>
-              <option value="Dr.">Dr.</option>
-              <option value="Prof.">Prof.</option>
-              <option value="Rev.">Rev.</option>
-              <option value="Mayor">His Worship</option>
-              <option value="Honorable">The Honourable</option>
-              <option value="Rh.">The Right Honourable</option>
-              <option value="govgen">His Excellency</option>
-              <option value="queen">Her Majesty</option>
-              <option value="na">N/A</option>
+              <option value="Mr." <?=set_select('title', 'Mr.', TRUE) ?>>Mr.</option>
+              <option value="Mrs." <?=set_select('title', 'Mrs.') ?>>Mrs.</option>
+              <option value="Miss" <?=set_select('title', 'Miss') ?>>Miss</option>
+              <option value="Ms." <?=set_select('title', 'Ms.') ?>>Ms.</option>
+              <option value="Dr." <?=set_select('title', 'Dr.') ?>>Dr.</option>
+              <option value="Prof." <?=set_select('title', 'Prof.') ?>>Prof.</option>
+              <option value="Rev." <?=set_select('title', 'Rev.') ?>>Rev.</option>
+              <option value="Mayor" <?=set_select('title', 'Mayor') ?>>His Worship</option>
+              <option value="Honorable" <?=set_select('title', 'Honorable') ?>>The Honourable</option>
+              <option value="Rh." <?=set_select('title', 'Rh.') ?>>The Right Honourable</option>
+              <option value="govgen" <?=set_select('title', 'govgen.') ?>>His Excellency</option>
+              <option value="queen" <?=set_select('title', 'queen') ?>>Her Majesty</option>
+              <option value="na" <?=set_select('title', 'na') ?>>N/A</option>
             </select>
 
 
-            <input id="whoname" name="email" type="text" placeholder="" class="input-xlarge" required="">
+            <input id="whoname" name="whoname" type="text" placeholder="" class="input-xlarge" required="" value="<?=set_value('whoname'); ?>">
             <p class="help-block">Who we are talking to</p>
           </div>
         </div>
@@ -79,9 +87,9 @@
       <div class="col-md-6">
         <!-- Text input-->
         <div class="control-group">
-          <label class="control-label" for="email">Phone Number</label>
+          <label class="control-label" for="phone">Phone Number <span class="redasterix">*</span></label>
           <div class="controls">
-            <input id="email" name="email" type="text" placeholder="(403)555-1234" class="input-xlarge" required="">
+            <input id="phone" name="phone" type="text" placeholder="(403)555-1234" class="input-xlarge" required="" value="<?=set_value('phone'); ?>">
             <p class="help-block">The best number we can reach you at</p>
           </div>
         </div>
@@ -90,9 +98,9 @@
       <div class="col-md-6">
         <!-- Text input-->
         <div class="control-group">
-          <label class="control-label" for="email">E-Mail Address</label>
+          <label class="control-label" for="email">E-Mail Address <span class="redasterix">*</span></label>
           <div class="controls">
-            <input id="email" name="email" type="text" placeholder="you@example.com" class="input-xlarge" required="">
+            <input id="email" name="email" type="text" placeholder="you@example.com" class="input-xlarge" required="" value="<?=set_value('email'); ?>">
             <p class="help-block">The best e-mail we can reach you at</p>
           </div>
         </div>
@@ -103,9 +111,9 @@
       <div class="col-md-6">
         <!-- Text input-->
         <div class="control-group">
-          <label class="control-label" for="address">Street Address</label>
+          <label class="control-label" for="address">Street Address <span class="redasterix">*</span></label>
           <div class="controls">
-            <input id="address" name="address" type="text" placeholder="101, 123 Fake Street NW" class="input-xlarge" required="">
+            <input id="address" name="address" type="text" placeholder="101, 123 Fake Street NW" class="input-xlarge" required="" value="<?=set_value('address'); ?>">
             <p class="help-block">Street Address, Including Unit Number (If Applicable)</p>
           </div>
         </div>
@@ -115,7 +123,7 @@
         <div class="control-group">
           <label class="control-label" for="address2">Street Address 2</label>
           <div class="controls">
-            <input id="address2" name="address2" type="text" placeholder="" class="input-xlarge">
+            <input id="address2" name="address2" type="text" placeholder="" class="input-xlarge" value="<?=set_value('address2'); ?>">
             <p class="help-block">Just in case you need more space</p>
           </div>
         </div>
@@ -124,9 +132,9 @@
 
     <!-- Text input-->
     <div class="control-group">
-      <label class="control-label" for="postalcode">Postal Code</label>
+      <label class="control-label" for="postalcode">Postal Code <span class="redasterix">*</span></label>
       <div class="controls">
-        <input id="postalcode" name="postalcode" type="text" placeholder="L#L #L#" class="input-xlarge">
+        <input id="bookingpostalcode" name="postalcode" type="text" placeholder="L#L #L#" class="input-xlarge" required="" value="<?=set_value('postalcode'); ?>">
         <p class="help-block">Postal Code, We can figure out the rest from this. </p>
       </div>
     </div>
@@ -136,13 +144,13 @@
       <label class="control-label" for="referral">How did you find out about us?</label>
       <div class="controls">
         <select id="referral" name="referral" style="width: 200px;">
-          <option value="wordofmouth">Word of mouth</option>
-          <option value="kijiji">Kijiji</option>
-          <option value="car">Our cool car</option>
-          <option value="google">Google / Bing</option>
-          <option value="advertisement">Advertisement</option>
-          <option value="cosmicrays">Cosmic Rays</option>
-          <option value="notlisted">( Other / Not Listed )</option>
+          <option value="wordofmouth" <?=set_select('referral', 'wordofmouth') ?>>Word of mouth</option>
+          <option value="kijiji" <?=set_select('referral', 'kijiji') ?>>Kijiji</option>
+          <option value="car" <?=set_select('referral', 'car') ?>>Our cool car</option>
+          <option value="google" <?=set_select('referral', 'google') ?>>Google / Bing</option>
+          <option value="advertisement" <?=set_select('referral', 'advertisement') ?>>Advertisement</option>
+          <option value="cosmicrays" <?=set_select('referral', 'cosmicrays') ?>>Cosmic Rays</option>
+          <option value="notlisted" <?=set_select('referral', 'notlisted') ?>>( Other / Not Listed )</option>
         </select>
       </div>
     </div>
@@ -153,7 +161,7 @@
         <div class="control-group">
           <label class="control-label" for="comment">Comment / Special Requests</label>
           <div class="controls">                     
-            <textarea id="comment" name="comment" placeholder="Type anything...!"></textarea>
+            <textarea id="comment" name="comment" placeholder="Type anything...!" value="<?=set_value('comment'); ?>"></textarea>
           </div>
         </div>
       </div>
@@ -166,9 +174,9 @@
     <div class="row">
       <div class="col-md-4">
         <div class="control-group">
-          <label class="control-label" for="firstdatechoice">First Time Choice</label>
+          <label class="control-label" for="firstdatechoice">First Time Choice <span class="redasterix">*</span></label>
           <div class="controls">
-            <input size="16" type="text" value="" name="firstdatechoice" id="firstdatechoice" placeholder="Click/Tap to select" readonly class="input-xlarge form_datetime">
+            <input size="16" type="text"  value="<?=set_value('firstdatechoice'); ?>" name="firstdatechoice" id="firstdatechoice" placeholder="Click/Tap to select" readonly class="input-xlarge form_datetime" required="">
           </div>
         </div>
       </div>
@@ -176,9 +184,9 @@
 
       <div class="col-md-4">
         <div class="control-group">
-          <label class="control-label" for="firstdatechoice-until">Until</label>
+          <label class="control-label" for="firstdatechoice-until">Until <span class="redasterix">*</span></label>
           <div class="controls">
-            <input size="16" type="text" value="" name="firstdatechoice-until" id="firstdatechoice-until" placeholder="Select a start date and time" disabled class="input-xlarge form_timepicker">
+            <input size="16" type="text"  value="<?=set_value('firstdatechoice-until'); ?>" name="firstdatechoice-until" id="firstdatechoice-until" placeholder="Select a start date and time" disabled class="input-xlarge form_timepicker" required="">
           </div>
         </div>
       </div>
@@ -192,7 +200,7 @@
         <div class="control-group">
           <label class="control-label" for="seconddatechoice">Second Time Choice</label>
           <div class="controls">
-            <input size="16" type="text" value="" name="seconddatechoice" id="seconddatechoice" placeholder="Click/Tap to select" readonly class="input-xlarge form_datetime">
+            <input size="16" type="text"  value="<?=set_value('seconddatechoice'); ?>" name="seconddatechoice" id="seconddatechoice" placeholder="Click/Tap to select" readonly class="input-xlarge form_datetime">
           </div>
         </div>
       </div>
@@ -201,7 +209,7 @@
         <div class="control-group">
           <label class="control-label" for="seconddatechoice-until">Until</label>
           <div class="controls">
-            <input size="16" type="text" value="" name="secondtimechoice-until" id="seconddatechoice-until" placeholder="Select a start date and time" disabled class="input-xlarge form_timepicker">
+            <input size="16" type="text"  value="<?=set_value('seconddatechoice-until'); ?>" name="secondtimechoice-until" id="seconddatechoice-until" placeholder="Select a start date and time" disabled class="input-xlarge form_timepicker">
           </div>
         </div>
       </div>
