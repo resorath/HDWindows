@@ -126,6 +126,20 @@ $('.form_datetime').ready(function() {
   })
 });
 
+$('#bookingform').ready(function() {
+
+  if($('#firstdatechoice').val() != '')
+  {
+    $('#firstdatechoice-until').removeAttr('disabled');
+  }
+
+  if($('#seconddatechoice').val() != '')
+  {
+    $('#seconddatechoice-until').removeAttr('disabled');
+  }
+
+});
+
 $('#secondtimechoice').change(function() {
   
   if($(this).val() != '')

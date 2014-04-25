@@ -209,7 +209,7 @@
         <div class="control-group">
           <label class="control-label" for="seconddatechoice-until">Until</label>
           <div class="controls">
-            <input size="16" type="text"  value="<?=set_value('seconddatechoice-until'); ?>" name="secondtimechoice-until" id="seconddatechoice-until" placeholder="Select a start date and time" disabled class="input-xlarge form_timepicker">
+            <input size="16" type="text"  value="<?=set_value('seconddatechoice-until'); ?>" name="seconddatechoice-until" id="seconddatechoice-until" placeholder="Select a start date and time" disabled class="input-xlarge form_timepicker">
           </div>
         </div>
       </div>
