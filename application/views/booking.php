@@ -1,6 +1,7 @@
-
-<?=print_r($_POST); ?>
   <div class="well">
+
+    <?=validation_errors(); ?>
+
     <h2 class="leadcentre lotsoftext" id="introheader">Ready to Book?</h2>
 
     <div id="getpersonal">Tell us what times are good for you, and we will book an appointment for you. Don't forget, we
@@ -43,8 +44,6 @@
         </label>
       </div>
     </div>
-
-    <?=validation_errors(); ?>
 
     <div class="alert alert-success alert-dismissable" id="welcomebackalert">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>

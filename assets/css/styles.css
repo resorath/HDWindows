@@ -605,6 +605,13 @@ input[type='text'],input[type='number'],select,textarea
   color: red;
 }
 
+.superglyph
+{
+  float: left; 
+  font-size: 32px; 
+  margin-right: 16px; 
+}
+
 #howitworks > p
 {
   font-size: 1.4em;

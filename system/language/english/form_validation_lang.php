@@ -1,8 +1,8 @@
 <?php
 
-$lang['required']			= "The %s field is required.";
+$lang['required']			= "Please fill in the %s box! We need this!";
 $lang['isset']				= "The %s field must have a value.";
-$lang['valid_email']		= "The %s field must contain a valid email address.";
+$lang['valid_email']		= "Please take a look at the %s box, the email doesn't look right.";
 $lang['valid_emails']		= "The %s field must contain all valid email addresses.";
 $lang['valid_url']			= "The %s field must contain a valid URL.";
 $lang['valid_ip']			= "The %s field must contain a valid IP.";

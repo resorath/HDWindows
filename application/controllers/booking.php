@@ -40,6 +40,8 @@ class Booking extends MY_Controller {
     $this->form_validation->set_rules('referral', 'Referral', 'xss_clean');
     $this->form_validation->set_rules('previousbook', 'Previously Booked', 'xss_clean');
 
+    $this->form_validation->set_error_delimiters('<div class="alert alert-danger"><p><strong><span class="glyphicon glyphicon-wrench superglyph"></span> Sorry, please check the following issues:</strong></p>', '</div>');
+
     if ($this->form_validation->run() == FALSE)
     {
       $this->loadview('booking', $this->data);
