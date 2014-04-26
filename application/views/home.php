@@ -245,9 +245,8 @@
 
           <div id="guaranteewell">
 
-            <p>We want to ensure that you are 100% satisfied with our work within the limits of safety and reason or we will fix it, free of charge*. We don't cut  corners or rush any part of the job. We want to make sure you are happy with how your windows look when we are done.</p>
+            <p>We want to ensure that you are 100% satisfied with our work within the limits of safety and reason or we will fix it, free of charge. We don't cut  corners or rush any part of the job. We want to make sure you are happy with how your windows look when we are done.</p>
 
-            <p id="guaranteediscloser"><a href="#"><i class="fa fa-asterisk"></i> Our guarantee has a few restrictions that we want you to be aware of. Really its common sense, but please click here to give it a read.</a></p>
           </div>
         </div>
 
