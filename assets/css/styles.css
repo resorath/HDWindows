@@ -427,6 +427,13 @@ input[type='text'],input[type='number'],select,textarea
   margin: 0 auto;
 }
 
+.adjustleft > img
+{
+  margin-left:-30px;
+  width: 100% !important;
+
+}
+
 .tallman
 {
   width: 90%;
@@ -994,7 +1001,7 @@ input[type='text'],input[type='number'],select,textarea
 {
   position: absolute;
   top: 20%;
-  right: 0%;
+  left: 0%;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.9);
   width: 30%;

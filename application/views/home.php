@@ -39,19 +39,13 @@
 
         <ul class="rslides">
           <li>
-            <img src="<?=base_url() ?>assets/img/slide/1.jpg" alt="">
+            <img src="<?=base_url() ?>assets/img/slide/dan.jpg" alt="">
             <div class="slidetext">
               <p class="slideleadtext">Spring Sale!</p>
               <p class="slidefollowtext">Get 15% off all services!</p>
             </div>
           </li>
-          <li>
-            <img src="<?=base_url() ?>assets/img/slide/2.jpg" alt="">
-            <div class="slidetext">
-              <p class="slideleadtext">Spring Sale!</p>
-              <p class="slidefollowtext">Get 15% off all services!</p>
-            </div>
-          </li>
+
         </ul>
 
       </div>
@@ -217,16 +211,16 @@
             </div>
           </div>
           <div class="col-md-4 whychooseblock">
-            <div class="tallman">
+            <div class="tallman adjustleft">
               <p class="leader">We're Local!</p>
-              <img src="<?=base_url() ?>assets/img/art-tower.png">
+              <img src="<?=base_url() ?>assets/img/buildings.jpg">
               <p class="follower">Daniel and Heather are proud to call Calgary home. Daniel moved here in 1996 and Heather was born and raised in Calgary. We strive to support other local businesses. We also work to keep our city clean by using biodegradable, non-toxic cleaning supplies, minimizing waste, and ensuring that the scheduled routes that we work on maximize efficiency to minimize gasoline consumed. If your home or business is downtown and doesn't require ladders, Daniel will often use his bicycle to get to the job. </p>
             </div>
           </div>
           <div class="col-md-4 whychooseblock">
             <div class="tallman" id="reason3">
               <p class="leader">We're Professional!</p>
-              <img src="<?=base_url() ?>assets/img/art-professional.png">
+              <img src="<?=base_url() ?>assets/img/house.jpg">
               <p class="follower">We work with the utmost attention to detail to make sure you are completely satisfied with your windows. Daniel has had experience with a multitude of building types and will ensure that you are happy with his work. He will treat your home, office or business with respect and care, considering timelines and surroundings. </p>
             </div>
           </div>
