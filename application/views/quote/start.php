@@ -30,7 +30,7 @@
   </div>
 
   <div class="quote-stage stage2 whitepage" id="stage2-residential" style="display: none;">
-    <h2 class="leadcentre lotsoftext">Ok! Now its time to figure out what you need...</h1>
+    <h2 class="leadcentre lotsoftext ">Ok! Now its time to figure out what you need...</h2>
 
     <div class="well"><p>On the next step we will ask you for details on what you need done. If you have a smart phone or tablet, you can proceed
     to the next step on your device while walking around, we're mobile friendly!</p>
@@ -41,21 +41,25 @@
 
     <p id="notapemeasure"><img src="<?=base_url() ?>assets/img/notapemeasure.png" alt="No tape measure!">Don't get out the tape measure! Lets look at some examples.</p>
 
-    <div class="quoteexample">
-      <img src="<?=base_url() ?>assets/img/size-example1.jpg" class="sizingexample">
-      <p>This window has two window panes, both are "large".</p>
-    </div>
+    <div class="quoteexamplecol">
 
-    <div class="quoteexample">
-      <img src="<?=base_url() ?>assets/img/size-example2.jpg" class="sizingexample">
+      <div class="quoteexample">
+        <img src="<?=base_url() ?>assets/img/size-example1.jpg" class="sizingexample">
+        <p>This window has two window panes, both are "large".</p>
+      </div>
 
-      <p>This window has four window panes, two "large" and two "small". </p>
-    </div>
+      <div class="quoteexample">
+        <img src="<?=base_url() ?>assets/img/size-example2.jpg" class="sizingexample">
 
-    <div class="quoteexample">
-      <img src="<?=base_url() ?>assets/img/size-example3.jpg" class="sizingexample">
+        <p>This window has four window panes, two "large" and two "small". </p>
+      </div>
 
-      <p>Can you guess this one? There are three "large" panes.</p>
+      <div class="quoteexample">
+        <img src="<?=base_url() ?>assets/img/size-example3.jpg" class="sizingexample">
+
+        <p>Can you guess this one? There are three "large" panes.</p>
+      </div>
+
     </div>
 
     <div class="well">
@@ -70,20 +74,32 @@
 
   <div class="quote-stage" id="stage3-residential">
 
-    <h2 class="leadcentre lotsoftext">Great! Tell us what you need!</h1>
+    <h2 class="leadcentre lotsoftext">Great! Tell us what you need!</h2>
+
+    <div class="well">
+      <p>Please enter how many of each type of pane you would like cleaned. Please note that there are different prices for cleaning single-side of the window versus doing both sides. </p>
+
+      <p>Sills and Ledges are included for each window.</p>
+
+      <p>Looking for other services; such as gutters, storm windows, post-construction cleanup, or the like? <a href="<?=base_url() ?>contactus">Please give us a call.</a></p>
+    </div>
 
     <div class="row">
-      <div class="col-md-6 col-parent">
+      <div class="col-md-4 col-parent">
         <div class="quote-col-leader">
-          Indoor Cleaning
+          Single Side Cleaning
+        </div>
+        <div class="valueification">
+          <img src="<?=base_url() ?>assets/img/onesidewindow.png">
+          One side of the window (Inside OR Outside)
         </div>
 
         <!-- Service Item -->
         <div class="quote-col">
-          <img src="<?=base_url() ?>assets/img/placeholder.gif">
+          <img src="<?=base_url() ?>assets/img/smallpane.png">
           <div class="description">
-            <p>Regular Pane</p>
-            <p class="kindasmall">Under 4m</p>
+            <p>Small Pane</p>
+            <p class="kindasmall">Under 6x6"</p>
           </div>
           <div class="input">
             <input type="text" id="input-indoor-regularpane">
@@ -98,10 +114,10 @@
 
         <!-- Service Item -->
         <div class="quote-col">
-          <img src="<?=base_url() ?>assets/img/placeholder.gif">
+          <img src="<?=base_url() ?>assets/img/largepane.png">
           <div class="description">
-            <p>Super Pane</p>
-            <p class="kindasmall">Over 2km</p>
+            <p>Large Pane</p>
+            <p class="kindasmall">Over 6x6"</p>
           </div>
           <div class="input">
             <input type="text" id="input-indoor-superpane">
@@ -116,17 +132,39 @@
 
       </div>
 
-      <div class="col-md-6 col-parent">
+      <div class="col-md-4 col-parent">
         <div class="quote-col-leader">
-          Outdoor Cleaning
+          Complete Cleaning
+        </div>
+        <div class="valueification">
+          <img src="<?=base_url() ?>assets/img/twosidewindow.png">
+          Both sides of the Window (Better Value)
         </div>
 
         <!-- Service Item -->
         <div class="quote-col">
-          <img src="<?=base_url() ?>assets/img/placeholder.gif">
+          <img src="<?=base_url() ?>assets/img/smallpane.png">
           <div class="description">
-            <p>Super Pane</p>
-            <p class="kindasmall">Over 2km</p>
+            <p>Small Pane</p>
+            <p class="kindasmall">Under 6x6"</p>
+          </div>
+          <div class="input">
+            <input type="text" id="input-outdoor-regularpane">
+          </div>
+          <div class="inputadjuster">
+            <button class="btn btn-xs btn-primary up" data-attachedinput="input-outdoor-regularpane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs btn-danger down" data-attachedinput="input-outdoor-regularpane"><span class="glyphicon glyphicon-minus"></span></button>
+          </div>
+
+        </div>
+        <!-- /Service Item -->
+
+        <!-- Service Item -->
+        <div class="quote-col">
+          <img src="<?=base_url() ?>assets/img/largepane.png">
+          <div class="description">
+            <p>Large Pane</p>
+            <p class="kindasmall">Over 6x6"</p>
           </div>
           <div class="input">
             <input type="text" id="input-outdoor-superpane">
@@ -138,45 +176,45 @@
 
         </div>
         <!-- /Service Item -->
-
-        <!-- Service Item -->
-        <div class="quote-col">
-          <img src="<?=base_url() ?>assets/img/placeholder.gif">
-          <div class="description">
-            <p>Ledges <span class="small">(Meters)</a></p>
-            <p class="kindasmall">1st or 2nd Floor</p>
-          </div>
-          <div class="input">
-            <input type="text" id="input-ledges">
-          </div>
-          <div class="sliderholder">
-            <input type="text" class="span2 slideinput" value="0" id="input-ledgesSlider" data-attachedinput="input-ledges">
-          </div>
-        </div>
-
-        <!-- /Service Item -->
-
-        <!-- Service Item -->
-        <div class="quote-col">
-          <img src="<?=base_url() ?>assets/img/placeholder.gif">
-          <div class="description">
-            <p>Sils <span class="small">(Meters)</a></p>
-            <p class="kindasmall">1st or 2nd Floor</p>
-          </div>
-          <div class="input">
-            <input type="text" id="input-sils">
-          </div>
-          <div class="sliderholder">
-            <input type="text" class="span2 slideinput" value="0" id="input-silsSlider" data-attachedinput="input-sils">
-          </div>
-        </div>
-
-        <!-- /Service Item -->
-
       </div>
 
+      <div class="col-md-4 col-parent">
+        <div class="quote-col-leader">
+          Quote Estimate
+        </div>
+
+        <table id="tally">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sample Item 1</td>
+              <td>5</td>
+            </tr>
+
+            <tr id="trspacer">
+            </tr>
+
+            <tr>
+              <td>Total</td>
+              <td>$333.00</td>
+            </tr>
 
 
+          </tbody>
+
+        </table>
+
+      </div>
+    </div>
+
+    <div id="quotebookbutton">
+      <a href="<?=base_url() ?>booking" class="btn btn-primary">Book Now</a>
+      <a href="<?=base_url() ?>contactus" class="btn btn-primary">Give us a Shout</a>
     </div>
     
   </div>

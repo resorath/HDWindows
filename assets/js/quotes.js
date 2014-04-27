@@ -1,5 +1,4 @@
-
-
+/*
 $('#residential-link').click(function() {
 	loadview('2', 'residential');
 });
@@ -7,7 +6,9 @@ $('#residential-link').click(function() {
 $('#residential2-link').click(function() {
 
 	loadview('3', 'residential');
+
 });
+*/
 
 // stage = 1, 2, etc. type = residential, commercial, lightcommercial
 function loadview(stage, type)
@@ -17,6 +18,8 @@ function loadview(stage, type)
 
 	console.log('#stage'+stage+'-'+type);
 	$('#stage'+stage+'-'+type).fadeIn();
+
+	$('body').scrollTop(0);
 
 }
 
@@ -70,33 +73,35 @@ $(window).hashchange( function(){
   if(hash.indexOf("#step2/") == 0)
   {
   		var type = hash.substring(7);
+  		loadview('2', type);
 
   }
 
   if(hash.indexOf("#step3/") == 0)
   {
   		var type = hash.substring(7);
+  		loadview('3', type);
 
   }
 
  });
 
+
 // on page load
-$(document).ready(function() {
-  var hash = window.location.hash;
+var hash = window.location.hash;
 
-  if(hash.indexOf("#step2/") == 0)
-  {
-  	var type = hash.substring(7);
-  	loadview('2', 'residential');
-	
-  }
+if(hash.indexOf("#step2/") == 0)
+{
+	var type = hash.substring(7);
+	loadview('2', 'residential');
 
-  if(hash.indexOf("#step3/") == 0)
-  {
-  		var type = hash.substring(7);
-		loadview('3', 'residential');
-  }
-
-});
-
+}
+else if(hash.indexOf("#step3/") == 0)
+{
+		var type = hash.substring(7);
+	loadview('3', 'residential');
+}
+else
+{
+	loadview('1', '');
+}
