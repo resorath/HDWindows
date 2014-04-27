@@ -183,7 +183,7 @@
           Quote Estimate
         </div>
 
-        <button class="btn" id="calculatebutton"><i class="fa fa-cog"></i> Calculate</button>
+        <button class="btn btn-default" id="calculatebutton"><i class="fa fa-cog"></i> Calculate</button>
 
         <table id="tally">
           <thead>
