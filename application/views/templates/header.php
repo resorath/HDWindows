@@ -67,6 +67,18 @@
     </ul>
   </div>
 
+  <noscript>
+    <div class="bigwarning">
+      <p><i class="fa fa-umbrella"></i> Hi there, it looks like your not running with JavaScript enabled. We respect your decision and will try to accommodate you, however please be aware some parts of this site will not work (such as booking). If you didn't expect this message, <a href="http://enable-javascript.com/">please click here to learn how to turn JavaScript back on.</a> Thanks!</p>
+    </div>
+  </noscript>
+
+  <!--[if lt IE 8]>
+    <div class="bigwarning" id="badbrowser">
+      <p><i class="fa fa-exclamation-triangle"></i> Hi there, looks like your browser is a little out of date. Your experience on this site (and most others) will be degraded. Please upgrade to the latest version of your browser, or try a new one! <a href="http://browsehappy.com/">Please click here to learn more.</a> Thanks!</p>
+    </div>
+  <![endif]-->
+
   <?php if(isset($subcontenttitle)): ?>
   <div class="container" id="maincontent">
 
