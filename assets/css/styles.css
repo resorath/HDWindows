@@ -38,6 +38,16 @@ input[type='text'],input[type='number'],select,textarea
   position: relative;
 }
 
+.green
+{
+  color: #00AA00;
+}
+
+.hugegreencheck
+{
+  font-size: 12.0em;
+}
+
 #greeter
 {
 
@@ -159,6 +169,11 @@ input[type='text'],input[type='number'],select,textarea
 {
     background-color: #FFFFFF;
     background-image: url('../img/masthead.gif');
+}
+
+.center
+{
+  text-align: center;
 }
 
 .whitepage

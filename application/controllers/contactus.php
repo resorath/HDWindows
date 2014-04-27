@@ -27,7 +27,18 @@ class Contactus extends MY_Controller {
 	{
 		$this->load->model('Communication_expert');
 
-		if($_SESSION['captchatoken'] == NULL || $_POST['contacttoken'] != $_SESSION['captchatoken'])
+		// no captcha token might mean no javascript, lets validate the captcha manually.
+		if($_POST['contacttoken'] == '')
+		{
+			$result = $this->checkcaptcha($_POST['recaptcha_challenge_field'], $_POST['recaptcha_response_field'], false);
+			if($result['valid'] != 'ok')
+			{
+				redirect('/contactus');
+				return;
+			}
+
+		}
+		else if($_SESSION['captchatoken'] == NULL || $_POST['contacttoken'] != $_SESSION['captchatoken'])
 		{
 			redirect('/contactus');
 			return;
@@ -39,12 +50,15 @@ class Contactus extends MY_Controller {
 
 		$this->Communication_expert->send_message_email($_POST['name'], $_POST['contact'], $_POST['question'], $id);
 
+		$data['subcontenttitle'] = "Contact Us";
+		$this->loadview('contactussuccess', $data);
+
 
 
 	}
 
 	// JSON
-	public function checkcaptcha($challenge, $response)
+	public function checkcaptcha($challenge, $response, $jsonresult = true)
 	{
 		$this->load->helper('captcha');
 
@@ -66,7 +80,10 @@ class Contactus extends MY_Controller {
 			);
 		}
 
-		echo json_encode($result);
+		if($jsonresult)
+			echo json_encode($result);
+		else
+			return $result;
 
 
 

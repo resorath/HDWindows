@@ -10,6 +10,22 @@ $(document).ready(function(){
 
     });
 
+  if($('#circlecheck').length > 0) {
+    window.setTimeout(function() {
+      $('#circleholder').html('<i class="fa fa-check-circle-o" id="circlecheck"></i>');
+      $('#circleholder').addClass('green');
+
+    }, 800);
+  }
+
+  if($('#envcheck').length > 0) {
+    window.setTimeout(function() {
+      $('#circleholder').html('<i class="fa fa-envelope-o" id="envcheck"></i>');
+      $('#circleholder').addClass('green');
+
+    }, 800);
+  }
+
 });
 
 
@@ -163,6 +179,7 @@ $('#secondtimechoice').change(function() {
   }
 
 });
+
 
 /*var xpos = 180;
 var lastScrollTop = $(window).scrollTop();;
