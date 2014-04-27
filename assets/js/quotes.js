@@ -71,6 +71,8 @@ $('#calculatebutton').click(function(){
 	var csp = $('#input-complete-smallpane').val();
 	var clp = $('#input-complete-largepane').val();
 
+	$(this).html('<i class="fa fa-cog"></i> Recalculate');
+
 	var total = 0;
 
 	$('#lineitems').html('');
@@ -89,12 +91,12 @@ $('#calculatebutton').click(function(){
 	{
 		$('#lineitems').append('<tr id="trspacer"></tr>');
 
-		$('#lineitems').append('<tr><td>Subtotal</td><td>$' + subtotal.toFixed(2) + '</td></tr>');
-		$('#lineitems').append('<tr><td>Tax</td><td>$' + tax.toFixed(2) + '</td></tr>');
+		$('#lineitems').append('<tr><td>Subtotal</td><td>$' + subtotal.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '</td></tr>');
+		$('#lineitems').append('<tr><td>Tax</td><td>$' + tax.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '</td></tr>');
 
 		$('#lineitems').append('<tr id="trspacer"></tr>');
 
-		$('#lineitems').append('<tr><td>Total</td><td>$' + total.toFixed(2) + '</td></tr>');
+		$('#lineitems').append('<tr><td>Total</td><td>$' + total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '</td></tr>');
 	}
 	else
 	{	

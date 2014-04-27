@@ -25,6 +25,8 @@ class Booking extends MY_Controller {
 
     $this->load->library('form_validation');
 
+    $this->load->model('client_expert');
+
     $this->form_validation->set_rules('whoname', 'Contact Name', 'required|trim|xss_clean');
     $this->form_validation->set_rules('email', 'E-Mail Address', 'required|valid_email|trim|xss_clean');
     $this->form_validation->set_rules('address', 'Street Address', 'required|trim|xss_clean');
@@ -48,6 +50,9 @@ class Booking extends MY_Controller {
     }
     else
     {
+
+
+      $this->Client_expert->add_booking($_POST);
       $this->loadview('bookingsuccess', $this->data);
     }
 	}
