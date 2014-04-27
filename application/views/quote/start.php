@@ -29,26 +29,40 @@
 
   </div>
 
-  <div class="quote-stage stage2" id="stage2-residential" style="display: none;">
+  <div class="quote-stage stage2 whitepage" id="stage2-residential" style="display: none;">
     <h2 class="leadcentre lotsoftext">Ok! Now its time to figure out what you need...</h1>
 
     <div class="well"><p>On the next step we will ask you for details on what you need done. If you have a smart phone or tablet, you can proceed
-    to the next step on your device while walking around, we're mobile friendly! Please have a rough idea of:</p></div>
+    to the next step on your device while walking around, we're mobile friendly!</p>
 
-    <ul class="protips">
-      <li><p>If you need Window cleaning, how many window panes you have and roughly how big they are. A window pane a continuous peice
-        of glass that needs cleaning. Count windows you need cleaned inside and out.</p>
+    <p>To estimate your quote, lets count how many window panes you have. Here, lets figure that out.</p></div>
 
-        <img src="<?=base_url() ?>assets/img/windowdiagram.png">
-      </li>
+    <p id="estimatequote"><i class="fa fa-bullhorn bigfa"></i> We have two window pane sizes that we need to measure. Panes larger than 6" x 6" (about 15cm x 15cm) and panes smaller than that. If your windows are not squareish, than use a surface area of 36" squared, or 225 cm squared. </p>
 
+    <p id="notapemeasure"><img src="<?=base_url() ?>assets/img/notapemeasure.png" alt="No tape measure!">Don't get out the tape measure! Lets look at some examples.</p>
 
-      <li>Ledges and Sils? Collect a rough length of each ledge and sil that needs cleaning.</li>
+    <div class="quoteexample">
+      <img src="<?=base_url() ?>assets/img/size-example1.jpg" class="sizingexample">
+      <p>This window has two window panes, both are "large".</p>
+    </div>
 
-      <li>Removing or replacing storm windows? Get a rough size and count.</li>
-    </ul>
+    <div class="quoteexample">
+      <img src="<?=base_url() ?>assets/img/size-example2.jpg" class="sizingexample">
 
-    <button class="btn btn-large btn-primary nav-justified stage2-link" id="residential2-link" onclick="window.location.hash='#step3/residential';">Okay, Lets do this!</button>
+      <p>This window has four window panes, two "large" and two "small". </p>
+    </div>
+
+    <div class="quoteexample">
+      <img src="<?=base_url() ?>assets/img/size-example3.jpg" class="sizingexample">
+
+      <p>Can you guess this one? There are three "large" panes.</p>
+    </div>
+
+    <div class="well">
+      <p>On the next screen, we will ask you how many of each size of window you have. Remember, sills and screens are included in your price!</p>
+    </div>
+
+    <button class="btn btn-large btn-primary nav-justified stage2-link" id="residential2-link" style="margin-bottom: 20px;" onclick="window.location.hash='#step3/residential';">Okay, Lets do this!</button>
 
 
   </div>
@@ -59,7 +73,7 @@
     <h2 class="leadcentre lotsoftext">Great! Tell us what you need!</h1>
 
     <div class="row">
-      <div class="col-md-4 col-parent">
+      <div class="col-md-6 col-parent">
         <div class="quote-col-leader">
           Indoor Cleaning
         </div>
@@ -102,7 +116,7 @@
 
       </div>
 
-      <div class="col-md-4 col-parent">
+      <div class="col-md-6 col-parent">
         <div class="quote-col-leader">
           Outdoor Cleaning
         </div>
@@ -162,17 +176,6 @@
       </div>
 
 
-
-      <div class="col-md-4 col-parent">
-        <div class="quote-col-leader">
-          Installation and Teardown
-        </div>
-
-        <div class="quote-col">
-          
-        </div>
-
-      </div>
 
     </div>
     

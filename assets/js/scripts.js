@@ -79,6 +79,7 @@ $('#skippostalcodelookup').click(function() {
   $('#postalcodeerror').fadeOut();
   $('#postalcodeinput').fadeOut();
   $('#getstartedvalid').fadeIn();
+  $('#getstartedinvalid').hide();
 
 });
 
