@@ -846,6 +846,13 @@ input[type='text'],input[type='number'],select,textarea
   width: 70%;
 }
 
+#calculatebutton
+{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .bigfa
 {
   float: left;
@@ -861,7 +868,7 @@ input[type='text'],input[type='number'],select,textarea
 
 #trspacer
 {
-  height: 30px;
+  height: 20px;
 }
 
 /* Quote Cell */

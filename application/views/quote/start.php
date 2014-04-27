@@ -102,11 +102,11 @@
             <p class="kindasmall">Under 6x6"</p>
           </div>
           <div class="input">
-            <input type="text" id="input-indoor-regularpane">
+            <input type="text" id="input-single-smallpane">
           </div>
           <div class="inputadjuster">
-            <button class="btn btn-xs btn-primary up" data-attachedinput="input-indoor-regularpane"><span class="glyphicon glyphicon-plus"></span></button>
-            <button class="btn btn-xs btn-danger down" data-attachedinput="input-indoor-regularpane"><span class="glyphicon glyphicon-minus"></span></button>
+            <button class="btn btn-xs btn-primary up" data-attachedinput="input-single-smallpane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs btn-danger down" data-attachedinput="input-single-smallpane"><span class="glyphicon glyphicon-minus"></span></button>
           </div>
 
         </div>
@@ -120,11 +120,11 @@
             <p class="kindasmall">Over 6x6"</p>
           </div>
           <div class="input">
-            <input type="text" id="input-indoor-superpane">
+            <input type="text" id="input-single-largepane">
           </div>
           <div class="inputadjuster">
-            <button class="btn btn-xs btn-primary up" data-attachedinput="input-indoor-superpane"><span class="glyphicon glyphicon-plus"></span></button>
-            <button class="btn btn-xs btn-danger down" data-attachedinput="input-indoor-superpane"><span class="glyphicon glyphicon-minus"></span></button>
+            <button class="btn btn-xs btn-primary up" data-attachedinput="input-single-largepane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs btn-danger down" data-attachedinput="input-single-largepane"><span class="glyphicon glyphicon-minus"></span></button>
           </div>
 
         </div>
@@ -149,11 +149,11 @@
             <p class="kindasmall">Under 6x6"</p>
           </div>
           <div class="input">
-            <input type="text" id="input-outdoor-regularpane">
+            <input type="text" id="input-complete-smallpane">
           </div>
           <div class="inputadjuster">
-            <button class="btn btn-xs btn-primary up" data-attachedinput="input-outdoor-regularpane"><span class="glyphicon glyphicon-plus"></span></button>
-            <button class="btn btn-xs btn-danger down" data-attachedinput="input-outdoor-regularpane"><span class="glyphicon glyphicon-minus"></span></button>
+            <button class="btn btn-xs btn-primary up" data-attachedinput="input-complete-smallpane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs btn-danger down" data-attachedinput="input-complete-smallpane"><span class="glyphicon glyphicon-minus"></span></button>
           </div>
 
         </div>
@@ -167,11 +167,11 @@
             <p class="kindasmall">Over 6x6"</p>
           </div>
           <div class="input">
-            <input type="text" id="input-outdoor-superpane">
+            <input type="text" id="input-complete-largepane">
           </div>
           <div class="inputadjuster">
-            <button class="btn btn-xs btn-primary up" data-attachedinput="input-outdoor-superpane"><span class="glyphicon glyphicon-plus"></span></button>
-            <button class="btn btn-xs btn-danger down" data-attachedinput="input-outdoor-superpane"><span class="glyphicon glyphicon-minus"></span></button>
+            <button class="btn btn-xs btn-primary up" data-attachedinput="input-complete-largepane"><span class="glyphicon glyphicon-plus"></span></button>
+            <button class="btn btn-xs btn-danger down" data-attachedinput="input-complete-largepane"><span class="glyphicon glyphicon-minus"></span></button>
           </div>
 
         </div>
@@ -183,6 +183,8 @@
           Quote Estimate
         </div>
 
+        <button class="btn" id="calculatebutton"><i class="fa fa-cog"></i> Calculate</button>
+
         <table id="tally">
           <thead>
             <tr>
@@ -190,18 +192,10 @@
               <th>Count</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>Sample Item 1</td>
-              <td>5</td>
-            </tr>
+          <tbody id="lineitems">
+
 
             <tr id="trspacer">
-            </tr>
-
-            <tr>
-              <td>Total</td>
-              <td>$333.00</td>
             </tr>
 
 
@@ -211,6 +205,25 @@
 
       </div>
     </div>
+
+    <script>
+      var wc = {
+        single : {
+          small: 2,
+          large: 5
+        },
+
+        complete : {
+          small: 4,
+          large: 8
+        },
+
+        tax : 0.05
+
+      };
+
+
+    </script>
 
     <div id="quotebookbutton">
       <a href="<?=base_url() ?>booking" class="btn btn-primary">Book Now</a>
