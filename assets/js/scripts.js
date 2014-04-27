@@ -1,10 +1,10 @@
 // boot
 $(document).ready(function(){
-    $(".rslides").responsiveSlides({
+    /*$(".rslides").responsiveSlides({
     	pause: true,
     	maxwidth: "1200px"
 
-    });
+    });*/
 
     $('#openmobilemenu').sidr({
 

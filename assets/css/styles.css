@@ -19,6 +19,7 @@ h1
   font-family: 'ComicNeue', serif;
   padding-top: 30px;
   font-size: 5.0em;
+  text-align: center
 }
 
 input[type='text'],input[type='number'],select,textarea 
@@ -401,50 +402,53 @@ input[type='text'],input[type='number'],select,textarea
 {
   padding-top: 50px;
   padding-bottom: 80px;
+  width: 100%;
+  margin-left: auto;
+  position: relative;
+  overflow: hidden;
 }
+
 
 .tallman > .leader
 {
   font-size: 2.0em;
   text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
 }
 
 .tallman > .follower
 {
   color: #444444;
-  line-height: 24px;
+  line-height: 28px;
   font-family: arial, serif;
+  text-align: justify;
 
 }
 
 .tallman > img
 {
   display: block;
-  padding: 20px;
-  width: 180px;
-  height: 290px;
   margin: 0 auto;
+  width: 100%;
+
+  max-width: 800px;
+  max-height: 350px;
+  margin-left: auto;
 }
 
-.adjustleft > img
-{
-  margin-left:-30px;
-  width: 100% !important;
-
-}
 
 .tallman
 {
-  width: 90%;
-  padding: 10px;
-  height: 800px;
   background-color: #FFFFFF;
-  border-radius: 5px;
+
+
+  /*border-radius: 5px;
 
   -webkit-box-shadow: 10px 10px 46px 20px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 46px 20px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 46px 20px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 46px 20px rgba(0,0,0,0.75);*/
 
 }
 
@@ -958,6 +962,28 @@ input[type='text'],input[type='number'],select,textarea
   /*background-color: #FFFFFF;*/
   position: relative;
   width: 100%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  max-height: 500px;
+  overflow: none;
+}
+
+.slides > img
+{
+  width: 100%;
+
+  max-height: 500px;
+  overflow: none;
+}
+
+#headerfull
+{
+  display: block;
+}
+
+#headermobile
+{
+  display: none;
 }
 
 
@@ -993,7 +1019,7 @@ input[type='text'],input[type='number'],select,textarea
   display: block;
   height: auto;
   float: left;
-  width: 100%;
+  max-width: 100%;
   border: 0;
 }
 
@@ -1003,12 +1029,21 @@ input[type='text'],input[type='number'],select,textarea
   top: 20%;
   left: 0%;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.9);
+  /*background-color: rgba(255, 255, 255, 0.9);*/
   width: 30%;
   min-width: 200px;
-  height: 130px;
+  height: 150px;
   padding: 20px;
+  text-align: right;
 
+}
+
+#promobutton
+{
+  width: 200px;
+  background-color: #FFDB58;
+  color: #000000;
+  font-weight: bold;
 }
 
 .slideleadtext
@@ -1029,7 +1064,6 @@ input[type='text'],input[type='number'],select,textarea
   background-color: #FFDB58;
   padding: 2px;
   margin-top: 20px;
-  margin-bottom: -20px;
   display: none;
 
 }
@@ -1068,6 +1102,16 @@ input[type='text'],input[type='number'],select,textarea
     padding-top: 20px;
     font-size: 1.9em;
     font-weight: bold;
+  }
+
+  #headerfull
+  {
+    display: none;
+  }
+
+  #headermobile
+  {
+    display: block;
   }
 
   #mobilenavul, #mobilegreet
@@ -1345,6 +1389,11 @@ input[type='text'],input[type='number'],select,textarea
     height: inherit;
     margin-bottom: 40px;
 
+  }
+
+  .slidetext
+  {
+      top: 5%;
   }
 
   #commercialcore > #commercialbanner

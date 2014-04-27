@@ -1,6 +1,6 @@
 <div class="whitepage">
 
-	<p id="privacybanner">HDWindows respects your privacy both online and off. What does that mean? It means when you tell us about yourself and give us
+	<p id="privacybanner">HD Window Cleaning (HDWindows.ca) respects your privacy both online and off. What does that mean? It means when you tell us about yourself and give us
 	sensitive information like your phone number or e-mail address, you can trust us that those details won't end up in the hands
 	of spammers. It also means we value you as a customer more than we value selling your information. </p>
 
