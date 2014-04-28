@@ -26,6 +26,11 @@ $(document).ready(function(){
     }, 800);
   }
 
+  if($('#recaptcha_response_field').length > 0)
+  {
+    $('#recaptcha_response_field').attr('required', 'required');
+  }
+
 });
 
 
