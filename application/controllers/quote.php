@@ -27,4 +27,16 @@ class Quote extends MY_Controller {
 
 	}
 
+	public function memorizeQuoteType($type, $value)
+	{
+		$_SESSION['quotetype'][$type] = $value;
+
+	}
+
+	public function memorizeQuoteTotal($value)
+	{
+		$_SESSION['quotevalue'] = $value;
+
+	}
+
 }

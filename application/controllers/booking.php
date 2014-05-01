@@ -41,6 +41,7 @@ class Booking extends MY_Controller {
     $this->form_validation->set_rules('seconddatechoice-until', 'Second Date Choice (until)', 'xss_clean');
     $this->form_validation->set_rules('referral', 'Referral', 'xss_clean');
     $this->form_validation->set_rules('previousbook', 'Previously Booked', 'xss_clean');
+    $this->form_validation->set_rules('comment', 'Comment', 'xss_clean');
 
     $this->form_validation->set_error_delimiters('<div class="alert alert-danger"><p><strong><span class="glyphicon glyphicon-wrench superglyph"></span> Sorry, please check the following issues:</strong></p>', '</div>');
 
@@ -50,10 +51,16 @@ class Booking extends MY_Controller {
     }
     else
     {
-
-
-      $this->Client_expert->add_booking($_POST);
-      $this->loadview('bookingsuccess', $this->data);
+      if(array_key_exists("bookingkey", $_SESSION) && $_SESSION["bookingkey"] == hash('md5', json_encode($_POST)))
+      {
+        $this->loadview('booking', $this->data);
+      }
+      else
+      {
+        $this->Client_expert->add_booking($_POST);
+        $_SESSION["bookingkey"] = hash('md5', json_encode($_POST));
+        $this->loadview('bookingsuccess', $this->data);
+      }
     }
 	}
 

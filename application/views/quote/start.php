@@ -1,3 +1,4 @@
+  <?php print_r($_SESSION); ?>
   <div class="quote-stage stage1" id="stage1-welcome">
 
     <h2 class="leadcentre lotsoftext">Which of these choices best represents you?</h1>
@@ -116,7 +117,7 @@
             <p class="kindasmall">Under 6x6"</p>
           </div>
           <div class="input">
-            <input type="text" id="input-single-smallpane">
+            <input type="text" id="input-single-smallpane" class="quote-input">
           </div>
           <div class="inputadjuster">
             <button class="btn btn-xs btn-primary up" data-attachedinput="input-single-smallpane"><span class="glyphicon glyphicon-plus"></span></button>
@@ -134,7 +135,7 @@
             <p class="kindasmall">Over 6x6"</p>
           </div>
           <div class="input">
-            <input type="text" id="input-single-largepane">
+            <input type="text" id="input-single-largepane" class="quote-input">
           </div>
           <div class="inputadjuster">
             <button class="btn btn-xs btn-primary up" data-attachedinput="input-single-largepane"><span class="glyphicon glyphicon-plus"></span></button>
@@ -163,7 +164,7 @@
             <p class="kindasmall">Under 6x6"</p>
           </div>
           <div class="input">
-            <input type="text" id="input-complete-smallpane">
+            <input type="text" id="input-complete-smallpane" class="quote-input">
           </div>
           <div class="inputadjuster">
             <button class="btn btn-xs btn-primary up" data-attachedinput="input-complete-smallpane"><span class="glyphicon glyphicon-plus"></span></button>
@@ -181,7 +182,7 @@
             <p class="kindasmall">Over 6x6"</p>
           </div>
           <div class="input">
-            <input type="text" id="input-complete-largepane">
+            <input type="text" id="input-complete-largepane" class="quote-input">
           </div>
           <div class="inputadjuster">
             <button class="btn btn-xs btn-primary up" data-attachedinput="input-complete-largepane"><span class="glyphicon glyphicon-plus"></span></button>

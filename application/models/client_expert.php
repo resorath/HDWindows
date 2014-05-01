@@ -7,23 +7,36 @@ class Client_expert extends CI_Model
 		parent::__construct();
 	}
 
-	function add_booking($contactmodal)
+	function add_booking($bookingmodel)
 	{
 		// try to find an existing contact by phone + email
-		$contactmodal['phone'] = preg_replace("/[^0-9]/","",$contactmodal['phone']);
+		$bookingmodel['phone'] = preg_replace("/[^0-9]/","",$bookingmodel['phone']);
 
 		$q = "select `id` from `customer` where `phone` = ? and `email` = ?";
-		$result = $this->db->query($q, array($contactmodal['phone'], $contactmodal['email']));
+		$result = $this->db->query($q, array($bookingmodel['phone'], $bookingmodel['email']));
 		$customerid = null;
 
 		// should do something with `previousbook`?
-		$previousbook = $contactmodal['previousbook'];
+		$previousbook = $bookingmodel['previousbook'];
 
-		unset($contactmodal['previousbook']);
-		unset($contactmodal['submit']);
-		unset($contactmodal['id']);
+		unset($bookingmodel['previousbook']);
+		unset($bookingmodel['submit']);
+		unset($bookingmodel['id']);
 
-		$contactmodal['session'] = json_encode($_SERVER);
+
+		$contactmodal['firstdatechoice'] = $bookingmodel['firstdatechoice'];
+		$contactmodal['firstdatechoice-until'] = $bookingmodel['firstdatechoice-until'];
+		$contactmodal['seconddatechoice'] = $bookingmodel['seconddatechoice'];
+		@$contactmodal['seconddatechoice-until'] = $bookingmodel['seconddatechoice-until'];
+		$contactmodal['comment'] = $bookingmodel['comment'];
+
+		unset($bookingmodel['firstdatechoice']);
+		unset($bookingmodel['firstdatechoice-until']);
+		unset($bookingmodel['seconddatechoice']);
+		unset($bookingmodel['seconddatechoice-until']);
+		unset($bookingmodel['comment']);
+
+
 
 		if($result->num_rows() > 0)
 		{
@@ -32,9 +45,17 @@ class Client_expert extends CI_Model
 		}
 		else
 		{
-			$this->db->insert('customer', $contactmodal);
+			$this->db->insert('customer', $bookingmodel);
 			$customerid = $this->db->insert_id();
 		}
+
+
+
+		$contactmodal['session'] = json_encode($_SERVER);
+		$contactmodal['quote_type'] = $_SESSION['bookingtype'];
+		$contactmodal['quote_rows'] = json_encode($_SESSION['quotetype']);
+		$contactmodal['quote_total'] = $_SESSION['quotevalue'];
+
 
 		$contactmodal['customerid'] = $customerid;
 

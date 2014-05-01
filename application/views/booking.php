@@ -161,7 +161,7 @@
         <div class="control-group">
           <label class="control-label" for="comment">Comment / Special Requests</label>
           <div class="controls">                     
-            <textarea id="comment" name="comment" placeholder="Type anything...!" value="<?=set_value('comment'); ?>"></textarea>
+            <textarea id="comment" name="comment" placeholder="Type anything...!"><?=set_value('comment'); ?></textarea>
           </div>
         </div>
       </div>

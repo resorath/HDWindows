@@ -34,6 +34,11 @@ $('.stage1-link').click(function(){
 });
 
 
+$('.quote-input').change(function() {
+	var type = $(this).attr('id').split('-');
+
+	$.ajax({url: config.base + 'quote/memorizeQuoteType/' + type[1] + type[2] + "/" + $(this).val()});	
+});
 
 $('.inputadjuster > .up').click(function() {
 	var val = $('#' + $(this).data('attachedinput')).val();
@@ -43,6 +48,9 @@ $('.inputadjuster > .up').click(function() {
 		val++;
 
 	$('#' + $(this).data('attachedinput')).val(val);
+	
+	var type = $(this).data('attachedinput').split('-');
+	$.ajax({url: config.base + 'quote/memorizeQuoteType/' + type[1] + type[2] + "/" + val});	
 });
 
 $('.inputadjuster > .down').click(function() {
@@ -56,6 +64,9 @@ $('.inputadjuster > .down').click(function() {
 		val = '';
 
 	$('#' + $(this).data('attachedinput')).val(val);
+
+	var type = $(this).data('attachedinput').split('-');
+	$.ajax({url: config.base + 'quote/memorizeQuoteType/' + type[1] + type[2] + "/" + val});	
 });
 
 
@@ -74,6 +85,7 @@ $(".slideinput").on('slide', function(slideEvt) {
 	else
 		$('#' + $(this).data('attachedinput')).val('');
 });
+
 
 $('#calculatebutton').click(function(){
 	var ssp = $('#input-single-smallpane').val();
@@ -107,6 +119,8 @@ $('#calculatebutton').click(function(){
 		$('#lineitems').append('<tr id="trspacer"></tr>');
 
 		$('#lineitems').append('<tr><td>Total</td><td>$' + total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '</td></tr>');
+	
+		$.ajax({url: config.base + 'quote/memorizeQuoteTotal/' + total.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,')});	
 	}
 	else
 	{	
