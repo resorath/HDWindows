@@ -6,6 +6,8 @@ $(document).ready(function(){
 
     });*/
 
+  $.webshims.polyfill('forms');
+
     $('#openmobilemenu').sidr({
 
     });
@@ -31,6 +33,50 @@ $(document).ready(function(){
     $('#recaptcha_response_field').attr('required', 'required');
   }
 
+  // check if position: fixed is supported, and if not, removed fixed positions
+  if(!supportFixedPositions())
+  {
+    $('#commercialservices').css('background-attachment', 'scroll');
+  }
+
+
+  if($('#referral').length > 0)
+    $('#referral').select2();
+
+  if($('.stage1-link').length > 0)
+    $('.windowretainer').fadeOut(1000);
+
+  if($('#howitworks').length > 0)
+    $('#howitworksa').tooltip();
+
+  if($('.form_datetime').length > 0)
+  {
+    $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'})
+    .on('changeDate', function(ev){
+      $('.form_datetime').datetimepicker('hide');
+      var trigger = '#' + ev.target.id;
+      $(trigger + '-until').removeAttr('disabled');
+      $(trigger + '-until').attr('placeholder', "Click/Tap to select");
+      var selecteddatetime = $(trigger).val().split(' ');
+      var selectedtime = selecteddatetime[1];
+
+
+      $(trigger + '-until').timepicker({ 
+        'timeFormat': 'H:i',
+        'step': 30,
+        'maxTime': '11:30pm',
+        'minTime': selectedtime,
+        'showDuration': true
+
+
+      });
+
+      $(trigger + '-until').focus();
+    })
+  }
+
+
+
 });
 
 
@@ -50,15 +96,6 @@ $(window).stellar({
 	responsive: true
 });
 
-$(document).ready()
-{
-	// check if position: fixed is supported, and if not, removed fixed positions
-	if(!supportFixedPositions())
-	{
-		$('#commercialservices').css('background-attachment', 'scroll');
-	}
-
-}
 
 $('#mobilenavul > li > a').click(function() {
   $.sidr('close');
@@ -109,44 +146,9 @@ $('#postalcodeprivacyanchor').click(function() {
 
 });
 
-$('.stage1-link').ready(function() {
-  $('.windowretainer').fadeOut(1000);
-
-});
-
-$('#howitworks').ready(function() {
-  $('#howitworksa').tooltip()
-});
-
-$('#referral').ready(function() {
-  $('#referral').select2();
-
-});
-
-$('.form_datetime').ready(function() {
-  $(".form_datetime").datetimepicker({format: 'yyyy-mm-dd hh:ii'})
-  .on('changeDate', function(ev){
-    $('.form_datetime').datetimepicker('hide');
-    var trigger = '#' + ev.target.id;
-    $(trigger + '-until').removeAttr('disabled');
-    $(trigger + '-until').attr('placeholder', "Click/Tap to select");
-    var selecteddatetime = $(trigger).val().split(' ');
-    var selectedtime = selecteddatetime[1];
 
 
-    $(trigger + '-until').timepicker({ 
-      'timeFormat': 'H:i',
-      'step': 30,
-      'maxTime': '11:30pm',
-      'minTime': selectedtime,
-      'showDuration': true
 
-
-    });
-
-    $(trigger + '-until').focus();
-  })
-});
 
 $('#bookingform').ready(function() {
 

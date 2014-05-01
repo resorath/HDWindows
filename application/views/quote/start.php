@@ -1,16 +1,16 @@
-  <div class="quote-stage stage1" id="stage1">
+  <div class="quote-stage stage1" id="stage1-welcome">
 
     <h2 class="leadcentre lotsoftext">Which of these choices best represents you?</h1>
 
     <div class="row multichoice">
-      <a href="#step2/residential" class="stage1-link" id="residential-link">
+      <a href="#step2/measure" class="stage1-link" id="residential-link">
         <div class="col-md-3 quote-stage-1" id="residential">
           <div class="windowretainer"></div>
           <p class="lead">Residential</p>
-          <p class="follow">I own a typical house, townhouse, condo or apartment unit.</p>
+          <p class="follow">I own a house, townhouse, condo or apartment unit.</p>
         </div>
       </a>
-      <a href="#step2/lightcommercial" class="stage1-link" id="lightcommercial-link">
+      <a href="#step2/measure" class="stage1-link" id="lightcommercial-link">
         <div class="col-md-3 col-md-offset-1 quote-stage-1" id="lightcommercial">
           <div class="windowretainer"></div>
           <p class="lead">Light Commercial</p>
@@ -29,7 +29,7 @@
 
   </div>
 
-  <div class="quote-stage stage2 whitepage" id="stage2-residential" style="display: none;">
+  <div class="quote-stage stage2 whitepage" id="stage2-measure" style="display: none;">
     <h2 class="leadcentre lotsoftext ">Ok! Now its time to figure out what you need...</h2>
 
     <div class="well"><p>On the next step we will ask you for details on what you need done. If you have a smart phone or tablet, you can proceed
@@ -66,13 +66,27 @@
       <p>On the next screen, we will ask you how many of each size of window you have. Remember, sills and screens are included in your price!</p>
     </div>
 
-    <button class="btn btn-large btn-primary nav-justified stage2-link" id="residential2-link" style="margin-bottom: 20px;" onclick="window.location.hash='#step3/residential';">Okay, Lets do this!</button>
+    <button class="btn btn-large btn-primary nav-justified stage2-link" id="residential2-link" style="margin-bottom: 20px;" onclick="window.location.hash='#step3/quote';">Okay, Lets do this!</button>
+
+
+  </div>
+
+  <div class="quote-stage stage2 whitepage" id="stage2-commercial" style="display: none;">
+    <h2 class="leadcentre lotsoftext ">Hello!</h2>
+
+    <div class="well"><p>Thank you for your interest in HD Windows. Due to the diversity of commercial properties, we can not offer you a reliable instant quote online. </p>
+      <p>However, we would be more than happy to talk to you over the phone or book a meeting to discuss your needs. Please <a href="<?=base_url() ?>">contact us</a> to get started.
+
+      <div id="quotebookbutton">
+        <a href="<?=base_url() ?>contactus" class="btn btn-primary">Contact Us</a>
+      </div>
+    </div>
 
 
   </div>
 
 
-  <div class="quote-stage" id="stage3-residential">
+  <div class="quote-stage stage3" id="stage3-quote" style="display: none;">
 
     <h2 class="leadcentre lotsoftext">Great! Tell us what you need!</h2>
 

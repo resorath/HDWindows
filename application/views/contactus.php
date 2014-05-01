@@ -1,7 +1,10 @@
   <div class="well">
     <h2 class="leadcentre lotsoftext" id="introheader">Tell us how we can help</h2>
 
-    <div id="getpersonal">Want to get personal? Call us: +1(403)555-1234</div>
+    <div id="getpersonal">
+      <p>Want to get personal? Call us!</p>
+      <p class="callusp">+1(403)991-2772</p>
+    </div>
 
     <div class="row">
       <div class="col-md-6 col-md-offset-3">

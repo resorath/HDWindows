@@ -11,10 +11,13 @@ $('#residential2-link').click(function() {
 */
 
 // stage = 1, 2, etc. type = residential, commercial, lightcommercial
-function loadview(stage, type)
+function loadview(stage, type, dofade)
 {
-	for(var i = 1; i < stage; i++)
-		$('.stage' + i).fadeOut();
+	dofade = (typeof dofade === "undefined") ? true : false;
+
+	if(dofade)
+		for(var i = 1; i <= 3; i++)
+			$('.stage' + i).fadeOut();
 
 	console.log('#stage'+stage+'-'+type);
 	$('#stage'+stage+'-'+type).fadeIn();
@@ -22,6 +25,13 @@ function loadview(stage, type)
 	$('body').scrollTop(0);
 
 }
+
+$('.stage1-link').click(function(){
+	var type = $(this).attr('id').split('-');
+
+	$.ajax({url: config.base + 'quote/memorizeBookingType/' + type[0]});
+
+});
 
 
 
@@ -115,12 +125,15 @@ $(window).hashchange( function(){
   		loadview('2', type);
 
   }
-
-  if(hash.indexOf("#step3/") == 0)
+  else if(hash.indexOf("#step3/") == 0)
   {
   		var type = hash.substring(7);
   		loadview('3', type);
 
+  }
+  else
+  {
+  		loadview('1', 'welcome');
   }
 
  });
@@ -132,15 +145,15 @@ var hash = window.location.hash;
 if(hash.indexOf("#step2/") == 0)
 {
 	var type = hash.substring(7);
-	loadview('2', 'residential');
+	loadview('2', type);
 
 }
 else if(hash.indexOf("#step3/") == 0)
 {
 	var type = hash.substring(7);
-	loadview('3', 'residential');
+	loadview('3', type);
 }
 else
 {
-	loadview('1', '');
+	loadview('1', 'welcome', false);
 }

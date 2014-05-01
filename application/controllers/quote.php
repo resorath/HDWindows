@@ -19,4 +19,12 @@ class Quote extends MY_Controller {
            
 	}
 
+	public function memorizeBookingType($type)
+	{
+		// this should only be residential, lightcommercial or commercial
+		if($type == "residential" || $type == "lightcommercial" || $type == "commercial")
+			$_SESSION['bookingtype'] = $type;
+
+	}
+
 }

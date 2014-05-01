@@ -49,6 +49,7 @@
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       <strong>Thanks for coming back!</strong>
       <p>To make your return visit easier, you can click the link in the e-mail you got form us last time to book again! Don't have that e-mail anymore? No problem, just fill the form out again and we will figure things out. </p>
+      <p><i class="fa fa-repeat"></i> Let us know if you want to set up a recurring schedule when we come on site, makes life a little easier!</p>
     </div>
 
     <div class="row">
