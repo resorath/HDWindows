@@ -1,4 +1,3 @@
-  <?php print_r($_SESSION); ?>
   <div class="quote-stage stage1" id="stage1-welcome">
 
     <h2 class="leadcentre lotsoftext">Which of these choices best represents you?</h1>
