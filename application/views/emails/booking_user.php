@@ -4,7 +4,7 @@
 	<title>HDWindows.ca Booking Confirmation</title>
 </head>
 <body bgcolor="#d2EFFF">
-<div style="background-color: #d2EFFF; width=100% height=100%; padding: 10px;">
+<div style="background-color: #d2EFFF; width: 100% height: 100%; padding: 10px;">
 <h1 style="font-family: Verdana, sans-serif;">HD Window Cleaners of Calgary</h1>
 
 <h3 style="font-family: Verdana, sans-serif;">Thank you for your booking!</h3>
