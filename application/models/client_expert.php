@@ -43,8 +43,8 @@ class Client_expert extends CI_Model
 		$emailmodel['firstdatechoice-until'] = $bookingmodel['firstdatechoice-until'];
 		$emailmodel['seconddatechoice'] = $bookingmodel['seconddatechoice'];
 		@$emailmodel['seconddatechoice-until'] = $bookingmodel['seconddatechoice-until'];
-		$emailmodel['quote_type'] = $_SESSION['bookingtype'];
-		$emailmodel['quote_total'] = $_SESSION['quotevalue'];
+		@$emailmodel['quote_type'] = $_SESSION['bookingtype'];
+		@$emailmodel['quote_total'] = $_SESSION['quotevalue'];
 		$emailmodel['comment'] = $bookingmodel['comment'];
 
 
@@ -70,9 +70,9 @@ class Client_expert extends CI_Model
 
 
 		$contactmodal['session'] = json_encode($_SERVER);
-		$contactmodal['quote_type'] = $_SESSION['bookingtype'];
-		$contactmodal['quote_rows'] = json_encode($_SESSION['quotetype']);
-		$contactmodal['quote_total'] = $_SESSION['quotevalue'];
+		@$contactmodal['quote_type'] = $_SESSION['bookingtype'];
+		@$contactmodal['quote_rows'] = json_encode($_SESSION['quotetype']);
+		@$contactmodal['quote_total'] = $_SESSION['quotevalue'];
 
 
 		$contactmodal['customerid'] = $customerid;
