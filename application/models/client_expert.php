@@ -89,6 +89,11 @@ class Client_expert extends CI_Model
 		$this->load->library('parser');
 		$this->load->library('email');
 
+		$config['useragent'] = 'HDWindows.ca';
+		$config['mailtype'] = 'text';
+
+		$this->email->initialize($config);
+
 		$mailbody = $this->parser->parse('emails/booking', $emailmodel, TRUE);
 
 		$this->email->from($emailmodel['email'], $emailmodel['whoname'] . " (via HDWindows.ca Booking Form)");
