@@ -2,7 +2,7 @@ This is an automated message from the Friendly HDWindows.ca Booking Robot.
 
 Hello!
 
-I received a booking request from {name} at {time}
+I received a booking request from {whoname} at {time}
 
 Customer Information:
 
@@ -39,7 +39,7 @@ Quote Total: {quote_total}
 
 ...
 
-To reply, please contact {name} using the email or phone number above. 
+To reply, please contact {whoname} using the email or phone number above. 
 
 Have an excellent day.
 

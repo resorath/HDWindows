@@ -10,6 +10,7 @@ class Client_expert extends CI_Model
 	function add_booking($bookingmodel)
 	{
 		// try to find an existing contact by phone + email
+		$emailmodel['phone'] = $bookingmodel['phone'];
 		$bookingmodel['phone'] = preg_replace("/[^0-9]/","",$bookingmodel['phone']);
 
 		$q = "select `id` from `customer` where `phone` = ? and `email` = ?";
@@ -33,6 +34,7 @@ class Client_expert extends CI_Model
 		$contactmodal['comment'] = $bookingmodel['comment'];
 
 		$emailmodel['title'] = $bookingmodel['title'];
+		$emailmodel['time'] = date('r');
 		$emailmodel['whoname'] = $bookingmodel['whoname'];
 		$emailmodel['phone'] = $bookingmodel['phone'];
 		$emailmodel['email'] = $bookingmodel['email'];
@@ -46,6 +48,7 @@ class Client_expert extends CI_Model
 		@$emailmodel['quote_type'] = $_SESSION['bookingtype'];
 		@$emailmodel['quote_total'] = $_SESSION['quotevalue'];
 		$emailmodel['comment'] = $bookingmodel['comment'];
+		$emailmodel['referral'] = $bookingmodel['referral'];
 
 
 		unset($bookingmodel['firstdatechoice']);
@@ -85,7 +88,6 @@ class Client_expert extends CI_Model
 		// Send the email to the owner
 		$this->load->library('parser');
 		$this->load->library('email');
-
 
 		$mailbody = $this->parser->parse('emails/booking', $emailmodel, TRUE);
 
