@@ -232,7 +232,9 @@
           large: 8
         },
 
-        tax : 0.05
+        tax : 0.05,
+        discount: 0.15,
+        discountreason: "Spring Sale"
 
       };
 

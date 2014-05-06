@@ -105,6 +105,8 @@ $('#calculatebutton').click(function(){
 	if(clp != ''){$('#lineitems').append('<tr><td>Complete Small Pane</td><td>' + clp + '</td></tr>');}
 
 	var subtotal = (ssp * wc.single.small) + (slp * wc.single.large) + (csp * wc.complete.small) + (clp * wc.complete.large);
+	var discount = subtotal * wc.discount;
+	subtotal -= discount;
 	var tax = subtotal * wc.tax;
 	total = subtotal + tax;
 
@@ -114,6 +116,11 @@ $('#calculatebutton').click(function(){
 		$('#lineitems').append('<tr id="trspacer"></tr>');
 
 		$('#lineitems').append('<tr><td>Subtotal</td><td>$' + subtotal.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '</td></tr>');
+
+		if(discount > 0)
+			$('#lineitems').append('<tr><td>' + wc.discountreason + ' Discount</td><td>$-' + discount.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '</td></tr>');
+
+
 		$('#lineitems').append('<tr><td>Tax</td><td>$' + tax.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + '</td></tr>');
 
 		$('#lineitems').append('<tr id="trspacer"></tr>');
