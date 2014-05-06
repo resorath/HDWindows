@@ -106,9 +106,8 @@ $('#calculatebutton').click(function(){
 
 	var subtotal = (ssp * wc.single.small) + (slp * wc.single.large) + (csp * wc.complete.small) + (clp * wc.complete.large);
 	var discount = subtotal * wc.discount;
-	subtotal -= discount;
-	var tax = subtotal * wc.tax;
-	total = subtotal + tax;
+	var tax = (subtotal - discount) * wc.tax;
+	total = subtotal - discount + tax;
 
 
 	if(total > 0)
