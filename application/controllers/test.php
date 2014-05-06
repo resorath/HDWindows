@@ -21,4 +21,9 @@ class Test extends MY_Controller {
 	{
 		$this->load->view('test/hamburger');
 	}
+
+	public function emailmessage()
+	{
+		$this->load->view('emails/booking_user');
+	}
 }
