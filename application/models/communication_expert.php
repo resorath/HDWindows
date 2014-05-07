@@ -62,7 +62,7 @@ class Communication_expert extends CI_Model
 			'contact_email' => $contactdetails,
 			'contact_time' => date('r'),
 			'contact_message' => $message,
-			'contact_referer' => $_SERVER['HTTP_USER_AGENT'],
+			'contact_referer' => $_SESSION['ref'],
 			'contact_user_agent' => $_SERVER['HTTP_USER_AGENT'],
 			'contact_remote_addr' => $_SERVER['REMOTE_ADDR'],
 			'contact_session' => json_encode($_SESSION)
