@@ -27,7 +27,7 @@
 			</div>
 			<div class="col-sm-4">
 				<div class="smallmultichoice">
-					<a href="<?=base_url() ?>problem/email">
+					<a href="<?=base_url() ?>problem/website?e">
 						<div>
 							<p class="hugeicon"><i class="fa fa-envelope-o"></i></p>
 							<p>I have a problem with an E-Mail I received</p>

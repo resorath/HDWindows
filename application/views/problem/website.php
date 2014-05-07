@@ -1,5 +1,10 @@
 <div class="container">
 	<div class="well">
+		<?php if(array_key_exists("e", $_GET)): ?>
+	          <div class="alert alert-danger alert-big">
+	            <i class="fa fa-envelope-o"></i> The best way to report e-mails is using the technical form below. We will get in touch with you. 
+	          </div>
+	    <?php endif ?>
 
 		<h2 class="leadcentre lotsoftext" id="introheader">Thanks for helping make things better!</h2>
 		<div class="alert alert-info">
