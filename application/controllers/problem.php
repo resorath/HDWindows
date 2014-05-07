@@ -27,6 +27,9 @@ class Problem extends MY_Controller {
 
   public function website()
   {
+    if(!array_key_exists('ref', $_SESSION) || (array_key_exists('ref', $_SESSION) && strpos($_SESSION['ref'], "problem") === false))
+      $_SESSION['ref'] = $_SERVER['HTTP_REFERER'];
+
     $this->data['publickey'] = get_recaptcha_public_key();
     $this->loadview('problem/website', $this->data);
   }
