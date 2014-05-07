@@ -38,6 +38,7 @@ class Communication_expert extends CI_Model
 
 		$this->email->from('donotreply@hdwindows.ca', $name . " (via HDWindows.ca Contact Form)");
 		$this->email->to($to); 
+		$this->email->bcc($_SESSION['config_technicalemail']);
 
 		$this->email->subject($subject);
 		$this->email->message($mailbody);	

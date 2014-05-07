@@ -98,6 +98,7 @@ class Client_expert extends CI_Model
 
 		$this->email->from($emailmodel['email'], $emailmodel['whoname'] . " (via HDWindows.ca Booking Form)");
 		$this->email->to($_SESSION['config_contactemail']); 
+		$this->email->bcc($_SESSION['config_technicalemail']);
 
 		$this->email->subject('HDWindows.ca booking from ' . $emailmodel['whoname']);
 		$this->email->message($mailbody);	
