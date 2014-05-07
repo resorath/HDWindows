@@ -14,10 +14,17 @@ class Communication_expert extends CI_Model
 		return $this->db->insert_id();
 	}
 
-	function send_message_email($name, $contactdetails, $message, $id)
+	function send_message_email($name, $contactdetails, $message, $id, $to = NULL, $subject = NULL)
 	{
 		$this->load->library('parser');
 		$this->load->library('email');
+
+		if(is_null($to))
+			$to = $_SESSION['config_contactemail'];
+
+		if(is_null($subject))
+			$subject = "HDWindows.ca query from " . $name;
+
 
 		$data = array(
 			'contact_name' => $name,
@@ -30,9 +37,9 @@ class Communication_expert extends CI_Model
 		$mailbody = $this->parser->parse('emails/contactus', $data, TRUE);
 
 		$this->email->from('donotreply@hdwindows.ca', $name . " (via HDWindows.ca Contact Form)");
-		$this->email->to($_SESSION['config_contactemail']); 
+		$this->email->to($to); 
 
-		$this->email->subject('HDWindows.ca query from ' . $name);
+		$this->email->subject($subject);
 		$this->email->message($mailbody);	
 
 		$this->email->send();
@@ -40,6 +47,39 @@ class Communication_expert extends CI_Model
 
 	}
 
+
+	function send_error_email($contactdetails, $message)
+	{
+		$this->load->library('parser');
+		$this->load->library('email');
+
+		$to = $_SESSION['config_technicalemail'];
+
+		$subject = "HDWindows.ca error report";
+
+
+		$data = array(
+			'contact_email' => $contactdetails,
+			'contact_time' => date('r'),
+			'contact_message' => $message,
+			'contact_referer' => $_SERVER['HTTP_USER_AGENT'],
+			'contact_user_agent' => $_SERVER['HTTP_USER_AGENT'],
+			'contact_remote_addr' => $_SERVER['REMOTE_ADDR'],
+			'contact_session' => json_encode($_SESSION)
+			);
+
+		$mailbody = $this->parser->parse('emails/error_report', $data, TRUE);
+
+		$this->email->from('donotreply@hdwindows.ca', "HDWindows.ca Error Reporting Bot");
+		$this->email->to($to); 
+
+		$this->email->subject($subject);
+		$this->email->message($mailbody);	
+
+		$this->email->send();
+
+
+	}
 
 
 }

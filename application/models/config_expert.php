@@ -15,6 +15,7 @@ class Config_expert extends CI_Model
 
 		$_SESSION['config_contactemail'] = $row->contactemail;
 		$_SESSION['config_contactphone'] = $row->contactphone;
+		$_SESSION['config_technicalemail'] = $row->technicalemail;
 
 	}
 

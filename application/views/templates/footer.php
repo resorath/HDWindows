@@ -4,7 +4,7 @@
       <ul id="footernav">
         <li><a href="<?=base_url() ?>privacypolicy">Privacy Policy</a></li>
         <li><a href="<?=base_url() ?>contactus">Contact Us</a></li>
-        <li><a href="#">Report a Problem</a></li>
+        <li><a href="<?=base_url() ?>problem">Report a Problem</a></li>
 
       </ul>
     </div>

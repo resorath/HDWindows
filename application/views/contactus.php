@@ -1,9 +1,15 @@
   <div class="well">
+    <?php if(array_key_exists("p", $_GET)): ?>
+          <div class="alert alert-info alert-big">
+            <i class="fa fa-wrench"></i> The best way to resolve issues with work done on-site is to contact us directly. Please give us a call or send us a note below. 
+          </div>
+    <?php endif ?>
+
     <h2 class="leadcentre lotsoftext" id="introheader">Tell us how we can help</h2>
 
     <div id="getpersonal">
       <p>Want to get personal? Call us!</p>
-      <p class="callusp">+1(403)991-2772</p>
+      <p class="callusp"><?=$_SESSION['config_contactphone'] ?></p>
     </div>
 
     <div class="row">

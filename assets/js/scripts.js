@@ -33,6 +33,16 @@ $(document).ready(function(){
     $('#recaptcha_response_field').attr('required', 'required');
   }
 
+  if($('#cogspin').length> 0)
+  {
+    var angle = 0;
+    setInterval(function(){
+          angle-=0.03;
+         $("#cogspin").rotate(angle);
+    },10);
+
+  }
+
   // check if position: fixed is supported, and if not, removed fixed positions
   if(!supportFixedPositions())
   {
@@ -141,8 +151,8 @@ $('#skippostalcodelookup').click(function() {
 
 });
 
-$('#postalcodeprivacyanchor').click(function() {
-  $('#postalcodeprivacy').fadeIn();
+$('.protipanchor').click(function() {
+  $('.protip').fadeIn();
 
 });
 

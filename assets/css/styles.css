@@ -674,6 +674,13 @@ input[type='text'],input[type='number'],select,textarea
   margin-right: 16px; 
 }
 
+#cogspin
+{
+  width: 40%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 #howitworks > p
 {
   font-size: 1.4em;
@@ -812,6 +819,35 @@ input[type='text'],input[type='number'],select,textarea
   background-color: #009999;
 }
 
+.smallmultichoice
+{
+  padding: 10px;
+  background-color: #FFDDDD;
+  margin-top: 30px;
+  border: 8px #FFDDDD solid;
+}
+
+.smallmultichoice a
+{
+  text-align: center;
+  color: black;
+}
+
+.smallmultichoice:hover
+{
+  background: none;
+  border: 8px pink solid;
+}
+
+#reporttable td, th
+{
+  padding: 10px;
+}
+
+.hugeicon
+{
+  font-size: 5.0em;
+}
 
 .quote-col-leader
 {
@@ -1220,6 +1256,10 @@ input[type='text'],input[type='number'],select,textarea
 
 }
 
+.alert-big
+{
+  font-size: 1.8em;
+}
 
 /* END Front page slide control */
 
@@ -1247,6 +1287,11 @@ input[type='text'],input[type='number'],select,textarea
     padding-top: 20px;
     font-size: 1.9em;
     font-weight: bold;
+  }
+
+  .alert-big
+  {
+    font-size: 1.0em;
   }
 
   #headerfull
@@ -1550,6 +1595,11 @@ input[type='text'],input[type='number'],select,textarea
 
   }
 
+  .leadcentre
+  {
+    font-size: 2.5em;
+  }
+
   .slidetext
   {
       top: 5%;
@@ -1566,11 +1616,10 @@ input[type='text'],input[type='number'],select,textarea
 /* Standard Wide */
 @media (min-width: 992px) and (max-width: 1280px){
 
- /* #commercialcore > #commercialbanner
+  .leadcentre
   {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
-*/
 
 }
 
