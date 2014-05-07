@@ -217,6 +217,9 @@
 
         </table>
 
+        <a href="javascript:void(0);" class="protipanchor" data-toggle="modal" data-target="#myModal">Quote estimate is approximate, click to learn more.</a>
+        <div class="protip"></div>
+
       </div>
     </div>
 
@@ -248,4 +251,30 @@
     
   </div>
 
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">On the subject of instant quote accuracy...</h4>
+      </div>
+      <div class="modal-body">
+        <p>Thanks for getting an online quote, however we cannot guarantee the accuracy of the quote for a couple reasons:</p>
+        <ol>
+          <li>Quotes are subject to your estimation of the work and not our own. As a result, we cannot guarantee that your measurements line up with our own evaluations</li>
+          <li>Software errors do occur. If the website malfunctions or otherwise acts contrary to normal options, then the values given will be off. </li>
+          <li>Our prices are subject to change without notice. We try to keep the site up to date with that, however human errors do occur.</li>
+        </ol>
+        <p>We do our best to represent our prices on the website. However, a quote in person and on paper will be the price that both parties ultimately agree upon before work begins. This tool is useful
+          for getting an approximation of how much the work should cost, and if all goes well should be as close to the final price as possible. </p>
+
+        <p>Thanks!</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cool!</button>
+      </div>
+    </div>
+  </div>
 </div>
