@@ -102,7 +102,7 @@ $('#calculatebutton').click(function(){
 	if(ssp != ''){$('#lineitems').append('<tr><td>Single Small Pane</td><td>' + ssp + '</td></tr>');}
 	if(slp != ''){$('#lineitems').append('<tr><td>Single Large Pane</td><td>' + slp + '</td></tr>');}
 	if(csp != ''){$('#lineitems').append('<tr><td>Complete Small Pane</td><td>' + csp + '</td></tr>');}
-	if(clp != ''){$('#lineitems').append('<tr><td>Complete Small Pane</td><td>' + clp + '</td></tr>');}
+	if(clp != ''){$('#lineitems').append('<tr><td>Complete Large Pane</td><td>' + clp + '</td></tr>');}
 
 	var subtotal = (ssp * wc.single.small) + (slp * wc.single.large) + (csp * wc.complete.small) + (clp * wc.complete.large);
 	var discount = subtotal * wc.discount;
