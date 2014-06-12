@@ -70,7 +70,7 @@
   </div>
 
   <noscript>
-    <div class="bigwarning">
+    <div class="bigwarning" id="nojavascript">
       <p><i class="fa fa-umbrella"></i> Hi there, it looks like your not running with JavaScript enabled. We respect your decision and will try to accommodate you, however please be aware some parts of this site will not work (such as booking). If you didn't expect this message, <a href="http://enable-javascript.com/">please click here to learn how to turn JavaScript back on.</a> Thanks!</p>
     </div>
   </noscript>
