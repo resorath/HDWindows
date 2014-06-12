@@ -25,7 +25,7 @@
 	</div>
 
 	<div class="row multichoice" id="getstartedvalid" style="display: none;">
-	  <h2 class="leadcentre lotsoftext" id="getstartedselectionheader">Sweet, we can help you. How should this go down?</h1>
+	  <h2 class="leadcentre lotsoftext" id="getstartedselectionheader">Sweet, we can help you. How should this go down?</h2>
 
 	  <a href="<?=base_url() ?>quote" class="stage1-link" id="quote-link">
 	    <div class="col-md-3 getstartedlink" id="quote">
