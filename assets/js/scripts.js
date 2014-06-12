@@ -34,6 +34,9 @@ $(document).ready(function(){
 
     });
 
+    $.sidr('close');
+
+
   if($('#circlecheck').length > 0) {
     window.setTimeout(function() {
       $('#circleholder').html('<i class="fa fa-check-circle-o" id="circlecheck"></i>');

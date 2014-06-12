@@ -10,19 +10,19 @@
             <img src="<?=base_url() ?>assets/img/badlogo.png" alt="Bad Logo">
           </div>
           <div class="col-sm-2"></div>
-          <div class="col-sm-2 toplink" id="quote">
+          <div class="col-sm-2 toplink" id="book">
             <div class="navicon"><span class="glyphicon glyphicon-heart"></span></div>
-            <span class="ctalink"><a href="#" data-scrolltarget="whyus" class="scrolllink">Why Us?</a></span>
-            <p class="clinger">Learn what makes us special</p>
-          </div>
-
-          <div class="col-sm-2 toplink borderleft" id="book">
-            <div class="navicon"><span class="glyphicon glyphicon-fire"></span></div>
-            <span class="ctalink"><a href="getstarted">Get Started</a></span>
-            <p class="clinger">Get a free quote and book an appointment</p>
+            <span class="ctalink"><a href="booking">Book an Appointment</a></span>
+            <p class="clinger">Bring us on site</p>
           </div>
 
           <div class="col-sm-2 toplink borderleft" id="quote">
+            <div class="navicon"><span class="glyphicon glyphicon-fire"></span></div>
+            <span class="ctalink"><a href="quote">Get a Quote</a></span>
+            <p class="clinger">Online, instand and free</p>
+          </div>
+
+          <div class="col-sm-2 toplink borderleft" id="contact">
             <div class="navicon"><span class="glyphicon glyphicon-bell"></span></div>
             <span class="ctalink"><a href="<?=base_url() ?>contactus">Contact Us</a></span>
             <p class="clinger">Questions? Let us know!</p>
@@ -48,20 +48,17 @@
 
       <div class="container" id="linkscontainer">
         <div class="row">
-          <div class="col-sm-2 aboutuslink col-sm-offset-1">
+          <div class="col-sm-3 aboutuslink">
             <a href="#" data-scrolltarget="residentservices" class="scrolllink"><span class="aboutuslinka">Residential Services</span></a>
           </div>
-          <div class="col-sm-2 aboutuslink">
+          <div class="col-sm-3 aboutuslink">
             <a href="#" data-scrolltarget="commercialservices" class="scrolllink"><span class="aboutuslinka">Commercial Services</span></a>
           </div>
-          <div class="col-sm-2 aboutuslink">
-            <a href="booking"><span class="aboutuslinka">Book an Appointment</span></a>
+          <div class="col-sm-3 aboutuslink">
+            <a href="#" data-scrolltarget="whyus" class="scrolllink"><span class="aboutuslinka">Why Choose Us?</span></a>
           </div>
-          <div class="col-sm-2 aboutuslink">
-            <a href="#" data-scrolltarget="guarantee" class="scrolllink"><span class="aboutuslinka">Our Guarantee to You</span>
-          </div>
-          <div class="col-sm-2 aboutuslink">
-            <a href="quote"><span class="aboutuslinka">Get an Instant Quote</a></span>
+          <div class="col-sm-3 aboutuslink">
+            <a href="#" data-scrolltarget="guarantee" class="scrolllink"><span class="aboutuslinka">Our Guarantee to You</span></a>
           </div>
         </div>
       </div>

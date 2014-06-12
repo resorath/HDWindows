@@ -327,7 +327,7 @@ input[type='text'],input[type='number'],select,textarea
   color: #000000;
   width: 100%;
   z-index: 999;
-  height: 25px;
+  height: 35px;
   font-weight: bold;
 }
 
@@ -335,13 +335,23 @@ input[type='text'],input[type='number'],select,textarea
 {
   position: absolute;
   right: 5px;
+  font-size: 1.0em;
 
+}
+
+#menu-close
+{
+  position: absolute;
+  z-index: 999;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
 }
 
 #auxmobilemenu
 {
-  font-size: 0.8em;
-  width: 25px;
+  font-size: 0.9em;
+  width: 75px;
   right: 5px;
   left: inherit;
   height: 15px;
@@ -349,7 +359,8 @@ input[type='text'],input[type='number'],select,textarea
 
 #mainmobilemenu
 {
-  position: fixed;
+  /*position: fixed;*/
+  font-size: 1.5em;
 }
 
 .mobilemenu a:hover
@@ -1356,7 +1367,6 @@ input[type='text'],input[type='number'],select,textarea
 
   .ctalink
   {
-    width: 100px;
     display: inline-block;
   }
 

@@ -34,25 +34,27 @@
 
     } ?>
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
   </head>
   <body>
 
   <?php if(isset($subcontenttitle)): ?>
   <nav class="mobilemenu" id="auxmobilemenu">
-    <div id="menuanchor"><a href="#sidr" id="openmobilemenu"><span class="glyphicon glyphicon-tasks"></span></a></div>
+    <div id="menuanchor"><a href="#sidr" id="openmobilemenu"><span>Menu <span class="glyphicon glyphicon-tasks"></span></span></a></div>
   </nav>
   <?php else: ?>
   <nav class="mobilemenu" id="mainmobilemenu">
-    <div id="menuanchor"><a href="#sidr" id="openmobilemenu">Menu <span class="glyphicon glyphicon-tasks"></span></a></div>
+    <div id="menuanchor"><a href="#sidr" id="openmobilemenu"><span>Menu <span class="glyphicon glyphicon-tasks"></span></span></a></div>
   </nav>
   <?php endif ?>
 
 
   <div id="sidr">
+
+  <span id="menu-close" onclick="javascript:$.sidr('close')">x</span>
   <p class="mobilegreet">How can we help?</p>
     <ul id="mobilenavul">
       <li class="active"><a href="<?=base_url() ?>/#greeter">Meet and Greet</a></li>
