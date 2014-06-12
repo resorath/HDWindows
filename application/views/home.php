@@ -185,7 +185,7 @@
       </div>
 
       <a href="<?=base_url() ?>contactus" class="commercialcontacta">
-        <p class="commercialfooter">Get started here by calling us up or book a <i class="fa fa-coffee"></i>coffee appointment</p>
+        <p class="commercialfooter">Get started here by calling us up or book a coffee appointment <i class="fa fa-coffee"></i></p>
       </a>
 
     </section>
