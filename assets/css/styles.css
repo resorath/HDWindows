@@ -1324,7 +1324,50 @@ input[type='text'],input[type='number'],select,textarea
   right: 0px;
 }
 
+.admin-supercol
+{
+  border: 1px solid #000000;
+  padding: 10px;
+}
 
+#admin-dashboardrow
+{
+  margin-top: 20px;
+}
+
+.weakcontainer
+{
+  margin: 10px;
+  position: relative;
+}
+
+.admin-supercol-header
+{
+  margin-top: -22px;
+  margin-left: 20px;
+  padding-left: 5px;
+  background-color: #FFFFFF;
+  background-image: url('../img/masthead.gif');
+  display: block;
+  width: 200px;
+  font-weight: bold;
+}
+
+.admin-col-content > h5
+{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.admin-actions
+{
+  width: 90px;
+}
+
+.table > tbody > tr.success > td
+{
+  background-color: orange;
+}
 
 /* END Admin */
 
