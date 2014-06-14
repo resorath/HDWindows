@@ -1316,6 +1316,14 @@ input[type='text'],input[type='number'],select,textarea
   margin-bottom: 10px;
 }
 
+/* dash */
+#admin-logout
+{
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+
 
 
 /* END Admin */

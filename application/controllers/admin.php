@@ -31,7 +31,6 @@ class Admin extends MY_Controller {
 
 	public function index()
 	{		
-		unset($_SESSION['user']);
 		$this->loadview('admin/dashboard', $this->data);
 
 	}
