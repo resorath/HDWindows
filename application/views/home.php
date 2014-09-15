@@ -32,14 +32,14 @@
       </div>
 
       <div class="salebannermobile">
-        <img src="<?=base_url() ?>assets/img/flower.png" alt="">
-        Spring Sale! 15% off all services!
+        <img src="<?=base_url() ?>assets/img/leaf.png" alt="">
+        Autumn Sale! 15% off all services!
       </div>
       <div class="slides">
         <img src="<?=base_url() ?>assets/img/slide/dan.jpg" alt="" id="headerfull">
         <img src="<?=base_url() ?>assets/img/slide/dan_m.jpg" alt="" id="headermobile">
         <div class="slidetext">
-          <p class="slideleadtext">Spring Sale!</p>
+          <p class="slideleadtext">Autumn Sale!</p>
           <p class="slidefollowtext">Get 15% off all services!</p>
           <a href="<?=base_url() ?>getstarted" class="btn" id="promobutton">Get Started</a>
         </div>

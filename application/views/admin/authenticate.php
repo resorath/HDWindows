@@ -17,13 +17,13 @@
 
 			<div class="control-group">
 			  <div class="controls">
-			    <input id="username" name="username" type="text" placeholder="Username" class="input-xlarge" required>
+			    <input id="username" name="username" type="text" placeholder="Username" class="input-xlarge" required="required" autofocus="autofocus">
 			  </div>
 			</div>
 
 			<div class="control-group">
 			  <div class="controls">
-			    <input id="password" name="password" type="password" placeholder="Password" class="input-xlarge" required>
+			    <input id="password" name="password" type="password" placeholder="Password" class="input-xlarge" required="required">
 			  </div>
 			</div>
 

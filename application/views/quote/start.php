@@ -237,7 +237,7 @@
 
         tax : 0.05,
         discount: 0.15,
-        discountreason: "Spring Sale"
+        discountreason: "Autumn Sale"
 
       };
 

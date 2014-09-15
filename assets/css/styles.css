@@ -1369,6 +1369,11 @@ input[type='text'],input[type='number'],select,textarea
   background-color: orange;
 }
 
+.dashboard
+{
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
 /* END Admin */
 
 
