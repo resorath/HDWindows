@@ -1374,6 +1374,20 @@ input[type='text'],input[type='number'],select,textarea
   font-family: Verdana, Tahoma, sans-serif;
 }
 
+#admin-top-left
+{
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#butler
+{
+  position: absolute;
+  left: 40%;
+  top: 10px;
+  display: none;
+}
+
 /* END Admin */
 
 

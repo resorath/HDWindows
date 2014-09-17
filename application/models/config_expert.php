@@ -19,6 +19,24 @@ class Config_expert extends CI_Model
 
 	}
 
+	function get_values()
+	{
+		$query = $this->db->get('config');
+
+		return $query->row(); 
+	}
+
+	function apply_change($key, $value)
+	{
+		$data = array($key => $value);
+		$res = $this->db->update('config', $data, array('id' => '1'));
+		
+		if(!$res)
+			return false;
+		return true;
+
+	}
+
 
 }
 ?>

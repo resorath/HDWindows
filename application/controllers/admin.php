@@ -27,10 +27,15 @@ class Admin extends MY_Controller {
       	redirect('/admin/authenticate');
       	exit();
       }
+
+      $this->load->model('config_expert');
   }
 
 	public function index()
 	{		
+		$this->data['dashdata'] = $this->Config_expert->get_values();
+
+
 		$this->loadview('admin/dashboard', $this->data);
 
 	}
@@ -86,5 +91,13 @@ class Admin extends MY_Controller {
 	public function sha1($words)
 	{
 		echo(sha1($words));
+	}
+
+	public function applyChange($key)
+	{
+		if($this->Config_expert->apply_change(urldecode($key), urldecode($_GET['v'])))
+			echo "okay";
+		else
+			echo "nope";
 	}
 }
