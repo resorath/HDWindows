@@ -31,16 +31,20 @@
         </div>
       </div>
 
+      <?php if($_SESSION['config_saleAmount'] > 0): ?>
       <div class="salebannermobile">
         <img src="<?=base_url() ?>assets/img/leaf.png" alt="">
         Autumn Sale! 15% off all services!
       </div>
+      <?php endif ?>
       <div class="slides">
         <img src="<?=base_url() ?>assets/img/slide/dan.jpg" alt="" id="headerfull">
         <img src="<?=base_url() ?>assets/img/slide/dan_m.jpg" alt="" id="headermobile">
         <div class="slidetext">
+          <?php if($_SESSION['config_saleAmount'] > 0): ?>
           <p class="slideleadtext">Autumn Sale!</p>
           <p class="slidefollowtext">Get 15% off all services!</p>
+          <?php endif ?>
           <a href="<?=base_url() ?>getstarted" class="btn" id="promobutton">Get Started</a>
         </div>
 

@@ -16,6 +16,13 @@ class Config_expert extends CI_Model
 		$_SESSION['config_contactemail'] = $row->contactemail;
 		$_SESSION['config_contactphone'] = $row->contactphone;
 		$_SESSION['config_technicalemail'] = $row->technicalemail;
+		$_SESSION['config_priceSmallSinglePane'] = $row->priceSmallSinglePane;
+		$_SESSION['config_priceLargeSinglePane'] = $row->priceLargeSinglePane;
+		$_SESSION['config_priceSmallCompletePane'] = $row->priceSmallCompletePane;
+		$_SESSION['config_priceLargeCompletePane'] = $row->priceLargeCompletePane;
+		$_SESSION['config_taxMultiplier'] = $row->taxMultiplier;
+		$_SESSION['config_saleAmount'] = $row->saleAmount;
+		$_SESSION['config_saleReason'] = $row->saleReason;
 
 	}
 

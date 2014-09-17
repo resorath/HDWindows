@@ -40,6 +40,13 @@ class Admin extends MY_Controller {
 
 	}
 
+	public function Logout()
+	{
+		unset($_SESSION['user']);
+
+		redirect('/admin');
+	}
+
 	public function authenticate()
 	{
 	  if(array_key_exists("user", $_SESSION))

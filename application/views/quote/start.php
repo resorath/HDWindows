@@ -226,18 +226,18 @@
     <script>
       var wc = {
         single : {
-          small: 2,
-          large: 5
+          small: <?=$_SESSION['config_priceSmallSinglePane'] ?>,
+          large: <?=$_SESSION['config_priceLargeSinglePane'] ?>
         },
 
         complete : {
-          small: 4,
-          large: 8
+          small: <?=$_SESSION['config_priceSmallCompletePane'] ?>,
+          large: <?=$_SESSION['config_priceLargeCompletePane'] ?>
         },
 
-        tax : 0.05,
-        discount: 0.15,
-        discountreason: "Autumn Sale"
+        tax : <?=$_SESSION['config_taxMultiplier'] ?>,
+        discount: <?=$_SESSION['config_saleAmount'] ?>,
+        discountreason: "<?=$_SESSION['config_saleReason'] ?>",
 
       };
 
