@@ -4,10 +4,10 @@
 
     <h2 class="leadcentre lotsoftext" id="introheader">Ready to Book?</h2>
 
-    <div id="getpersonal">Tell us what times are good for you, and we will book an appointment for you. Don't forget, we
+    <div id="getpersonal">Please fill out your contact details and will get back to you. Don't forget, we
       can do this <a href="<?=base_url() ?>contactus">over the phone</a> as well.</div>
 
-    <div class="outer-center">
+    <!--<div class="outer-center">
       <div class="inner-center" id="howitworks">
         <p>How it works <a href="#" id="howitworksa" data-toggle="tooltip" data-placement="top" title="We aren't a big company, but instead a small team. A little song and dance is neccesary so we can group together our bookings. Thank you for your patience and keeping our fuel consumption down!"><span class="glyphicon glyphicon-question-sign"></span></a></p>
         <ol>
@@ -17,7 +17,7 @@
           <li>We agree on the quote, and work gets done.</li>
         </ol>
       </div>
-    </div>
+    </div>-->
     <div class="clear"></div>
 
     <div style="margin-top: 40px"></div>
@@ -48,7 +48,7 @@
     <div class="alert alert-success alert-dismissable" id="welcomebackalert">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       <strong>Thanks for coming back!</strong>
-      <p>To make your return visit easier, you can click the link in the e-mail you got form us last time to book again! Don't have that e-mail anymore? No problem, just fill the form out again and we will figure things out. </p>
+      <!--<p>To make your return visit easier, you can click the link in the e-mail you got form us last time to book again! Don't have that e-mail anymore? No problem, just fill the form out again and we will figure things out. </p>-->
       <p><i class="fa fa-repeat"></i> Let us know if you want to set up a recurring schedule when we come on site, makes life a little easier!</p>
     </div>
 
@@ -166,7 +166,7 @@
         </div>
       </div>
     </div>
-
+<!--
     <hr class="stylishhr">
 
     <p>Please pick some dates and times that work for you. We will get back to you!</p>
@@ -214,7 +214,7 @@
         </div>
       </div>
 
-    </div>
+    </div>-->
 
     <!-- Button -->
     <div class="control-group" id="bookbutton">

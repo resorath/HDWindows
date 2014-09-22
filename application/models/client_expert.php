@@ -27,9 +27,9 @@ class Client_expert extends CI_Model
 		unset($bookingmodel['id']);
 
 
-		$contactmodal['firstdatechoice'] = $bookingmodel['firstdatechoice'];
-		$contactmodal['firstdatechoice-until'] = $bookingmodel['firstdatechoice-until'];
-		$contactmodal['seconddatechoice'] = $bookingmodel['seconddatechoice'];
+		@$contactmodal['firstdatechoice'] = $bookingmodel['firstdatechoice'];
+		@$contactmodal['firstdatechoice-until'] = $bookingmodel['firstdatechoice-until'];
+		@$contactmodal['seconddatechoice'] = $bookingmodel['seconddatechoice'];
 		@$contactmodal['seconddatechoice-until'] = $bookingmodel['seconddatechoice-until'];
 		$contactmodal['comment'] = $bookingmodel['comment'];
 
@@ -41,9 +41,9 @@ class Client_expert extends CI_Model
 		$emailmodel['address'] = $bookingmodel['address'];
 		$emailmodel['address2'] = $bookingmodel['address2'];
 		$emailmodel['postalcode'] = $bookingmodel['postalcode'];
-		$emailmodel['firstdatechoice'] = $bookingmodel['firstdatechoice'];
-		$emailmodel['firstdatechoice-until'] = $bookingmodel['firstdatechoice-until'];
-		$emailmodel['seconddatechoice'] = $bookingmodel['seconddatechoice'];
+		@$emailmodel['firstdatechoice'] = $bookingmodel['firstdatechoice'];
+		@$emailmodel['firstdatechoice-until'] = $bookingmodel['firstdatechoice-until'];
+		@$emailmodel['seconddatechoice'] = $bookingmodel['seconddatechoice'];
 		@$emailmodel['seconddatechoice-until'] = $bookingmodel['seconddatechoice-until'];
 		@$emailmodel['quote_type'] = $_SESSION['bookingtype'];
 		@$emailmodel['quote_total'] = $_SESSION['quotevalue'];

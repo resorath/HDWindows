@@ -32,13 +32,13 @@ class Booking extends MY_Controller {
     $this->form_validation->set_rules('address', 'Street Address', 'required|trim|xss_clean');
     $this->form_validation->set_rules('postalcode', 'Postal Code', 'required|trim|xss_clean');
     $this->form_validation->set_rules('phone', 'Phone Number', 'required|trim|xss_clean');
-    $this->form_validation->set_rules('firstdatechoice', 'First Date Choice', 'required|trim|xss_clean');
-    $this->form_validation->set_rules('firstdatechoice-until', 'First Date Choice (until)', 'required|trim|xss_clean');
+    //$this->form_validation->set_rules('firstdatechoice', 'First Date Choice', 'required|trim|xss_clean');
+    //$this->form_validation->set_rules('firstdatechoice-until', 'First Date Choice (until)', 'required|trim|xss_clean');
 
     $this->form_validation->set_rules('title', 'Title', 'xss_clean');
     $this->form_validation->set_rules('address2', 'Address Line 2', 'xss_clean');
-    $this->form_validation->set_rules('seconddatechoice', 'Second Date Choice', 'xss_clean');
-    $this->form_validation->set_rules('seconddatechoice-until', 'Second Date Choice (until)', 'xss_clean');
+    //$this->form_validation->set_rules('seconddatechoice', 'Second Date Choice', 'xss_clean');
+    //$this->form_validation->set_rules('seconddatechoice-until', 'Second Date Choice (until)', 'xss_clean');
     $this->form_validation->set_rules('referral', 'Referral', 'xss_clean');
     $this->form_validation->set_rules('previousbook', 'Previously Booked', 'xss_clean');
     $this->form_validation->set_rules('comment', 'Comment', 'xss_clean');
