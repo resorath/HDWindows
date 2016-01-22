@@ -7,7 +7,7 @@
       <div class="container" id="maincontent">
         <div class="row">
           <div class="col-sm-4" id="logo">
-            <img src="<?=base_url() ?>assets/img/badlogo.png" alt="Bad Logo">
+            <img src="<?=base_url() ?>assets/img/goodlogo.png" alt="Bad Logo" id="identitylogo" width="300px" height="112px">
           </div>
           <div class="col-sm-2"></div>
           <div class="col-sm-2 toplink" id="book">

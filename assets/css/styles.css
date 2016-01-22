@@ -200,7 +200,8 @@ input[type='text'],input[type='number'],select,textarea
 
 #maincontent
 {
-	padding-top: 30px;
+	padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .toplink
@@ -282,6 +283,7 @@ input[type='text'],input[type='number'],select,textarea
 
 .navicon
 {
+  margin-top: 10px;
 	font-size: 2.0em;
 }
 
@@ -1518,6 +1520,7 @@ input[type='text'],input[type='number'],select,textarea
 
   #maincontent
   {
+    margin-top: 20px;
   }
 
   .leadcentre
@@ -1617,12 +1620,20 @@ input[type='text'],input[type='number'],select,textarea
 
   #logo
   {
-    margin-top: 20px;
+    margin-top: 0px;
   }
 
   #logo > a > img
   {
     border: none;
+  }
+
+  #identitylogo
+  {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 112px;
   }
 
   .residentrow
